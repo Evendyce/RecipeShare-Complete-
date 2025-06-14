@@ -1,7 +1,48 @@
 ﻿@page "/"
+@using RecipeShare.Web.Components.VoidGlass.VG2x2
+@using RecipeShare.Web.Components.VoidGlass.VGCard
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<VG2x2 CssClass="vg-dashboard"
+       TopLeftHeading="Overview"
+       TopRightHeading="Analytics"
+       BottomLeftHeading="Tasks"
+       BottomRightHeading="Messages">
 
-Welcome to your new app.
+    <TopLeft>
+        <VGCard Header="Welcome" SubHeader="Quick Stats" Icon="fas fa-star">
+            <ContentTemplate>
+                <p>This is a sample card inside the top-left quadrant of the VG2x2 grid.</p>
+            </ContentTemplate>
+        </VGCard>
+    </TopLeft>
+
+    <TopRight>
+        <VGCard Header="Visitors" SubHeader="Today" Icon="fas fa-chart-line">
+            <ContentTemplate>
+                <p>Number of visitors today: 1,234</p>
+            </ContentTemplate>
+        </VGCard>
+    </TopRight>
+
+    <BottomLeft>
+        <VGCard Header="Pending Tasks" SubHeader="Due Soon" Icon="fas fa-tasks">
+            <ContentTemplate>
+                <ul>
+                    <li>Review reports</li>
+                    <li>Update website</li>
+                    <li>Team meeting at 3 PM</li>
+                </ul>
+            </ContentTemplate>
+        </VGCard>
+    </BottomLeft>
+
+    <BottomRight>
+        <VGCard Header="Inbox" SubHeader="New Messages" Icon="fas fa-envelope">
+            <ContentTemplate>
+                <p>You have 5 new messages.</p>
+            </ContentTemplate>
+        </VGCard>
+    </BottomRight>
+</VG2x2>

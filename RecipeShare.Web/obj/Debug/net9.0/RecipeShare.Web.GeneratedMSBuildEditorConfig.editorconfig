@@ -212,6 +212,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Donovan/source/repos/Evendyce/RecipeShare/RecipeShare.Web/Components/VoidGlass/VG2x2/VG2x2.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xWb2lkR2xhc3NcVkcyeDJcVkcyeDIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Donovan/source/repos/Evendyce/RecipeShare/RecipeShare.Web/Components/VoidGlass/VGCard/VGCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xWb2lkR2xhc3NcVkdDYXJkXFZHQ2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Donovan/source/repos/Evendyce/RecipeShare/RecipeShare.Web/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

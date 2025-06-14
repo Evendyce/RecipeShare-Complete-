@@ -1,0 +1,32 @@
+﻿@inherits VG2x2Base
+
+<div class="vg-2x2 @CssClass" style="@Style">
+    <div class="vg-2x2-cell top-left">
+        @if (!string.IsNullOrWhiteSpace(TopLeftHeading))
+        {
+            <div class="vg-2x2-heading">@TopLeftHeading</div>
+        }
+        @TopLeft
+    </div>
+    <div class="vg-2x2-cell top-right">
+        @if (!string.IsNullOrWhiteSpace(TopRightHeading))
+        {
+            <div class="vg-2x2-heading">@TopRightHeading</div>
+        }
+        @TopRight
+    </div>
+    <div class="vg-2x2-cell bottom-left">
+        @if (!string.IsNullOrWhiteSpace(BottomLeftHeading))
+        {
+            <div class="vg-2x2-heading">@BottomLeftHeading</div>
+        }
+        @BottomLeft
+    </div>
+    <div class="vg-2x2-cell bottom-right">
+        @if (!string.IsNullOrWhiteSpace(BottomRightHeading))
+        {
+            <div class="vg-2x2-heading">@BottomRightHeading</div>
+        }
+        @BottomRight
+    </div>
+</div>

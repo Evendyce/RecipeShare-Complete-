@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>9apz3nd6lf</Fingerprint>
-      <Integrity>P6YaVJABQ6OUS9o8H2FJlIxQ7T3p2CJktofC3tTh3aU=</Integrity>
+      <Fingerprint>4zdhpaelhd</Fingerprint>
+      <Integrity>AF616U8HWwXSyWQ2LqpamXnE5lIWq1WN5eQYW15zwv4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\voidglass.css'))</OriginalItemSpec>
@@ -1596,8 +1596,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>uednw70bpg</Fingerprint>
-      <Integrity>WgC7lcc6SpnYgHkkK9lB0kChTTVzaRaF+8rJ8ejTebY=</Integrity>
+      <Fingerprint>nvw2hovlyp</Fingerprint>
+      <Integrity>81OZPVFWW4Q+6mFW6h708RM35xnWyxvRWsF8hjq4rDY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass\components\_topbar.scss'))</OriginalItemSpec>

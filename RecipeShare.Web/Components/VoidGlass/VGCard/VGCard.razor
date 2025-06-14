@@ -1,0 +1,53 @@
+﻿@inherits VGCardBase
+
+<div class="vg-card @CssClass" style="width:@(Width ?? "100%"); height:@(Height ?? "100%"); @Style">
+    @if (HeaderTemplate != null)
+    {
+        <div class="vg-card-header">
+            @HeaderTemplate
+        </div>
+    }
+    else if (!string.IsNullOrWhiteSpace(Header) || !string.IsNullOrWhiteSpace(SubHeader))
+    {
+        <div class="vg-card-header">
+            @if (!string.IsNullOrWhiteSpace(Icon))
+            {
+                <span class="vg-card-icon"><i class="@Icon"></i></span>
+            }
+            <div class="vg-card-header-text">
+                @if (!string.IsNullOrWhiteSpace(Header))
+                {
+                    <h3 class="vg-card-title">@Header</h3>
+                }
+                @if (!string.IsNullOrWhiteSpace(SubHeader))
+                {
+                    <p class="vg-card-subtitle">@SubHeader</p>
+                }
+            </div>
+        </div>
+    }
+
+    <div class="vg-card-body">
+        @if (ContentTemplate != null)
+        {
+            @ContentTemplate
+        }
+        else
+        {
+            @Content
+        }
+    </div>
+
+    @if (FooterTemplate != null)
+    {
+        <div class="vg-card-footer">
+            @FooterTemplate
+        </div>
+    }
+    else if (!string.IsNullOrWhiteSpace(Footer))
+    {
+        <div class="vg-card-footer">
+            @Footer
+        </div>
+    }
+</div>
