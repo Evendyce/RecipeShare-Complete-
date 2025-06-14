@@ -1,0 +1,18 @@
+VoidGlass Theme License
+
+Copyright © 2025 Donovan Minnie
+
+Permission is granted to use, modify, and distribute the VoidGlass theme within this project or others, provided that **clear and visible attribution** is included:
+
+- Mention the author name: "Donovan Minnie"
+- Reference the original theme name: "VoidGlass"
+- Do not redistribute the theme standalone, rebrand, or sell without written permission
+
+This license applies to:
+- All SCSS/CSS files under the VoidGlass theme
+- Custom components prefixed with VG or styled under VoidGlass visual principles
+
+If using externally or commercially, please provide a visible UI or README credit such as:
+"UI styled with the VoidGlass Theme by Donovan Minnie"
+
+Violation of these terms may result in spooky UI ghosts, aesthetic distortion, or worse — legal consequences.
