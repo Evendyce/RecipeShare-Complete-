@@ -1,0 +1,17 @@
+﻿@use "sass:map";
+
+@mixin theme-vars($theme-map) {
+    --vg-bg: #{map.get($theme-map, bg)};
+    --vg-text: #{map.get($theme-map, text)};
+    --vg-glass: #{map.get($theme-map, glass)};
+    --vg-border: #{map.get($theme-map, border)};
+    --vg-neon: #{map.get($theme-map, neon)};
+    --vg-neon-light: #{map.get($theme-map, neon-light)};
+    --vg-accent: #{map.get($theme-map, accent)};
+    --vg-accent-light: #{map.get($theme-map, accent-light)};
+    --vg-info: #{map.get($theme-map, info)};
+    --vg-info-light: #{map.get($theme-map, info-light)};
+    --vg-danger: #{map.get($theme-map, danger)};
+    --vg-danger-light: #{map.get($theme-map, danger-light)};
+    --vg-heading: #{map.get($theme-map, heading)};
+}

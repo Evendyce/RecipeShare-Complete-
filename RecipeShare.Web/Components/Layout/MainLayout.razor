@@ -1,19 +1,22 @@
-﻿@inherits LayoutComponentBase
+﻿@using RecipeShare.Web.Components.Layout.Sections.Footer
+@inherits MainLayoutBase
 
 <div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
+    @* <div class="vg-sidebar-container">
+        <VgSidebar />
+    </div> *@
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+    <div class="vg-main">
+        <div class="vg-shell">
+
+            <div class="voidglass-ambient"></div>
+            <div class="vectors-bg" />
+
+            <main class="main-content">@Body</main>
         </div>
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
+        <VgFooter />
+    </div>
 </div>
 
 <div id="blazor-error-ui" data-nosnippet>

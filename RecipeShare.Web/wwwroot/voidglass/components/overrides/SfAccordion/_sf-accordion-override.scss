@@ -1,0 +1,95 @@
+﻿// wwwroot/voidglass/components/overrides/SfAccordion/_sf-accordion-override.scss
+
+.e-accordion {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+.e-acrdn-item {
+    background-color: transparent !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+
+    &.e-select.e-selected {
+        background-color: transparent !important;
+        border-bottom: 1px solid var(--vg-border) !important;
+    }
+
+    &.e-overlay {
+        opacity: 1 !important;
+    }
+}
+
+.e-acrdn-header {
+    background-color: transparent !important;
+    color: var(--vg-text) !important;
+    padding: 0 !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    line-height: 1.25rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    border: none !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+
+    .e-toggle-icon {
+        position: static !important;
+        font-size: 1.2rem !important;
+        color: var(--vg-accent) !important;
+    }
+
+    .e-acrdn-header-icon,
+    .e-icons {
+        color: var(--vg-accent) !important;
+    }
+
+    .e-acrdn-header-content {
+        color: var(--vg-text) !important;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+}
+
+.e-acrdn-panel {
+    background-color: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+
+    .e-acrdn-content {
+        padding: 0 !important;
+        color: var(--vg-text) !important;
+    }
+
+    .e-acrdn-header-content {
+        font-weight: normal !important;
+    }
+}
+
+// Optional: Override larger variant
+.e-bigger .e-accordion,
+.e-accordion.e-bigger {
+    .e-acrdn-header {
+        padding: 0 !important;
+    }
+
+    .e-toggle-icon {
+        font-size: 1.25rem !important;
+    }
+
+    .e-acrdn-content {
+        font-size: 0.95rem !important;
+        padding: 0 !important;
+    }
+}

@@ -1,0 +1,31 @@
+﻿$vg-theme-dark: (
+  bg: #000000,
+  text: #ffffff,
+  glass: rgba(255, 255, 255, 0.05),
+  border: rgba(255, 255, 255, 0.15),
+  neon: #00ffff,
+  neon-light: #66ffff,
+  accent: #9b5de5,
+  accent-light: #b490f1,
+  info: #17a2b8,
+  info-light: #5bc0de,
+  danger: #ff005c,
+  danger-light: #ff4f85,
+  heading: #ffffff
+);
+
+$vg-theme-light: (
+  bg: #f5f5f5,
+  text: #0a0a0a,
+  glass: rgba(255, 255, 255, 0.6),
+  border: rgba(0, 0, 0, 0.08),
+  neon: #0077ff,
+  neon-light: #3399ff,
+  accent: #e85cff,
+  accent-light: #f2a6ff,
+  info: #0d6efd,
+  info-light: #66b2ff,
+  danger: #e63946,
+  danger-light: #f77b82,
+  heading: #222222
+);

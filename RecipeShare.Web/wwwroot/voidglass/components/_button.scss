@@ -1,0 +1,67 @@
+﻿.vg-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 0.75rem;
+    border: 1px solid transparent;
+    backdrop-filter: blur(12px);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: var(--vg-text);
+    background-color: var(--vg-glass);
+    border-color: var(--vg-border);
+
+    &:hover,
+    &:focus-visible {
+        box-shadow: 0 0 10px var(--vg-accent);
+        color: var(--vg-accent);
+        border-color: var(--vg-accent);
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+
+    &--solid {
+        background-color: var(--vg-accent);
+        color: black;
+
+        &:hover {
+            background-color: var(--vg-accent-light);
+            box-shadow: 0 0 12px var(--vg-accent);
+        }
+    }
+
+    &--outline {
+        background-color: transparent;
+        border: 1px solid var(--vg-border);
+    }
+
+    &--primary {
+        --vg-accent: var(--vg-neon);
+        --vg-accent-light: var(--vg-neon-light);
+    }
+
+    &--general {
+        --vg-accent: var(--vg-info);
+        --vg-accent-light: var(--vg-info-light);
+    }
+
+    &--cancel {
+        --vg-accent: var(--vg-danger);
+        --vg-accent-light: var(--vg-danger-light);
+    }
+
+    &--circle {
+        padding: 0.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 999px;
+        justify-content: center;
+    }
+}

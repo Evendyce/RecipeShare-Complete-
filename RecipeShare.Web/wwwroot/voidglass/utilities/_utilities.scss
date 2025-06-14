@@ -1,0 +1,16 @@
+﻿@use '../themes/tokens' as *;
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-glow {
+    color: var(--vg-neon);
+    text-shadow: 0 0 8px var(--vg-neon);
+}
+
+.radius-lg {
+    border-radius: 1rem;
+}

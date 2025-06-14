@@ -1,6 +1,11 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 
+@code {
+    // This should allow new CSS to now always load on app start up
+    static readonly string CssVersion = $"2.{new Random().Next(100, 100000000)}";
+}
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +13,14 @@
     <link rel="stylesheet" href="@Assets["lib/bootstrap/dist/css/bootstrap.min.css"]" />
     <link rel="stylesheet" href="@Assets["app.css"]" />
     <link rel="stylesheet" href="@Assets["RecipeShare.Web.styles.css"]" />
+    <link rel="stylesheet" href="css/voidglass.css?version=@CssVersion" />
+
+    @* FONT AWESOME FREE *@
+    <link href="/fa/css/fontawesome.css" rel="stylesheet" />
+    <link href="/fa/css/brands.css" rel="stylesheet" />
+    <link href="/fa/css/solid.css" rel="stylesheet" />
+    <link href="/fa/css/regular.css" rel="stylesheet" />
+
     <ImportMap />
     <link rel="icon" type="image/png" href="favicon.png" />
     <HeadOutlet @rendermode="PageRenderMode" />
@@ -15,7 +28,17 @@
 
 <body>
     <Routes @rendermode="PageRenderMode" />
+    <script src="js/themeToggle.js"></script>
     <script src="_framework/blazor.web.js"></script>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+          window.voidGlassTheme.init();
+          window.__applyThemeAfterBlazorNav = () => {
+            window.voidGlassTheme.init();
+          };
+        });
+    </script>
 </body>
 
 </html>

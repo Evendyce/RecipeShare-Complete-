@@ -1,0 +1,47 @@
+﻿@use '../themes/tokens' as *;
+
+.triangles-bg {
+    background-image: url('../images/triangles.svg');
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+    padding: 25px;
+    inset: 0;
+    mix-blend-mode: hard-light;
+    z-index: -1;
+    animation: shimmerBreathe 12s ease-in-out infinite;
+}
+
+.vectors-bg {
+    mix-blend-mode: hard-light;
+    background-image: url('../images/vectors.svg');
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+    padding: 25px;
+    inset: 0;
+    z-index: -1;
+    animation: shimmerBreathe 12s ease-in-out infinite;
+}
+
+.voidglass-ambient {
+    mix-blend-mode: hard-light;
+    position: absolute;
+    inset: 0;
+    /*background: radial-gradient(circle at 30% 40%, #9b5de540, transparent 70%), radial-gradient(circle at 70% 70%, #66ffff33, transparent 60%);*/
+    /*background: radial-gradient(circle at 30% 40%, #2b1c40a0, transparent 70%), radial-gradient(circle at 70% 70%, #00555550, transparent 60%);*/
+    /*background: radial-gradient(circle at 30% 40%, #2e2e2e33, transparent 70%), radial-gradient(circle at 70% 70%, #4b4b4b22, transparent 60%);*/
+    background: radial-gradient(circle at 30% 40%, #2b2b2b40 10%, transparent 50%), radial-gradient(circle at 70% 70%, #55555533 5%, transparent 40%);
+    animation: ambientShift 30s ease-in-out infinite;
+    z-index: -2;
+}
+
+@keyframes ambientShift {
+    0%, 100% {
+        background-position: 30% 40%, 70% 70%;
+    }
+
+    50% {
+        background-position: 60% 20%, 40% 90%;
+    }
+}

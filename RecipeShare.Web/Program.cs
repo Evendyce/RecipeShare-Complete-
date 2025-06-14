@@ -1,8 +1,9 @@
-using Microsoft.AspNetCore.Components.Authorization;
+﻿using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using RecipeShare.Web.Components;
 using RecipeShare.Web.Components.Account;
+using RecipeShare.Web.Components.Layout.Sections.Footer;
 using RecipeShare.Web.Data;
 
 namespace RecipeShare.Web
@@ -13,37 +14,60 @@ namespace RecipeShare.Web
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            // -------------------------------
+            // Razor Components
+            // -------------------------------
             builder.Services.AddRazorComponents()
                 .AddInteractiveServerComponents();
 
+            // -------------------------------
+            // Identity & Authentication
+            // -------------------------------
             builder.Services.AddCascadingAuthenticationState();
             builder.Services.AddScoped<IdentityUserAccessor>();
             builder.Services.AddScoped<IdentityRedirectManager>();
             builder.Services.AddScoped<AuthenticationStateProvider, IdentityRevalidatingAuthenticationStateProvider>();
 
             builder.Services.AddAuthentication(options =>
-                {
-                    options.DefaultScheme = IdentityConstants.ApplicationScheme;
-                    options.DefaultSignInScheme = IdentityConstants.ExternalScheme;
-                })
+            {
+                options.DefaultScheme = IdentityConstants.ApplicationScheme;
+                options.DefaultSignInScheme = IdentityConstants.ExternalScheme;
+            })
                 .AddIdentityCookies();
 
-            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-            builder.Services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(connectionString));
-            builder.Services.AddDatabaseDeveloperPageExceptionFilter();
-
-            builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            builder.Services.AddIdentityCore<ApplicationUser>(options =>
+            {
+                options.SignIn.RequireConfirmedAccount = false;
+            })
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddSignInManager()
                 .AddDefaultTokenProviders();
 
             builder.Services.AddSingleton<IEmailSender<ApplicationUser>, IdentityNoOpEmailSender>();
 
+            // -------------------------------
+            // Database Context
+            // -------------------------------
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
+                ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+
+            builder.Services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(connectionString));
+
+            builder.Services.AddDbContextFactory<RecipeShareContext>(opt => opt.UseSqlServer(connectionString));
+
+            builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+
+            // -------------------------------
+            // Custom Services
+            // -------------------------------
+            builder.Services.AddSingleton<SnapZoneConfig>();
+
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
+            // -------------------------------
+            // Middleware & Pipeline
+            // -------------------------------
             if (app.Environment.IsDevelopment())
             {
                 app.UseMigrationsEndPoint();
@@ -51,19 +75,25 @@ namespace RecipeShare.Web
             else
             {
                 app.UseExceptionHandler("/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
             app.UseHttpsRedirection();
 
+            // Authentication & Authorization
+            app.UseAuthentication();
+            app.UseAuthorization();
+
             app.UseAntiforgery();
 
             app.MapStaticAssets();
+
             app.MapRazorComponents<App>()
                 .AddInteractiveServerRenderMode();
 
-            // Add additional endpoints required by the Identity /Account Razor components.
+            // -------------------------------
+            // Identity Endpoints
+            // -------------------------------
             app.MapAdditionalIdentityEndpoints();
 
             app.Run();

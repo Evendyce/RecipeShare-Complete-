@@ -1,0 +1,340 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="1536.000000pt" height="1024.000000pt" viewBox="0 0 1536.000000 1024.000000" preserveAspectRatio="xMidYMid meet">
+
+	<g transform="translate(0.000000,1024.000000) scale(0.100000,-0.100000)" fill="#0d0d0d" background="blue" stroke="none" backdrop-filter="blur(16px)" box-shadow="0 0 40px rgba(0, 255, 255, 0.15)">
+		<path d="M0 9611 l0 -628 194 -117 c107 -64 199 -116 204 -116 5 0 146 150 313 333 306 334 507 552 872 944 l198 213 -891 0 -890 0 0 -629z" fill="#0c0c0c">
+			<animate attributeName="stroke" dur="27s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#0c0c0c;#c0c0c0"/>
+			<animate attributeName="fill" dur="27s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#0c0c0c;#c0c0c0"/>
+		</path>
+		<path d="M1438 9793 c-550 -594 -973 -1059 -988 -1089 -14 -26 -24 17 255 -1077 69 -269 125 -491 125 -493 0 -21 67 54 382 424 381 447 759 896 819 972 39 49 24 -7 214 800 46 195 113 478 149 628 36 149 66 274 66 277 0 3 -137 5 -304 5 l-303 0 -415 -447z" fill="#525252">
+			<animate attributeName="stroke" dur="43s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#525252;#c0c0c0"/>
+			<animate attributeName="fill" dur="43s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#525252;#c0c0c0"/>
+		</path>
+		<path d="M2473 10017 c-29 -122 -86 -361 -127 -532 -194 -812 -208 -877 -195 -886 7 -4 64 -22 126 -39 62 -17 265 -80 452 -140 187 -61 346 -110 354 -110 8 0 23 12 33 28 28 43 673 933 1034 1426 157 215 159 218 105 231 -11 3 -137 30 -280 61 -143 30 -388 85 -544 120 l-284 64 -311 0 -311 0 -52 -223z" fill="#252525">
+			<animate attributeName="stroke" dur="25s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#252525;#aaaaaa"/>
+			<animate attributeName="fill" dur="25s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#252525;#aaaaaa"/>
+		</path>
+		<path d="M3565 10214 c340 -81 768 -167 850 -171 58 -3 200 6 400 26 267 27 1023 97 1565 146 91 9 174 17 185 19 11 2 -682 4 -1540 4 l-1560 0 100 -24z" fill="#313131">
+			<animate attributeName="stroke" dur="43s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#313131;#aaaaaa"/>
+			<animate attributeName="fill" dur="43s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#313131;#aaaaaa"/>
+		</path>
+		<path d="M6690 10214 c-118 -13 -343 -37 -500 -53 -732 -78 -963 -103 -1195 -130 -137 -16 -295 -32 -350 -35 -55 -4 -128 -12 -163 -18 l-63 -12 7 -30 c31 -145 247 -909 445 -1581 144 -488 187 -625 197 -624 4 0 72 82 152 182 79 100 210 260 291 357 80 96 264 319 409 495 146 176 474 572 730 880 256 309 471 568 479 578 13 16 6 17 -105 16 -66 -1 -216 -12 -334 -25z" fill="#0d0d0d">
+			<animate attributeName="stroke" dur="32s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#0d0d0d;#aaaaaa"/>
+			<animate attributeName="fill" dur="32s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#0d0d0d;#aaaaaa"/>
+		</path>
+		<path d="M7450 10174 c107 -36 328 -107 490 -159 736 -234 1003 -319 1113 -355 l117 -38 33 56 c32 55 115 207 245 450 l60 112 -1126 -1 -1127 -1 195 -64z" fill="#404040">
+			<animate attributeName="stroke" dur="30s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#404040;#aaaaaa"/>
+			<animate attributeName="fill" dur="30s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#404040;#aaaaaa"/>
+		</path>
+		<path d="M9549 10163 c-45 -81 -215 -376 -276 -476 -19 -32 -33 -61 -30 -63 9 -9 1548 -264 1593 -264 51 0 57 7 206 215 153 213 453 637 462 653 6 9 -188 12 -953 12 l-960 0 -42 -77z" fill="#303030">
+			<animate attributeName="stroke" dur="27s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#303030;#aaaaaa"/>
+			<animate attributeName="fill" dur="27s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#303030;#aaaaaa"/>
+		</path>
+		<path d="M11572 10188 c-21 -29 -81 -111 -132 -183 -51 -71 -189 -259 -307 -416 -117 -158 -213 -292 -213 -298 0 -13 14 -14 210 -1 154 10 1180 64 1420 75 161 7 424 26 429 31 4 4 -120 195 -377 582 l-175 262 -408 0 -408 0 -39 -52z" fill="#272727">
+			<animate attributeName="stroke" dur="31s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#272727;#aaaaaa"/>
+			<animate attributeName="fill" dur="31s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#272727;#aaaaaa"/>
+		</path>
+		<path d="M12500 10235 c0 -11 540 -809 564 -833 14 -14 25 -10 416 158 442 190 1069 456 1308 556 152 64 279 117 281 120 2 2 -575 4 -1282 4 -708 0 -1287 -2 -1287 -5z" fill="#444444">
+			<animate attributeName="stroke" dur="41s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#444444;#aaaaaa"/>
+			<animate attributeName="fill" dur="41s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#444444;#aaaaaa"/>
+		</path>
+		<path d="M15235 10224 c-16 -7 -397 -166 -845 -353 -1006 -418 -1209 -505 -1252 -536 -17 -11 -4 -24 129 -131 81 -65 200 -161 263 -214 128 -107 424 -352 541 -447 l76 -62 99 39 c75 30 714 276 1074 414 l35 14 3 646 2 646 -47 -1 c-27 0 -61 -7 -78 -15z" fill="#414141">
+			<animate attributeName="stroke" dur="42s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#414141;#aaaaaa"/>
+			<animate attributeName="fill" dur="42s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#414141;#aaaaaa"/>
+		</path>
+		<path d="M7153 10128 c-21 -24 -185 -218 -363 -433 -178 -214 -520 -623 -760 -909 -515 -613 -484 -575 -476 -583 7 -7 298 42 1091 182 835 148 1793 307 1987 330 l57 6 107 202 c157 293 324 620 324 632 0 6 -222 82 -492 168 -271 87 -694 223 -940 303 -246 79 -458 144 -471 144 -16 0 -38 -15 -64 -42z" fill="#030303">
+			<animate attributeName="stroke" dur="32s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#030303;#aaaaaa"/>
+			<animate attributeName="fill" dur="32s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#030303;#aaaaaa"/>
+		</path>
+		<path d="M4227 9768 c-348 -468 -981 -1342 -1057 -1459 -22 -35 -40 -74 -40 -90 0 -31 130 -292 257 -514 98 -172 255 -459 486 -885 198 -365 170 -329 449 -578 230 -204 257 -226 263 -210 24 67 415 1620 415 1649 0 13 -12 60 -26 104 -41 129 -439 1495 -524 1800 -79 283 -95 335 -104 335 -3 0 -57 -69 -119 -152z" fill="#343434">
+			<animate attributeName="stroke" dur="26s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#343434;#aaaaaa"/>
+			<animate attributeName="fill" dur="26s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#343434;#aaaaaa"/>
+		</path>
+		<path d="M9017 9216 c-200 -367 -267 -500 -267 -527 0 -32 508 -1581 533 -1627 12 -21 21 -12 192 189 99 116 307 356 462 533 l283 321 86 170 c85 166 304 579 459 863 43 78 76 144 74 146 -2 2 -350 61 -774 130 -423 70 -791 131 -816 135 l-47 8 -185 -341z" fill="#323232">
+			<animate attributeName="stroke" dur="41s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#323232;#c0c0c0"/>
+			<animate attributeName="fill" dur="41s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#323232;#c0c0c0"/>
+		</path>
+		<path d="M12710 9308 c-188 -9 -936 -48 -1425 -74 -165 -9 -306 -18 -313 -20 -18 -5 -7 -20 184 -244 174 -205 499 -591 669 -795 61 -72 218 -260 350 -416 133 -156 287 -339 344 -407 57 -68 107 -120 111 -115 4 4 17 73 29 153 21 138 97 578 197 1140 25 140 68 369 95 509 27 139 49 260 49 267 0 16 -14 16 -290 2z" fill="#424242">
+			<animate attributeName="stroke" dur="29s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#424242;#c0c0c0"/>
+			<animate attributeName="fill" dur="29s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#424242;#c0c0c0"/>
+		</path>
+		<path d="M13067 9263 c-9 -15 -107 -521 -172 -888 -36 -203 -81 -458 -100 -565 -34 -188 -105 -640 -105 -664 0 -7 32 -51 71 -98 l71 -86 51 57 c29 31 160 182 292 336 436 510 763 890 881 1023 25 29 45 54 43 55 -2 2 -29 23 -59 47 -60 48 -76 61 -510 420 -162 134 -329 272 -371 307 -79 65 -85 68 -92 56z" fill="#353535">
+			<animate attributeName="stroke" dur="42s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#353535;#c0c0c0"/>
+			<animate attributeName="fill" dur="42s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#353535;#c0c0c0"/>
+		</path>
+		<path d="M10842 9118 c-22 -40 -134 -248 -249 -463 -116 -214 -225 -414 -243 -444 -25 -41 -31 -57 -23 -70 12 -20 35 -32 1263 -640 926 -460 1148 -567 1156 -558 13 12 -291 380 -1205 1461 -317 374 -593 705 -614 734 -21 28 -40 52 -42 52 -2 0 -21 -33 -43 -72z" fill="#0f0f0f">
+			<animate attributeName="stroke" dur="35s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#0f0f0f;#aaaaaa"/>
+			<animate attributeName="fill" dur="35s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#0f0f0f;#aaaaaa"/>
+		</path>
+		<path d="M0 7609 l0 -1302 52 49 c29 26 205 196 391 378 304 296 338 332 333 355 -3 14 -95 379 -204 811 l-198 784 -170 104 c-93 57 -177 108 -186 113 -17 9 -18 -55 -18 -1292z" fill="#222222">
+			<animate attributeName="stroke" dur="38s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#222222;#aaaaaa"/>
+			<animate attributeName="fill" dur="38s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#222222;#aaaaaa"/>
+		</path>
+		<path d="M15225 8827 c-71 -27 -274 -106 -450 -174 -176 -68 -381 -147 -455 -175 -74 -28 -138 -53 -142 -57 -3 -3 -18 -96 -32 -206 -15 -110 -51 -382 -80 -605 -50 -373 -53 -405 -38 -417 10 -7 163 -101 342 -210 179 -108 417 -254 530 -323 281 -173 451 -272 456 -267 2 2 3 562 2 1244 l-3 1240 -130 -50z" fill="#414141">
+			<animate attributeName="stroke" dur="43s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#414141;#aaaaaa"/>
+			<animate attributeName="fill" dur="43s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#414141;#aaaaaa"/>
+		</path>
+		<path d="M8400 8614 c-721 -120 -1553 -262 -1828 -313 -59 -11 -240 -43 -402 -71 -503 -87 -635 -111 -644 -120 -7 -7 2786 -1413 3331 -1675 l192 -93 40 121 c22 67 65 207 95 312 l55 189 -174 526 c-95 289 -220 667 -277 840 l-103 315 -40 2 c-22 1 -132 -14 -245 -33z" fill="#4f4f4f">
+			<animate attributeName="stroke" dur="44s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#4f4f4f;#aaaaaa"/>
+			<animate attributeName="fill" dur="44s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#4f4f4f;#aaaaaa"/>
+		</path>
+		<path d="M1935 8318 c-99 -117 -245 -289 -325 -383 -542 -639 -725 -860 -723 -874 1 -9 33 -70 71 -136 38 -66 133 -235 212 -375 175 -312 637 -1126 657 -1159 l15 -23 30 28 c16 16 93 100 171 187 159 177 139 140 273 507 211 578 289 796 373 1037 49 142 141 398 204 568 116 314 177 495 177 527 0 10 -12 24 -27 31 -34 18 -401 133 -578 182 -71 20 -176 49 -232 66 -57 16 -106 29 -110 29 -5 0 -89 -95 -188 -212z" fill="#2d2d2d">
+			<animate attributeName="stroke" dur="44s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#2d2d2d;#aaaaaa"/>
+			<animate attributeName="fill" dur="44s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#2d2d2d;#aaaaaa"/>
+		</path>
+		<path d="M14009 8228 c-36 -40 -177 -203 -314 -363 -136 -159 -365 -427 -509 -594 -144 -167 -272 -318 -285 -337 l-24 -33 33 -38 c18 -21 144 -157 279 -302 135 -146 282 -303 325 -350 132 -144 248 -261 257 -261 5 0 9 4 9 10 0 5 25 193 55 417 30 224 95 721 145 1103 50 382 95 719 100 749 17 94 14 94 -71 -1z" fill="#0d0d0d">
+			<animate attributeName="stroke" dur="40s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#0d0d0d;#aaaaaa"/>
+			<animate attributeName="fill" dur="40s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#0d0d0d;#aaaaaa"/>
+		</path>
+		<path d="M3071 7993 c-79 -208 -250 -677 -331 -908 -48 -137 -138 -387 -200 -555 -182 -495 -271 -743 -268 -751 2 -4 50 12 108 36 446 182 630 258 800 329 107 46 326 138 485 205 160 67 297 126 304 130 11 7 -19 68 -131 272 -80 145 -169 309 -198 364 -30 55 -140 256 -247 447 -106 191 -212 386 -235 433 -23 47 -45 85 -48 85 -3 0 -21 -39 -39 -87z" fill="#0b0b0b">
+			<animate attributeName="stroke" dur="35s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#0b0b0b;#aaaaaa"/>
+			<animate attributeName="fill" dur="35s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#0b0b0b;#aaaaaa"/>
+		</path>
+		<path d="M5269 7873 c-90 -103 -172 -197 -182 -210 -12 -14 -91 -308 -213 -786 -107 -419 -204 -797 -216 -840 -12 -42 -19 -80 -16 -83 4 -3 93 2 200 10 254 21 1249 105 1853 156 1002 84 2215 196 2224 205 2 3 -22 16 -55 31 -32 14 -814 403 -1736 865 -922 461 -1681 839 -1686 839 -4 0 -82 -84 -173 -187z" fill="#2e2e2e">
+			<animate attributeName="stroke" dur="40s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#2e2e2e;#aaaaaa"/>
+			<animate attributeName="fill" dur="40s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#2e2e2e;#aaaaaa"/>
+		</path>
+		<path d="M10068 7838 c-489 -562 -738 -853 -738 -860 0 -10 83 -64 460 -297 162 -101 333 -207 380 -236 693 -430 1001 -617 1007 -611 4 4 -168 424 -284 691 -61 141 -526 1249 -621 1478 -8 20 -18 37 -21 37 -4 0 -86 -91 -183 -202z" fill="#323232">
+			<animate attributeName="stroke" dur="37s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#323232;#c0c0c0"/>
+			<animate attributeName="fill" dur="37s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#323232;#c0c0c0"/>
+		</path>
+		<path d="M10350 8026 c0 -38 82 -237 685 -1666 75 -179 164 -389 196 -466 33 -78 68 -149 79 -159 23 -21 -19 -50 350 246 162 130 453 359 645 509 193 151 374 293 404 317 l53 43 -153 74 c-85 40 -554 273 -1044 516 -489 243 -945 469 -1013 501 -68 33 -141 68 -163 79 -32 17 -39 18 -39 6z" fill="#252525">
+			<animate attributeName="stroke" dur="38s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#252525;#c0c0c0"/>
+			<animate attributeName="fill" dur="38s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#252525;#c0c0c0"/>
+		</path>
+		<path d="M14000 7105 c0 -8 -81 -615 -126 -942 -19 -139 -34 -265 -34 -281 0 -21 16 -43 68 -94 75 -73 81 -77 237 -141 61 -24 220 -90 355 -147 262 -109 850 -350 856 -350 2 0 4 260 4 578 l0 578 -217 131 c-120 71 -358 216 -529 321 -340 208 -587 352 -604 352 -5 0 -10 -2 -10 -5z" fill="#484848">
+			<animate attributeName="stroke" dur="44s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#484848;#c0c0c0"/>
+			<animate attributeName="fill" dur="44s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#484848;#c0c0c0"/>
+		</path>
+		<path d="M403 6617 l-403 -392 0 -387 0 -388 22 -4 c13 -3 113 -9 223 -15 110 -5 494 -27 852 -47 359 -21 656 -35 660 -31 8 8 16 -7 -213 397 -233 413 -551 977 -638 1132 -41 74 -77 127 -86 127 -8 0 -196 -176 -417 -392z" fill="#575757">
+			<animate attributeName="stroke" dur="32s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#575757;#aaaaaa"/>
+			<animate attributeName="fill" dur="32s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#575757;#aaaaaa"/>
+		</path>
+		<path d="M9266 6807 c-16 -56 -56 -187 -88 -291 -32 -104 -59 -199 -60 -210 -1 -21 130 -304 517 -1116 205 -429 315 -663 363 -773 20 -44 23 -47 40 -35 11 7 113 114 228 238 115 124 254 272 309 330 383 402 660 704 663 721 5 28 -18 51 -102 100 -39 24 -307 189 -596 367 -289 178 -642 397 -785 485 -143 88 -304 189 -358 224 -54 35 -99 63 -100 63 -1 0 -15 -46 -31 -103z" fill="#3f3f3f">
+			<animate attributeName="stroke" dur="29s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#3f3f3f;#aaaaaa"/>
+			<animate attributeName="fill" dur="29s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#3f3f3f;#aaaaaa"/>
+		</path>
+		<path d="M12605 6640 c-132 -105 -370 -292 -530 -417 -159 -124 -372 -292 -472 -372 l-182 -146 57 -6 c75 -9 2213 -11 2330 -3 l90 7 -211 226 c-116 124 -268 287 -337 361 -121 129 -441 472 -484 517 l-21 23 -240 -190z" fill="#121212">
+			<animate attributeName="stroke" dur="28s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#121212;#aaaaaa"/>
+			<animate attributeName="fill" dur="28s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#121212;#aaaaaa"/>
+		</path>
+		<path d="M3950 6396 c-30 -13 -140 -58 -245 -101 -104 -42 -338 -139 -520 -215 -181 -76 -384 -159 -450 -184 -172 -67 -475 -197 -475 -203 0 -15 96 -216 335 -703 145 -294 315 -646 379 -782 130 -278 296 -612 300 -607 2 2 47 85 101 184 168 310 1081 1953 1151 2072 l42 72 -81 78 c-166 158 -449 408 -465 410 -10 1 -42 -9 -72 -21z" fill="#2e2e2e">
+			<animate attributeName="stroke" dur="32s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#2e2e2e;#aaaaaa"/>
+			<animate attributeName="fill" dur="32s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#2e2e2e;#aaaaaa"/>
+		</path>
+		<path d="M8860 6244 c-8 -2 -71 -8 -140 -13 -69 -6 -402 -36 -740 -66 -338 -31 -770 -69 -960 -85 -190 -16 -631 -54 -980 -84 -349 -31 -736 -63 -860 -72 -269 -20 -283 -23 -216 -53 27 -11 76 -30 110 -40 113 -36 2517 -865 2741 -946 165 -60 461 -154 493 -157 27 -3 -12 -85 382 802 126 283 249 559 274 613 25 54 46 100 46 103 0 5 -128 3 -150 -2z" fill="#232323">
+			<animate attributeName="stroke" dur="28s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#232323;#c0c0c0"/>
+			<animate attributeName="fill" dur="28s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#232323;#c0c0c0"/>
+		</path>
+		<path d="M9049 6169 c-25 -50 -649 -1449 -652 -1463 -3 -16 52 -31 369 -101 340 -75 1170 -255 1178 -255 12 0 -79 201 -314 695 -139 292 -316 665 -394 830 -78 165 -147 309 -153 319 -10 18 -13 15 -34 -25z" fill="#2f2f2f">
+			<animate attributeName="stroke" dur="33s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#2f2f2f;#aaaaaa"/>
+			<animate attributeName="fill" dur="33s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#2f2f2f;#aaaaaa"/>
+		</path>
+		<path d="M4660 5877 c0 -2 34 -81 75 -175 41 -94 124 -298 185 -454 62 -156 149 -375 195 -488 46 -113 147 -362 224 -555 78 -192 145 -357 150 -365 4 -8 102 -87 216 -176 l208 -161 1056 527 c581 290 1107 551 1169 580 101 48 111 55 90 63 -12 5 -124 44 -248 87 -124 43 -324 113 -445 155 -121 42 -303 106 -405 140 -102 35 -387 134 -635 220 -1414 493 -1835 631 -1835 602z" fill="#121212">
+			<animate attributeName="stroke" dur="33s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#121212;#c0c0c0"/>
+			<animate attributeName="fill" dur="33s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#121212;#c0c0c0"/>
+		</path>
+		<path d="M4539 5756 c-31 -55 -177 -319 -324 -586 -147 -267 -379 -685 -515 -930 -298 -536 -375 -678 -384 -707 -7 -22 -5 -23 53 -23 33 0 192 20 353 45 161 24 489 74 728 110 491 74 803 121 903 136 37 6 67 15 67 20 0 6 -33 92 -74 192 -137 338 -412 1021 -506 1257 -51 129 -113 280 -138 335 -25 55 -59 134 -76 176 l-31 77 -56 -102z" fill="#3d3d3d">
+			<animate attributeName="stroke" dur="36s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#3d3d3d;#aaaaaa"/>
+			<animate attributeName="fill" dur="36s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#3d3d3d;#aaaaaa"/>
+		</path>
+		<path d="M2032 5468 c-89 -99 -162 -188 -162 -196 0 -8 45 -153 99 -321 55 -168 134 -416 176 -551 266 -858 338 -1093 354 -1155 11 -41 24 -71 33 -73 7 -1 70 25 138 59 136 66 515 274 541 296 15 13 7 35 -91 241 -59 125 -175 364 -258 532 -82 168 -263 537 -402 820 -138 283 -255 518 -258 522 -4 4 -81 -74 -170 -174z" fill="#1e1e1e">
+			<animate attributeName="stroke" dur="32s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#1e1e1e;#aaaaaa"/>
+			<animate attributeName="fill" dur="32s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#1e1e1e;#aaaaaa"/>
+		</path>
+		<path d="M11330 5619 c0 -19 231 -1297 258 -1426 4 -21 11 -37 15 -35 17 7 251 158 615 398 218 143 669 437 1002 654 333 216 614 399 625 406 16 12 -175 14 -1248 14 -931 0 -1267 -3 -1267 -11z" fill="#020202">
+			<animate attributeName="stroke" dur="33s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#020202;#aaaaaa"/>
+			<animate attributeName="fill" dur="33s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#020202;#aaaaaa"/>
+		</path>
+		<path d="M14040 5607 c0 -3 66 -157 146 -344 80 -186 188 -435 239 -553 51 -118 156 -359 233 -535 77 -176 174 -396 215 -490 40 -93 76 -170 79 -170 4 0 97 108 207 240 l201 240 0 541 0 540 -212 87 c-117 47 -402 165 -634 261 -401 167 -474 195 -474 183z" fill="#444444">
+			<animate attributeName="stroke" dur="33s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#444444;#c0c0c0"/>
+			<animate attributeName="fill" dur="33s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#444444;#c0c0c0"/>
+		</path>
+		<path d="M11174 5493 c-44 -48 -271 -291 -506 -541 -542 -576 -601 -639 -596 -651 3 -10 265 -226 723 -596 311 -252 283 -233 300 -209 7 10 72 96 144 189 72 94 170 221 217 283 l86 113 -41 212 c-22 117 -75 401 -116 632 -115 641 -118 655 -126 655 -3 0 -42 -39 -85 -87z" fill="#050505">
+			<animate attributeName="stroke" dur="34s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#050505;#c0c0c0"/>
+			<animate attributeName="fill" dur="34s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#050505;#c0c0c0"/>
+		</path>
+		<path d="M13620 5391 c-355 -229 -908 -590 -1380 -901 -206 -135 -420 -274 -475 -308 -110 -68 -141 -90 -134 -95 2 -2 159 -123 349 -269 190 -146 444 -342 565 -436 121 -95 225 -172 231 -172 13 0 126 234 599 1240 177 377 368 781 424 899 56 117 100 215 99 217 -2 1 -127 -77 -278 -175z" fill="#303030">
+			<animate attributeName="stroke" dur="27s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#303030;#c0c0c0"/>
+			<animate attributeName="fill" dur="27s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#303030;#c0c0c0"/>
+		</path>
+		<path d="M13922 5458 c-494 -1037 -1082 -2289 -1082 -2304 0 -2 6 -4 14 -4 8 0 59 -33 113 -73 54 -40 220 -157 368 -260 149 -103 304 -212 345 -242 l75 -53 225 185 c223 184 840 688 892 729 l28 22 -25 59 c-13 33 -110 258 -216 499 -105 242 -292 671 -414 954 -249 575 -256 590 -267 590 -4 0 -30 -46 -56 -102z" fill="#4c4c4c">
+			<animate attributeName="stroke" dur="42s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#4c4c4c;#c0c0c0"/>
+			<animate attributeName="fill" dur="42s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#4c4c4c;#c0c0c0"/>
+		</path>
+		<path d="M4 4933 c7 -530 11 -605 35 -627 9 -8 82 -40 162 -70 80 -30 273 -104 429 -166 643 -253 721 -283 726 -277 6 6 5 2 158 527 59 201 146 495 193 653 50 168 82 292 77 296 -8 8 -394 33 -1264 81 -195 10 -392 22 -438 25 l-83 6 5 -448z" fill="#1d1d1d">
+			<animate attributeName="stroke" dur="36s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#1d1d1d;#aaaaaa"/>
+			<animate attributeName="fill" dur="36s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#1d1d1d;#aaaaaa"/>
+		</path>
+		<path d="M1801 5058 c-16 -51 -88 -293 -160 -538 -71 -245 -150 -516 -176 -603 l-46 -158 69 -132 c38 -73 183 -339 324 -592 140 -253 290 -526 334 -607 75 -140 94 -167 94 -133 0 8 52 197 116 421 l117 407 -33 106 c-213 704 -596 1921 -605 1921 -2 0 -17 -42 -34 -92z" fill="#282828">
+			<animate attributeName="stroke" dur="35s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#282828;#aaaaaa"/>
+			<animate attributeName="fill" dur="35s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#282828;#aaaaaa"/>
+		</path>
+		<path d="M7155 4051 c-616 -307 -1128 -565 -1139 -573 -16 -13 4 -20 215 -77 129 -35 504 -136 834 -226 773 -210 803 -218 819 -212 8 3 19 27 25 54 29 129 229 966 301 1256 88 362 83 337 73 336 -5 0 -512 -251 -1128 -558z" fill="#101010">
+			<animate attributeName="stroke" dur="36s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#101010;#c0c0c0"/>
+			<animate attributeName="fill" dur="36s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#101010;#c0c0c0"/>
+		</path>
+		<path d="M8390 4605 c0 -7 259 -641 422 -1035 63 -151 186 -447 273 -657 l159 -383 26 48 c14 26 69 153 122 282 53 129 169 413 258 630 89 217 198 479 241 581 43 102 79 191 79 196 0 13 76 -4 -735 172 -750 163 -845 182 -845 166z" fill="#121212">
+			<animate attributeName="stroke" dur="40s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#121212;#aaaaaa"/>
+			<animate attributeName="fill" dur="40s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#121212;#aaaaaa"/>
+		</path>
+		<path d="M8332 4489 c-24 -94 -264 -1077 -320 -1312 l-59 -248 61 -43 c34 -24 174 -119 311 -213 544 -369 673 -458 755 -518 163 -119 295 -206 298 -197 3 9 -66 197 -180 497 -33 88 -144 360 -245 605 -102 245 -277 670 -390 944 -112 275 -208 506 -212 514 -6 10 -11 1 -19 -29z" fill="#1e1e1e">
+			<animate attributeName="stroke" dur="30s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#1e1e1e;#c0c0c0"/>
+			<animate attributeName="fill" dur="30s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#1e1e1e;#c0c0c0"/>
+		</path>
+		<path d="M26 3803 c5 -538 13 -793 26 -793 9 0 92 48 648 375 151 89 348 203 438 254 89 51 162 94 162 96 0 2 -37 18 -82 35 -110 42 -701 276 -758 300 -79 32 -421 160 -429 160 -5 0 -7 -192 -5 -427z" fill="#4a4a4a">
+			<animate attributeName="stroke" dur="27s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#4a4a4a;#aaaaaa"/>
+			<animate attributeName="fill" dur="27s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#4a4a4a;#aaaaaa"/>
+		</path>
+		<path d="M10009 4183 c-29 -67 -323 -781 -459 -1113 -62 -151 -125 -306 -141 -343 -24 -58 -26 -67 -11 -63 19 6 422 89 912 190 173 35 327 67 342 71 21 5 49 38 112 129 47 66 128 175 180 241 53 66 95 123 93 126 -1 3 -103 87 -227 186 -124 99 -346 280 -495 402 -148 121 -273 221 -277 221 -5 0 -18 -21 -29 -47z" fill="#1c1c1c">
+			<animate attributeName="stroke" dur="41s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#1c1c1c;#aaaaaa"/>
+			<animate attributeName="fill" dur="41s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#1c1c1c;#aaaaaa"/>
+		</path>
+		<path d="M11536 3967 c-195 -245 -770 -1016 -763 -1023 1 -2 104 8 227 21 124 14 518 56 875 95 729 78 824 90 830 101 4 6 -490 395 -870 684 -71 55 -154 118 -183 142 -30 24 -57 43 -60 43 -4 0 -29 -28 -56 -63z" fill="#030303">
+			<animate attributeName="stroke" dur="39s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#030303;#c0c0c0"/>
+			<animate attributeName="fill" dur="39s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#030303;#c0c0c0"/>
+		</path>
+		<path d="M15205 3708 c-82 -98 -165 -196 -183 -217 l-34 -40 79 -88 c43 -49 125 -142 183 -207 l105 -118 3 210 c1 116 1 307 0 424 l-3 214 -150 -178z" fill="#141414">
+			<animate attributeName="stroke" dur="26s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#141414;#c0c0c0"/>
+			<animate attributeName="fill" dur="26s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#141414;#c0c0c0"/>
+		</path>
+		<path d="M5100 3705 c-113 -18 -464 -72 -780 -120 -316 -47 -644 -98 -729 -111 -85 -14 -183 -28 -218 -31 l-63 -6 0 -36 c0 -20 -7 -153 -15 -296 -32 -558 -45 -810 -45 -850 l0 -42 103 -41 c56 -23 107 -42 113 -42 7 0 120 91 251 203 337 285 1588 1346 1626 1379 l32 27 -35 0 c-19 -1 -127 -16 -240 -34z" fill="#262626">
+			<animate attributeName="stroke" dur="43s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#262626;#c0c0c0"/>
+			<animate attributeName="fill" dur="43s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#262626;#c0c0c0"/>
+		</path>
+		<path d="M5512 3193 c12 -939 29 -1907 34 -1912 2 -2 29 3 58 12 42 14 56 23 64 45 58 160 419 1148 482 1317 45 121 93 251 106 289 l24 68 -93 101 c-206 227 -346 361 -505 485 -89 70 -166 128 -170 130 -4 1 -4 -240 0 -535z" fill="#070707">
+			<animate attributeName="stroke" dur="35s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#070707;#aaaaaa"/>
+			<animate attributeName="fill" dur="35s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#070707;#aaaaaa"/>
+		</path>
+		<path d="M5265 3562 c-243 -206 -776 -659 -1080 -916 -143 -121 -303 -256 -355 -301 -52 -45 -137 -116 -188 -160 -51 -43 -91 -83 -89 -88 2 -6 138 -66 303 -135 533 -220 625 -258 919 -382 456 -191 694 -290 700 -290 3 0 3 21 1 48 -3 26 -11 445 -17 932 -6 487 -14 1009 -18 1161 l-6 276 -170 -145z" fill="#424242">
+			<animate attributeName="stroke" dur="34s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#424242;#c0c0c0"/>
+			<animate attributeName="fill" dur="34s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#424242;#c0c0c0"/>
+		</path>
+		<path d="M1165 3588 c-840 -490 -1058 -619 -1053 -624 2 -2 116 -42 253 -89 138 -48 360 -125 495 -172 135 -46 434 -150 665 -229 231 -80 466 -161 523 -181 57 -19 105 -33 109 -30 6 7 -48 107 -450 837 -298 542 -332 601 -345 599 -4 0 -92 -50 -197 -111z" fill="#060606">
+			<animate attributeName="stroke" dur="33s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#060606;#aaaaaa"/>
+			<animate attributeName="fill" dur="33s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#060606;#aaaaaa"/>
+		</path>
+		<path d="M3207 3455 c-16 -8 -78 -43 -140 -78 -156 -90 -426 -233 -476 -253 -22 -9 -41 -19 -41 -23 0 -22 100 -150 403 -516 82 -99 165 -199 184 -223 20 -24 39 -40 43 -35 11 11 72 1125 62 1135 -4 4 -20 1 -35 -7z" fill="#4a4a4a">
+			<animate attributeName="stroke" dur="41s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#4a4a4a;#c0c0c0"/>
+			<animate attributeName="fill" dur="41s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#4a4a4a;#c0c0c0"/>
+		</path>
+		<path d="M14875 3359 c-87 -72 -853 -701 -949 -779 -51 -41 -93 -79 -94 -85 -1 -5 8 -13 21 -17 12 -4 139 -41 282 -83 143 -42 469 -140 725 -217 256 -76 473 -141 483 -144 16 -5 17 21 17 447 l0 452 -107 121 c-185 209 -307 341 -318 344 -5 1 -32 -16 -60 -39z" fill="#595959">
+			<animate attributeName="stroke" dur="30s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#595959;#aaaaaa"/>
+			<animate attributeName="fill" dur="30s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#595959;#aaaaaa"/>
+		</path>
+		<path d="M6032 3380 c2 -5 73 -82 158 -172 86 -90 200 -212 255 -273 311 -345 1288 -1375 1304 -1375 7 0 112 1154 114 1265 l2 69 -250 68 c-1329 362 -1587 430 -1583 418z" fill="#050505">
+			<animate attributeName="stroke" dur="43s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#050505;#c0c0c0"/>
+			<animate attributeName="fill" dur="43s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#050505;#c0c0c0"/>
+		</path>
+		<path d="M12130 3024 c-316 -34 -685 -74 -820 -88 -308 -33 -552 -65 -564 -76 -10 -10 223 -318 573 -755 141 -176 287 -362 324 -412 38 -51 70 -93 72 -93 4 0 283 409 570 835 104 154 243 359 308 455 123 180 135 201 121 199 -5 -1 -268 -30 -584 -65z" fill="#393939">
+			<animate attributeName="stroke" dur="42s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#393939;#aaaaaa"/>
+			<animate attributeName="fill" dur="42s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#393939;#aaaaaa"/>
+		</path>
+		<path d="M12604 2795 c-109 -162 -265 -393 -346 -512 -80 -120 -225 -334 -322 -477 -97 -142 -175 -260 -173 -263 2 -2 44 10 93 26 49 16 267 84 484 149 217 66 528 161 690 210 162 50 327 100 365 111 l70 22 125 196 c69 108 126 201 127 207 4 16 -877 626 -904 626 -5 0 -99 -133 -209 -295z" fill="#2c2c2c">
+			<animate attributeName="stroke" dur="30s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#2c2c2c;#aaaaaa"/>
+			<animate attributeName="fill" dur="30s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#2c2c2c;#aaaaaa"/>
+		</path>
+		<path d="M2476 2908 c-33 -106 -132 -437 -198 -663 -55 -189 -81 -335 -60 -335 4 0 93 30 197 66 105 36 316 104 469 150 154 46 282 87 284 89 5 5 -103 141 -368 460 -91 110 -192 233 -224 273 -32 39 -60 72 -62 72 -2 0 -19 -51 -38 -112z" fill="#3a3a3a">
+			<animate attributeName="stroke" dur="35s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#3a3a3a;#c0c0c0"/>
+			<animate attributeName="fill" dur="35s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#3a3a3a;#c0c0c0"/>
+		</path>
+		<path d="M6326 2932 c-7 -13 -48 -121 -231 -617 -268 -729 -368 -1006 -364 -1009 10 -7 1851 -197 1901 -196 7 1 31 38 52 83 29 61 43 106 52 176 l14 93 -44 42 c-86 81 -767 799 -1186 1249 -160 171 -184 194 -194 179z" fill="#333333">
+			<animate attributeName="stroke" dur="44s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#333333;#aaaaaa"/>
+			<animate attributeName="fill" dur="44s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#333333;#aaaaaa"/>
+		</path>
+		<path d="M21 2818 c-20 -78 -21 -105 -21 -461 l0 -378 48 6 c26 3 225 23 442 45 709 71 1454 150 1518 161 34 6 62 14 62 18 0 7 -153 61 -940 333 -861 297 -1042 358 -1064 358 -20 0 -26 -10 -45 -82z" fill="#2e2e2e">
+			<animate attributeName="stroke" dur="30s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#2e2e2e;#aaaaaa"/>
+			<animate attributeName="fill" dur="30s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#2e2e2e;#aaaaaa"/>
+		</path>
+		<path d="M7936 2853 c-3 -3 -6 -25 -6 -48 0 -22 -22 -290 -50 -595 -27 -305 -54 -618 -60 -695 -6 -77 -13 -152 -15 -167 -3 -16 -2 -28 1 -28 3 0 211 141 462 313 252 173 517 354 590 402 72 48 132 91 132 95 0 7 -267 194 -700 490 -107 73 -229 157 -271 186 -42 30 -79 51 -83 47z" fill="#000000">
+			<animate attributeName="stroke" dur="33s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#000000;#c0c0c0"/>
+			<animate attributeName="fill" dur="33s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#000000;#c0c0c0"/>
+		</path>
+		<path d="M10345 2789 c-159 -33 -426 -88 -593 -122 -167 -34 -303 -66 -304 -72 0 -5 150 -80 333 -166 296 -138 1231 -582 1677 -795 166 -79 193 -84 177 -34 -4 11 -61 87 -128 168 -169 205 -535 671 -702 895 -77 103 -147 187 -155 186 -8 0 -145 -27 -305 -60z" fill="#171717">
+			<animate attributeName="stroke" dur="30s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#171717;#aaaaaa"/>
+			<animate attributeName="fill" dur="30s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#171717;#aaaaaa"/>
+		</path>
+		<path d="M9307 2499 l-34 -61 47 -128 c81 -218 241 -684 398 -1160 174 -528 189 -570 205 -570 7 0 75 34 152 76 181 98 749 403 1180 634 187 100 344 186 349 191 6 5 -27 26 -85 53 -52 24 -371 175 -709 336 -338 161 -723 343 -855 405 -132 62 -321 151 -419 199 -99 47 -183 86 -187 86 -4 0 -23 -27 -42 -61z" fill="#161616">
+			<animate attributeName="stroke" dur="37s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#161616;#c0c0c0"/>
+			<animate attributeName="fill" dur="37s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#161616;#c0c0c0"/>
+		</path>
+		<path d="M13653 2248 c-68 -100 -121 -183 -120 -185 5 -4 591 -153 1235 -313 l592 -147 0 178 0 177 -32 11 c-18 5 -244 74 -503 151 -258 78 -587 177 -730 220 -143 43 -273 81 -290 84 -29 6 -32 3 -152 -176z" fill="#4a4a4a">
+			<animate attributeName="stroke" dur="43s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#4a4a4a;#c0c0c0"/>
+			<animate attributeName="fill" dur="43s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#4a4a4a;#c0c0c0"/>
+		</path>
+		<path d="M3075 2115 c-228 -59 -825 -250 -825 -264 1 -6 191 -117 740 -434 162 -93 374 -215 470 -271 96 -56 279 -162 405 -236 127 -73 309 -180 404 -236 96 -57 177 -102 179 -100 6 6 -45 84 -113 171 -61 80 -671 863 -881 1130 -60 77 -132 170 -159 207 -33 44 -57 67 -70 67 -11 0 -78 -15 -150 -34z" fill="#171717">
+			<animate attributeName="stroke" dur="36s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#171717;#c0c0c0"/>
+			<animate attributeName="fill" dur="36s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#171717;#c0c0c0"/>
+		</path>
+		<path d="M2085 2134 c-17 -3 -224 -26 -595 -65 -214 -22 -1350 -138 -1417 -145 l-73 -7 0 -140 0 -141 277 -491 c356 -632 352 -625 362 -625 18 0 652 671 1116 1180 87 96 212 232 277 301 65 70 118 129 118 133 0 6 -29 6 -65 0z" fill="#535353">
+			<animate attributeName="stroke" dur="33s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#535353;#c0c0c0"/>
+			<animate attributeName="fill" dur="33s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#535353;#c0c0c0"/>
+		</path>
+		<path d="M3370 2084 c0 -3 40 -54 88 -112 49 -59 164 -206 257 -327 155 -202 330 -425 715 -912 136 -172 145 -182 165 -169 11 7 153 114 316 237 162 123 352 267 422 319 70 52 125 99 124 104 -2 5 -25 17 -53 27 -47 16 -600 245 -1142 473 -427 180 -880 366 -889 366 -2 0 -3 -3 -3 -6z" fill="#404040">
+			<animate attributeName="stroke" dur="37s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#404040;#c0c0c0"/>
+			<animate attributeName="fill" dur="37s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#404040;#c0c0c0"/>
+		</path>
+		<path d="M8885 1974 c-71 -48 -326 -221 -565 -384 -239 -164 -445 -303 -457 -309 -13 -6 -23 -15 -23 -19 0 -7 236 -164 822 -549 77 -51 144 -93 147 -93 13 0 214 1363 209 1412 l-3 28 -130 -86z" fill="#515151">
+			<animate attributeName="stroke" dur="44s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#515151;#c0c0c0"/>
+			<animate attributeName="fill" dur="44s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#515151;#c0c0c0"/>
+		</path>
+		<path d="M9072 1892 c-22 -151 -76 -521 -163 -1100 l-31 -213 35 -52 c20 -29 109 -158 199 -287 l164 -235 54 -3 c42 -2 57 1 67 14 11 15 248 288 376 433 32 36 60 76 63 88 4 15 -70 253 -205 661 l-212 638 -156 109 c-86 61 -159 111 -162 112 -3 2 -17 -72 -29 -165z" fill="#3d3d3d">
+			<animate attributeName="stroke" dur="43s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#3d3d3d;#aaaaaa"/>
+			<animate attributeName="fill" dur="43s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#3d3d3d;#aaaaaa"/>
+		</path>
+		<path d="M2094 1966 c-38 -41 -192 -204 -343 -363 -306 -321 -332 -350 -311 -338 13 8 128 111 599 534 46 42 90 90 97 107 16 39 36 125 31 131 -3 2 -35 -30 -73 -71z" fill="#111111">
+			<animate attributeName="stroke" dur="30s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#111111;#aaaaaa"/>
+			<animate attributeName="fill" dur="30s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#111111;#aaaaaa"/>
+		</path>
+		<path d="M13405 1975 c-5 -2 -257 -79 -560 -170 -993 -300 -1119 -343 -1075 -359 111 -42 2087 -706 2100 -706 5 0 5 12 0 28 -33 111 -391 1154 -404 1180 -15 29 -33 37 -61 27z" fill="#040404">
+			<animate attributeName="stroke" dur="39s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#040404;#aaaaaa"/>
+			<animate attributeName="fill" dur="39s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#040404;#aaaaaa"/>
+		</path>
+		<path d="M13584 1819 c29 -90 108 -326 176 -524 67 -198 131 -387 141 -420 37 -116 50 -145 67 -145 9 0 157 56 327 124 171 69 468 187 660 264 193 77 362 146 378 153 l27 12 0 126 0 126 -712 179 c-392 98 -780 196 -863 217 -82 22 -173 42 -202 45 l-52 7 53 -164z" fill="#3a3a3a">
+			<animate attributeName="stroke" dur="40s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#3a3a3a;#c0c0c0"/>
+			<animate attributeName="fill" dur="40s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#3a3a3a;#c0c0c0"/>
+		</path>
+		<path d="M1968 1658 c-608 -533 -1143 -1040 -1552 -1470 l-178 -188 308 0 c294 0 317 1 563 35 141 19 510 68 821 110 311 42 741 100 955 130 215 30 644 88 955 130 311 41 576 78 590 81 23 5 21 7 -24 35 -70 44 -1192 698 -1546 901 -168 97 -366 211 -440 255 -74 43 -165 93 -202 110 l-67 31 -183 -160z" fill="#222222">
+			<animate attributeName="stroke" dur="42s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#222222;#aaaaaa"/>
+			<animate attributeName="fill" dur="42s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#222222;#aaaaaa"/>
+		</path>
+		<path d="M0 747 l0 -747 73 0 73 0 150 152 c177 181 284 300 284 317 0 16 -548 989 -571 1016 -5 5 -9 -323 -9 -738z" fill="#3e3e3e">
+			<animate attributeName="stroke" dur="38s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#3e3e3e;#aaaaaa"/>
+			<animate attributeName="fill" dur="38s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#3e3e3e;#aaaaaa"/>
+		</path>
+		<path d="M11305 1247 c-176 -95 -432 -233 -570 -307 -137 -73 -335 -179 -440 -235 -104 -56 -235 -126 -290 -154 -55 -29 -113 -67 -130 -86 -34 -37 -370 -420 -393 -447 -14 -17 49 -18 1313 -18 1259 0 1327 1 1322 17 -36 121 -476 1398 -483 1400 -5 1 -153 -75 -329 -170z" fill="#060606">
+			<animate attributeName="stroke" dur="31s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#060606;#c0c0c0"/>
+			<animate attributeName="fill" dur="31s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#060606;#c0c0c0"/>
+		</path>
+		<path d="M11742 1318 c20 -73 56 -178 315 -925 l136 -393 1129 0 c901 0 1128 3 1122 12 -5 7 -110 132 -234 277 -124 145 -244 287 -268 316 -41 51 -47 55 -160 93 -64 22 -445 150 -847 285 -401 135 -835 282 -964 326 -129 45 -237 81 -242 81 -4 0 2 -33 13 -72z" fill="#333333">
+			<animate attributeName="stroke" dur="30s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#333333;#aaaaaa"/>
+			<animate attributeName="fill" dur="30s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#333333;#aaaaaa"/>
+		</path>
+		<path d="M5790 1223 c0 -5 274 -282 608 -616 526 -524 613 -607 638 -607 27 0 34 9 113 163 46 89 167 321 268 516 102 194 181 357 176 361 -4 5 -156 22 -338 40 -181 17 -548 53 -815 81 -267 27 -514 52 -550 55 -36 3 -73 8 -82 10 -10 3 -18 1 -18 -3z" fill="#212121">
+			<animate attributeName="stroke" dur="32s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#212121;#aaaaaa"/>
+			<animate attributeName="fill" dur="32s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#212121;#aaaaaa"/>
+		</path>
+		<path d="M5560 1203 c-28 -11 -961 -714 -958 -723 4 -11 127 -101 363 -265 110 -76 224 -156 254 -177 46 -33 62 -38 108 -38 29 0 53 3 53 8 0 4 13 66 29 137 48 212 178 832 195 935 10 52 19 103 22 113 4 13 -1 17 -23 16 -15 0 -35 -3 -43 -6z" fill="#3a3a3a">
+			<animate attributeName="stroke" dur="30s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#3a3a3a;#aaaaaa"/>
+			<animate attributeName="fill" dur="30s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#3a3a3a;#aaaaaa"/>
+		</path>
+		<path d="M7560 818 c-233 -450 -420 -812 -420 -815 0 -2 461 -3 1025 -3 564 0 1025 3 1025 6 0 4 -77 119 -172 257 l-172 250 -341 226 c-495 327 -718 471 -730 471 -6 0 -103 -177 -215 -392z" fill="#222222">
+			<animate attributeName="stroke" dur="32s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#222222;#c0c0c0"/>
+			<animate attributeName="fill" dur="32s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#222222;#c0c0c0"/>
+		</path>
+		<path d="M14671 936 c-371 -149 -676 -275 -678 -281 -1 -5 120 -154 270 -330 l273 -320 412 -3 412 -2 0 605 c0 333 -3 604 -7 604 -5 -1 -311 -124 -682 -273z" fill="#353535">
+			<animate attributeName="stroke" dur="39s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#353535;#aaaaaa"/>
+			<animate attributeName="fill" dur="39s" repeatCount="indefinite" keyTimes="0;0.29;0.5;0.71;1" values="#aaaaaa;#353535;#aaaaaa"/>
+		</path>
+		<path d="M5691 1168 c-6 -18 -28 -123 -50 -233 -46 -232 -177 -855 -190 -902 l-9 -33 736 0 737 0 -600 600 c-330 330 -603 600 -607 600 -3 0 -11 -15 -17 -32z" fill="#494949">
+			<animate attributeName="stroke" dur="39s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#494949;#c0c0c0"/>
+			<animate attributeName="fill" dur="39s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#494949;#c0c0c0"/>
+		</path>
+		<path d="M4445 425 c-5 -2 -188 -27 -405 -55 -426 -55 -655 -86 -1155 -155 -553 -77 -1041 -143 -1285 -175 -129 -17 -242 -32 -250 -34 -8 -2 846 -4 1899 -5 l1914 -1 -224 156 c-400 279 -391 274 -440 273 -24 0 -48 -2 -54 -4z" fill="#0d0d0d">
+			<animate attributeName="stroke" dur="35s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#0d0d0d;#c0c0c0"/>
+			<animate attributeName="fill" dur="35s" repeatCount="indefinite" keyTimes="0;0.5;1" values="#c0c0c0;#0d0d0d;#c0c0c0"/>
+		</path>
+	</g>
+</svg>

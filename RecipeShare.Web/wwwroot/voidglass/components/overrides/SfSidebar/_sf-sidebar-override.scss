@@ -1,0 +1,35 @@
+﻿// wwwroot/voidglass/components/overrides/SfSidebar/_sf-sidebar-override.scss
+
+.e-sidebar {
+    position: relative !important;
+    background-color: var(--vg-glass) !important;
+    border-right: 1px solid var(--vg-border) !important;
+    box-shadow: 4px 0 16px rgba(0, 0, 0, 0.2) !important;
+    overflow: hidden !important;
+    transition: all 0.3s ease-in-out !important;
+    z-index: 200 !important;
+}
+
+.e-sidebar.e-close {
+    visibility: visible !important;
+    transform: none !important;
+}
+
+.e-sidebar-context {
+    overflow-x: visible !important;
+}
+
+.e-sidebarcontainer {
+    &.e-left.e-open.e-push + div,
+    &.e-left.e-close.e-push + div {
+        margin-left: 0 !important;
+        transform: none !important;
+    }
+}
+
+.e-sidebar-overlay,
+.e-backdrop {
+    background-color: transparent !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}

@@ -1,0 +1,24 @@
+﻿.vg-fab {
+    @extend .vg-button !optional;
+    @extend .vg-button--circle !optional;
+    @extend .vg-button--solid !optional;
+    @extend .vg-button--primary !optional;
+    z-index: 1000;
+    // 🌡️ Reserved for mood-based animation logic (Hearth/Linda)
+    &.mood-calm {
+        animation: pulse 4s infinite ease-in-out;
+    }
+
+    &.mood-alert {
+        box-shadow: 0 0 20px var(--vg-danger-light);
+    }
+    // 🔮 Placeholder: triggers when Linda wants your attention
+    &.linda-watching::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border: 2px dashed var(--vg-neon-light);
+        border-radius: 50%;
+        animation: pulse-border 2s infinite;
+    }
+}

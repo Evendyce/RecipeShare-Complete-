@@ -1,0 +1,6 @@
+﻿@use '../themes/tokens' as *;
+
+.comet-glow {
+    animation: cometPulse 3s ease-in-out infinite;
+    box-shadow: 0 0 20px var(--vg-neon), 0 0 40px rgba(0,255,255,0.3);
+}

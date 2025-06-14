@@ -1,0 +1,61 @@
+﻿// wwwroot/voidglass/components/overrides/SfSpeedDial/_sf-speeddial-override.scss
+
+.e-speeddial-popup {
+    background: transparent !important;
+    box-shadow: none !important;
+    pointer-events: none;
+    z-index: 1000;
+
+    .e-speeddial-li {
+        pointer-events: auto;
+        background: transparent !important;
+        margin: 0.25rem 0 !important;
+
+        .e-speeddial-li-text {
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+            color: var(--vg-text) !important;
+            font-size: 0.85rem !important;
+            padding: 0.25rem 0.5rem !important;
+        }
+
+        .e-speeddial-li-icon {
+            background: var(--vg-glass) !important;
+            border: 1px solid var(--vg-border) !important;
+            color: var(--vg-accent) !important;
+            font-size: 1.2rem !important;
+            height: 2.5rem !important;
+            width: 2.5rem !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 9999px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        &:hover .e-speeddial-li-icon {
+            background: rgba(255, 255, 255, 0.08) !important;
+            color: var(--vg-neon) !important;
+        }
+    }
+
+    &.e-speeddial-radial,
+    &.e-speeddial-horz-left,
+    &.e-speeddial-horz-right {
+        .e-speeddial-li-text {
+            visibility: visible !important;
+            position: relative !important;
+        }
+    }
+
+    &.e-speeddial-overflow .e-speeddial-ul {
+        overflow: visible !important;
+        max-height: none !important;
+        max-width: none !important;
+    }
+}
+
+.e-speeddial-overlay {
+    background-color: transparent !important;
+}

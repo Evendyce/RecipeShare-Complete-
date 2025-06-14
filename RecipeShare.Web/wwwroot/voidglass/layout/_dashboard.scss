@@ -1,0 +1,27 @@
+﻿.vg-dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    padding: 3rem 2rem 3rem 2rem;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+    .vg-2x2-cell {
+        background-color: var(--vg-glass);
+        border: 1px solid var(--vg-border-light, rgba(255, 255, 255, 0.1));
+        border-radius: 1rem;
+        padding: 1.25rem;
+        transition: box-shadow 0.2s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        height: 100%;
+        width: 100%;
+
+        &:hover {
+            box-shadow: 0 0 8px var(--vg-accent, rgba(0, 255, 255, 0.3));
+        }
+    }
+}

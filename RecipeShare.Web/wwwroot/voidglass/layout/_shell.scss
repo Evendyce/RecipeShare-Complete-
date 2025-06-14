@@ -1,0 +1,78 @@
+﻿.page {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+
+    .vg-sidebar-container {
+        flex-shrink: 0;
+        height: 100%;
+    }
+
+    .vg-main {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        .vg-shell {
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            color: var(--vg-text);
+            overflow-y: auto;
+
+            .vg-dashboard {
+                flex: 1 1 auto;
+                height: 100%;
+            }
+        }
+
+        .vg-footer {
+            flex-shrink: 0;
+            width: 100%;
+            padding: 0.5rem 1rem;
+            background: var(--vg-glass);
+            border-top: 1px solid var(--vg-border);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.15);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 20;
+
+            .tm-links {
+                display: flex;
+                gap: 1rem;
+
+                a {
+                    font-size: 0.85rem;
+                    color: var(--vg-text);
+                    text-decoration: none;
+
+                    &:hover {
+                        color: var(--vg-accent);
+                    }
+                }
+            }
+
+            .snap-zones {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                pointer-events: none;
+            }
+
+            .snap-zone {
+                flex: 1;
+                height: 100%;
+                pointer-events: auto;
+            }
+        }
+    }
+}

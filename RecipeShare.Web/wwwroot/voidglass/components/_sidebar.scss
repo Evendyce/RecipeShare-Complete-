@@ -1,0 +1,151 @@
+﻿.vg-sidebar-container {
+    height: 100vh;
+    position: sticky;
+}
+
+.vg-sidebar {
+    background: var(--vg-glass);
+    backdrop-filter: blur(12px);
+    border-right: 1px solid var(--vg-border);
+    box-shadow: 4px 0 16px rgba(0, 0, 0, 0.2);
+    color: var(--vg-text);
+    height: 100%;
+
+    .sidebar-header {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+    // Spacer to push footer to the bottom
+    .vg-sidebar-spacer {
+        flex-grow: 1;
+    }
+    // Footer that holds the widget
+    .vg-sidebar-footer {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    // Spotify embed styling (VoidGlass style)
+    .spotify-widget-container {
+        width: 100%;
+        padding: 0.5rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 255, 200, 0.15);
+
+        iframe {
+            border: none;
+            border-radius: 12px;
+        }
+    }
+
+    .toggle-button {
+        font-size: 1.2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: var(--vg-text);
+    }
+
+    .e-acrdn {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+    }
+
+    .vg-nav-link {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 23px;
+        border-radius: 0.5rem;
+        color: var(--vg-text);
+        text-decoration: none;
+        transition: background 0.2s ease;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        &.active {
+            background: rgba(0, 255, 255, 0.1);
+            border-left: 3px solid var(--vg-neon);
+            font-weight: 600;
+        }
+
+        .fa-solid {
+            font-size: 20px;
+        }
+
+        .vg-nav-text {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            line-height: 23px;
+            font-size: 15px;
+        }
+    }
+
+    .vg-nav-header {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.5rem 1rem;
+        color: var(--vg-text);
+        font-weight: bold;
+        font-size: 0.95rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+
+        .fa-solid {
+            font-size: 22px;
+            color: var(--vg-accent);
+            border-bottom: 2px solid transparent;
+            padding-bottom: 2px;
+            transition: border 0.2s ease;
+            padding-left: 7px;
+            padding-right: 7px;
+        }
+
+        &.active .fa-solid {
+            border-bottom: 2px solid var(--vg-neon);
+            /*box-shadow: 0 0 8px var(--vg-neon);*/
+        }
+
+        .vg-nav-text {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    &.e-dock.e-close {
+        .vg-nav-text {
+            display: none;
+        }
+
+        .vg-nav-link .fa-solid {
+            margin-right: 0;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &.e-dock.e-open {
+        .vg-nav-text {
+            display: inline-block;
+        }
+
+        .vg-nav-link .fa-solid {
+            margin-right: 1rem;
+        }
+    }
+
+    .e-acrdn-item .e-acrdn-panel {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}

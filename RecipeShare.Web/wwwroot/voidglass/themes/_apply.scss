@@ -1,0 +1,10 @@
+﻿@use 'tokens' as *;
+@use 'theme.mixins' as *;
+
+html[data-theme='dark'] {
+    @include theme-vars($vg-theme-dark);
+}
+
+html[data-theme='light'] {
+    @include theme-vars($vg-theme-light);
+}

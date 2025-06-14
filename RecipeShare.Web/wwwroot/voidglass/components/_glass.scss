@@ -1,0 +1,21 @@
+﻿@use '../themes/tokens' as *;
+
+.vg-div-card {
+    background: var(--vg-glass);
+    backdrop-filter: blur(16px);
+    border: 1px solid var(--vg-border);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.15);
+}
+
+.vg-div-card--hoverable:hover {
+    box-shadow: inset 0 0 20px rgba(0,255,255,0.3);
+    border-color: rgba(0,255,255,0.4);
+}
+
+.glass-bg {
+    background: var(--vg-glass);
+    backdrop-filter: blur(16px);
+    border: 1px solid var(--vg-border);
+}

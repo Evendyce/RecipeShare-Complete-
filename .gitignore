@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/RecipeShare.Web/bin/Debug/net9.0
+/RecipeShare.Web/RecipeShare.zip

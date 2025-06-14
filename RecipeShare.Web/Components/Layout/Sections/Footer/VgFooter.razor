@@ -1,0 +1,16 @@
+﻿@inherits VgFooterBase
+@inject SnapZoneConfig ZoneConfig
+
+<footer class="vg-footer">
+    <div class="snap-zones">
+        @foreach (var i in Enumerable.Range(1, ZoneConfig.ClampedCount))
+        {
+            <div id="snap-zone-@i" class="snap-zone" />
+        }
+    </div>
+
+    <div class="tm-links">
+        <a href="/terms">Terms</a>
+        <a href="/privacy">Privacy</a>
+    </div>
+</footer>
