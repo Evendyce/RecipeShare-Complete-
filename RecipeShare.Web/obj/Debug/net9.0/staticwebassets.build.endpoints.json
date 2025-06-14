@@ -599,13 +599,13 @@
       ]
     },
     {
-      "Route": "css/voidglass.5yx18i7a0w.css",
+      "Route": "css/voidglass.9apz3nd6lf.css",
       "AssetFile": "css/voidglass.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000324886290"
+          "Quality": "0.000286204923"
         }
       ],
       "ResponseHeaders": [
@@ -623,7 +623,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3077"
+          "Value": "3493"
         },
         {
           "Name": "Content-Type",
@@ -631,15 +631,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"x4gdtO1wzfr/kNkKTS9DrLd7cUvENA964PYaeaX7meU=\""
+          "Value": "\"5fMlUvC4LYjlEFOwq8uqu36KP3jAbS3hKvdWLtotPK8=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"4x26cqMsSgakPM+KrglF7ZLNLZ8oa4OHOy8XKw/Rd6w=\""
+          "Value": "W/\"P6YaVJABQ6OUS9o8H2FJlIxQ7T3p2CJktofC3tTh3aU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 20:37:08 GMT"
+          "Value": "Sat, 14 Jun 2025 19:28:57 GMT"
         },
         {
           "Name": "Vary",
@@ -649,11 +649,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5yx18i7a0w"
+          "Value": "9apz3nd6lf"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-4x26cqMsSgakPM+KrglF7ZLNLZ8oa4OHOy8XKw/Rd6w="
+          "Value": "sha256-P6YaVJABQ6OUS9o8H2FJlIxQ7T3p2CJktofC3tTh3aU="
         },
         {
           "Name": "label",
@@ -662,7 +662,7 @@
       ]
     },
     {
-      "Route": "css/voidglass.5yx18i7a0w.css",
+      "Route": "css/voidglass.9apz3nd6lf.css",
       "AssetFile": "css/voidglass.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -676,7 +676,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13762"
+          "Value": "15858"
         },
         {
           "Name": "Content-Type",
@@ -684,21 +684,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4x26cqMsSgakPM+KrglF7ZLNLZ8oa4OHOy8XKw/Rd6w=\""
+          "Value": "\"P6YaVJABQ6OUS9o8H2FJlIxQ7T3p2CJktofC3tTh3aU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 20:37:08 GMT"
+          "Value": "Sat, 14 Jun 2025 19:28:57 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5yx18i7a0w"
+          "Value": "9apz3nd6lf"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-4x26cqMsSgakPM+KrglF7ZLNLZ8oa4OHOy8XKw/Rd6w="
+          "Value": "sha256-P6YaVJABQ6OUS9o8H2FJlIxQ7T3p2CJktofC3tTh3aU="
         },
         {
           "Name": "label",
@@ -707,7 +707,7 @@
       ]
     },
     {
-      "Route": "css/voidglass.5yx18i7a0w.css.gz",
+      "Route": "css/voidglass.9apz3nd6lf.css.gz",
       "AssetFile": "css/voidglass.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
@@ -725,7 +725,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3077"
+          "Value": "3493"
         },
         {
           "Name": "Content-Type",
@@ -733,11 +733,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"x4gdtO1wzfr/kNkKTS9DrLd7cUvENA964PYaeaX7meU=\""
+          "Value": "\"5fMlUvC4LYjlEFOwq8uqu36KP3jAbS3hKvdWLtotPK8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 20:37:08 GMT"
+          "Value": "Sat, 14 Jun 2025 19:28:57 GMT"
         },
         {
           "Name": "Vary",
@@ -747,11 +747,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5yx18i7a0w"
+          "Value": "9apz3nd6lf"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-x4gdtO1wzfr/kNkKTS9DrLd7cUvENA964PYaeaX7meU="
+          "Value": "sha256-5fMlUvC4LYjlEFOwq8uqu36KP3jAbS3hKvdWLtotPK8="
         },
         {
           "Name": "label",
@@ -766,7 +766,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000324886290"
+          "Quality": "0.000286204923"
         }
       ],
       "ResponseHeaders": [
@@ -784,7 +784,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3077"
+          "Value": "3493"
         },
         {
           "Name": "Content-Type",
@@ -792,15 +792,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"x4gdtO1wzfr/kNkKTS9DrLd7cUvENA964PYaeaX7meU=\""
+          "Value": "\"5fMlUvC4LYjlEFOwq8uqu36KP3jAbS3hKvdWLtotPK8=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"4x26cqMsSgakPM+KrglF7ZLNLZ8oa4OHOy8XKw/Rd6w=\""
+          "Value": "W/\"P6YaVJABQ6OUS9o8H2FJlIxQ7T3p2CJktofC3tTh3aU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 20:37:08 GMT"
+          "Value": "Sat, 14 Jun 2025 19:28:57 GMT"
         },
         {
           "Name": "Vary",
@@ -810,7 +810,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-4x26cqMsSgakPM+KrglF7ZLNLZ8oa4OHOy8XKw/Rd6w="
+          "Value": "sha256-P6YaVJABQ6OUS9o8H2FJlIxQ7T3p2CJktofC3tTh3aU="
         }
       ]
     },
@@ -829,7 +829,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13762"
+          "Value": "15858"
         },
         {
           "Name": "Content-Type",
@@ -837,17 +837,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4x26cqMsSgakPM+KrglF7ZLNLZ8oa4OHOy8XKw/Rd6w=\""
+          "Value": "\"P6YaVJABQ6OUS9o8H2FJlIxQ7T3p2CJktofC3tTh3aU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 20:37:08 GMT"
+          "Value": "Sat, 14 Jun 2025 19:28:57 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-4x26cqMsSgakPM+KrglF7ZLNLZ8oa4OHOy8XKw/Rd6w="
+          "Value": "sha256-P6YaVJABQ6OUS9o8H2FJlIxQ7T3p2CJktofC3tTh3aU="
         }
       ]
     },
@@ -870,7 +870,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3077"
+          "Value": "3493"
         },
         {
           "Name": "Content-Type",
@@ -878,11 +878,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"x4gdtO1wzfr/kNkKTS9DrLd7cUvENA964PYaeaX7meU=\""
+          "Value": "\"5fMlUvC4LYjlEFOwq8uqu36KP3jAbS3hKvdWLtotPK8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 20:37:08 GMT"
+          "Value": "Sat, 14 Jun 2025 19:28:57 GMT"
         },
         {
           "Name": "Vary",
@@ -892,7 +892,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-x4gdtO1wzfr/kNkKTS9DrLd7cUvENA964PYaeaX7meU="
+          "Value": "sha256-5fMlUvC4LYjlEFOwq8uqu36KP3jAbS3hKvdWLtotPK8="
         }
       ]
     },
@@ -21959,6 +21959,88 @@
       ]
     },
     {
+      "Route": "voidglass/components/_topbar.scss",
+      "AssetFile": "voidglass/components/_topbar.scss",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2386"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WgC7lcc6SpnYgHkkK9lB0kChTTVzaRaF+8rJ8ejTebY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 19:28:50 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WgC7lcc6SpnYgHkkK9lB0kChTTVzaRaF+8rJ8ejTebY="
+        }
+      ]
+    },
+    {
+      "Route": "voidglass/components/_topbar.uednw70bpg.scss",
+      "AssetFile": "voidglass/components/_topbar.scss",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2386"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WgC7lcc6SpnYgHkkK9lB0kChTTVzaRaF+8rJ8ejTebY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 19:28:50 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uednw70bpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WgC7lcc6SpnYgHkkK9lB0kChTTVzaRaF+8rJ8ejTebY="
+        },
+        {
+          "Name": "label",
+          "Value": "voidglass/components/_topbar.scss"
+        }
+      ]
+    },
+    {
       "Route": "voidglass/components/_vg2x2.04v13rnpg2.scss",
       "AssetFile": "voidglass/components/_vg2x2.scss",
       "Selectors": [],
@@ -22451,51 +22533,6 @@
       ]
     },
     {
-      "Route": "voidglass/layout/_shell.5e0ko5lwrt.scss",
-      "AssetFile": "voidglass/layout/_shell.scss",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1944"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AyUyu3TWj66ei1JpgBvGCbycU0aHDdlsLjk8AP5PT5M=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 13:40:36 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5e0ko5lwrt"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-AyUyu3TWj66ei1JpgBvGCbycU0aHDdlsLjk8AP5PT5M="
-        },
-        {
-          "Name": "label",
-          "Value": "voidglass/layout/_shell.scss"
-        }
-      ]
-    },
-    {
       "Route": "voidglass/layout/_shell.scss",
       "AssetFile": "voidglass/layout/_shell.scss",
       "Selectors": [],
@@ -22510,7 +22547,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1944"
+          "Value": "2842"
         },
         {
           "Name": "Content-Type",
@@ -22518,17 +22555,62 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"AyUyu3TWj66ei1JpgBvGCbycU0aHDdlsLjk8AP5PT5M=\""
+          "Value": "\"zcGO4OJ8Zffd0y8LumtAYgYHVLbAQkawcIDCEpTEsDM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 13:40:36 GMT"
+          "Value": "Sat, 14 Jun 2025 18:57:12 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-AyUyu3TWj66ei1JpgBvGCbycU0aHDdlsLjk8AP5PT5M="
+          "Value": "sha256-zcGO4OJ8Zffd0y8LumtAYgYHVLbAQkawcIDCEpTEsDM="
+        }
+      ]
+    },
+    {
+      "Route": "voidglass/layout/_shell.vt4v4cyn9t.scss",
+      "AssetFile": "voidglass/layout/_shell.scss",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2842"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zcGO4OJ8Zffd0y8LumtAYgYHVLbAQkawcIDCEpTEsDM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 18:57:12 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vt4v4cyn9t"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zcGO4OJ8Zffd0y8LumtAYgYHVLbAQkawcIDCEpTEsDM="
+        },
+        {
+          "Name": "label",
+          "Value": "voidglass/layout/_shell.scss"
         }
       ]
     },
@@ -22943,7 +23025,7 @@
       ]
     },
     {
-      "Route": "voidglass/voidglass.277darayyx.scss",
+      "Route": "voidglass/voidglass.p3om4g4j5v.scss",
       "AssetFile": "voidglass/voidglass.scss",
       "Selectors": [],
       "ResponseHeaders": [
@@ -22957,7 +23039,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "464"
+          "Value": "496"
         },
         {
           "Name": "Content-Type",
@@ -22965,21 +23047,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rhsKpCYwmu0stc9Bf1XpV40tBT0HQoNvsaCqKlxjJTg=\""
+          "Value": "\"heecYCdz6EhSoCC5ogfKYCrS2M7L4tXz+jrtgPqRZ9Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 12:41:33 GMT"
+          "Value": "Sat, 14 Jun 2025 17:48:52 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "277darayyx"
+          "Value": "p3om4g4j5v"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-rhsKpCYwmu0stc9Bf1XpV40tBT0HQoNvsaCqKlxjJTg="
+          "Value": "sha256-heecYCdz6EhSoCC5ogfKYCrS2M7L4tXz+jrtgPqRZ9Y="
         },
         {
           "Name": "label",
@@ -23002,7 +23084,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "464"
+          "Value": "496"
         },
         {
           "Name": "Content-Type",
@@ -23010,17 +23092,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rhsKpCYwmu0stc9Bf1XpV40tBT0HQoNvsaCqKlxjJTg=\""
+          "Value": "\"heecYCdz6EhSoCC5ogfKYCrS2M7L4tXz+jrtgPqRZ9Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 12:41:33 GMT"
+          "Value": "Sat, 14 Jun 2025 17:48:52 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-rhsKpCYwmu0stc9Bf1XpV40tBT0HQoNvsaCqKlxjJTg="
+          "Value": "sha256-heecYCdz6EhSoCC5ogfKYCrS2M7L4tXz+jrtgPqRZ9Y="
         }
       ]
     }

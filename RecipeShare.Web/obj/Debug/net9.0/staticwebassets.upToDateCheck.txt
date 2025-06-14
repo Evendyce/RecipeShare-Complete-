@@ -151,6 +151,7 @@ wwwroot\voidglass\components\_card.scss
 wwwroot\voidglass\components\_fab.scss
 wwwroot\voidglass\components\_glass.scss
 wwwroot\voidglass\components\_sidebar.scss
+wwwroot\voidglass\components\_topbar.scss
 wwwroot\voidglass\components\_vg2x2.scss
 wwwroot\voidglass\components\overrides\_sf-overrides.scss
 wwwroot\voidglass\components\overrides\SfAccordion\_sf-accordion-override.scss

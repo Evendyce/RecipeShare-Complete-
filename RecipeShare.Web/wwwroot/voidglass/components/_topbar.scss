@@ -1,0 +1,98 @@
+﻿.vg-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1.5rem;
+    background: rgba(var(--vg-bg-rgb), 0.4);
+    backdrop-filter: blur(24px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    color: var(--vg-text);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    .left, .center, .right {
+        display: flex;
+        align-items: center;
+    }
+
+    .left {
+        flex: 0 0 auto;
+
+        .app-title {
+            font-weight: 700;
+            font-size: 1.25rem;
+            letter-spacing: 0.05em;
+        }
+    }
+
+    .center {
+        flex: 1;
+        justify-content: center;
+        gap: 1.25rem;
+
+        .nav-link {
+            position: relative;
+            color: var(--vg-text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease-in-out;
+            padding-bottom: 0.25rem;
+            text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 2px;
+                width: 100%;
+                background: var(--vg-accent);
+                transform: scaleX(0);
+                transform-origin: bottom left;
+                transition: transform 0.2s ease-in-out;
+            }
+
+            &:hover {
+                color: var(--vg-accent);
+            }
+
+            &:hover::after {
+                transform: scaleX(1);
+            }
+        }
+
+        .nav-divider {
+            color: var(--vg-border);
+            opacity: 0.5;
+            margin: 0 0.5rem;
+            user-select: none;
+        }
+    }
+
+    .right {
+        flex: 0 0 auto;
+        gap: 1rem;
+
+        .username {
+            font-weight: 500;
+            opacity: 0.85;
+        }
+
+        .logout-button,
+        .login-link {
+            background: none;
+            border: none;
+            color: var(--vg-text);
+            font-weight: 500;
+            cursor: pointer;
+            padding: 0.25rem 0.75rem;
+            transition: background 0.2s ease-in-out;
+
+            &:hover {
+                background: rgba(var(--vg-text-rgb), 0.1);
+                border-radius: 4px;
+            }
+        }
+    }
+}

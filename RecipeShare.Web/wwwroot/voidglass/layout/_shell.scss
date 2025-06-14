@@ -73,6 +73,34 @@
                 height: 100%;
                 pointer-events: auto;
             }
+
+            .theme-toggle {
+                right: 1rem;
+                bottom: 1rem;
+                width: 1.75rem;
+                height: 1.75rem;
+                font-size: 0.95rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: var(--vg-glass-hover);
+                border: 1px solid var(--vg-border);
+                border-radius: 50%;
+                backdrop-filter: blur(8px);
+                color: var(--vg-text);
+                cursor: pointer;
+                transition: background 0.2s ease-in-out;
+                z-index: 99;
+
+                i {
+                    font-size: inherit;
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                    background: var(--vg-glass);
+                }
+            }
         }
     }
 }

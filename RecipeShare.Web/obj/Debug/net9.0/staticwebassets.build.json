@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1z4GpYZajhqrXrOyMom4Pjz9NsMuCFHZirca2mTP6hg=",
+  "Hash": "B2pJDxLG1h0NIW9QFAOpfzBXNUtAUc3hePvU1ZTu5Yc=",
   "Source": "RecipeShare.Web",
   "BasePath": "_content/RecipeShare.Web",
   "Mode": "Default",
@@ -563,12 +563,12 @@
       "OriginalItemSpec": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\obj\\Debug\\net9.0\\compressed\\caidz7uw41-5yx18i7a0w.gz",
+      "Identity": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\obj\\Debug\\net9.0\\compressed\\caidz7uw41-9apz3nd6lf.gz",
       "SourceId": "RecipeShare.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/RecipeShare.Web",
-      "RelativePath": "css/voidglass#[.{fingerprint=5yx18i7a0w}]?.css.gz",
+      "RelativePath": "css/voidglass#[.{fingerprint=9apz3nd6lf}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -577,8 +577,8 @@
       "RelatedAsset": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\css\\voidglass.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ld1tn5ywnf",
-      "Integrity": "x4gdtO1wzfr/kNkKTS9DrLd7cUvENA964PYaeaX7meU=",
+      "Fingerprint": "v3xygsb2zm",
+      "Integrity": "5fMlUvC4LYjlEFOwq8uqu36KP3jAbS3hKvdWLtotPK8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\css\\voidglass.css"
@@ -1564,8 +1564,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5yx18i7a0w",
-      "Integrity": "4x26cqMsSgakPM+KrglF7ZLNLZ8oa4OHOy8XKw/Rd6w=",
+      "Fingerprint": "9apz3nd6lf",
+      "Integrity": "P6YaVJABQ6OUS9o8H2FJlIxQ7T3p2CJktofC3tTh3aU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\voidglass.css"
@@ -3314,6 +3314,27 @@
       "OriginalItemSpec": "wwwroot\\voidglass\\components\\_sidebar.scss"
     },
     {
+      "Identity": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\voidglass\\components\\_topbar.scss",
+      "SourceId": "RecipeShare.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\",
+      "BasePath": "_content/RecipeShare.Web",
+      "RelativePath": "voidglass/components/_topbar#[.{fingerprint}]?.scss",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uednw70bpg",
+      "Integrity": "WgC7lcc6SpnYgHkkK9lB0kChTTVzaRaF+8rJ8ejTebY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\voidglass\\components\\_topbar.scss"
+    },
+    {
       "Identity": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\voidglass\\components\\_vg2x2.scss",
       "SourceId": "RecipeShare.Web",
       "SourceType": "Discovered",
@@ -3454,8 +3475,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5e0ko5lwrt",
-      "Integrity": "AyUyu3TWj66ei1JpgBvGCbycU0aHDdlsLjk8AP5PT5M=",
+      "Fingerprint": "vt4v4cyn9t",
+      "Integrity": "zcGO4OJ8Zffd0y8LumtAYgYHVLbAQkawcIDCEpTEsDM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\voidglass\\layout\\_shell.scss"
@@ -3580,8 +3601,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "277darayyx",
-      "Integrity": "rhsKpCYwmu0stc9Bf1XpV40tBT0HQoNvsaCqKlxjJTg=",
+      "Fingerprint": "p3om4g4j5v",
+      "Integrity": "heecYCdz6EhSoCC5ogfKYCrS2M7L4tXz+jrtgPqRZ9Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\voidglass\\voidglass.scss"
@@ -3887,13 +3908,13 @@
       ]
     },
     {
-      "Route": "css/voidglass.5yx18i7a0w.css",
-      "AssetFile": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\obj\\Debug\\net9.0\\compressed\\caidz7uw41-5yx18i7a0w.gz",
+      "Route": "css/voidglass.9apz3nd6lf.css",
+      "AssetFile": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\obj\\Debug\\net9.0\\compressed\\caidz7uw41-9apz3nd6lf.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000324886290"
+          "Quality": "0.000286204923"
         }
       ],
       "ResponseHeaders": [
@@ -3903,15 +3924,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3077"
+          "Value": "3493"
         },
         {
           "Name": "ETag",
-          "Value": "\"x4gdtO1wzfr/kNkKTS9DrLd7cUvENA964PYaeaX7meU=\""
+          "Value": "\"5fMlUvC4LYjlEFOwq8uqu36KP3jAbS3hKvdWLtotPK8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 20:37:08 GMT"
+          "Value": "Sat, 14 Jun 2025 19:28:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3931,13 +3952,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"4x26cqMsSgakPM+KrglF7ZLNLZ8oa4OHOy8XKw/Rd6w=\""
+          "Value": "W/\"P6YaVJABQ6OUS9o8H2FJlIxQ7T3p2CJktofC3tTh3aU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5yx18i7a0w"
+          "Value": "9apz3nd6lf"
         },
         {
           "Name": "label",
@@ -3945,12 +3966,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-4x26cqMsSgakPM+KrglF7ZLNLZ8oa4OHOy8XKw/Rd6w="
+          "Value": "sha256-P6YaVJABQ6OUS9o8H2FJlIxQ7T3p2CJktofC3tTh3aU="
         }
       ]
     },
     {
-      "Route": "css/voidglass.5yx18i7a0w.css",
+      "Route": "css/voidglass.9apz3nd6lf.css",
       "AssetFile": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\css\\voidglass.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3960,7 +3981,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13762"
+          "Value": "15858"
         },
         {
           "Name": "Content-Type",
@@ -3968,11 +3989,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4x26cqMsSgakPM+KrglF7ZLNLZ8oa4OHOy8XKw/Rd6w=\""
+          "Value": "\"P6YaVJABQ6OUS9o8H2FJlIxQ7T3p2CJktofC3tTh3aU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 20:37:08 GMT"
+          "Value": "Sat, 14 Jun 2025 19:28:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3982,7 +4003,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5yx18i7a0w"
+          "Value": "9apz3nd6lf"
         },
         {
           "Name": "label",
@@ -3990,13 +4011,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-4x26cqMsSgakPM+KrglF7ZLNLZ8oa4OHOy8XKw/Rd6w="
+          "Value": "sha256-P6YaVJABQ6OUS9o8H2FJlIxQ7T3p2CJktofC3tTh3aU="
         }
       ]
     },
     {
-      "Route": "css/voidglass.5yx18i7a0w.css.gz",
-      "AssetFile": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\obj\\Debug\\net9.0\\compressed\\caidz7uw41-5yx18i7a0w.gz",
+      "Route": "css/voidglass.9apz3nd6lf.css.gz",
+      "AssetFile": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\obj\\Debug\\net9.0\\compressed\\caidz7uw41-9apz3nd6lf.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4005,7 +4026,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3077"
+          "Value": "3493"
         },
         {
           "Name": "Content-Type",
@@ -4013,11 +4034,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"x4gdtO1wzfr/kNkKTS9DrLd7cUvENA964PYaeaX7meU=\""
+          "Value": "\"5fMlUvC4LYjlEFOwq8uqu36KP3jAbS3hKvdWLtotPK8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 20:37:08 GMT"
+          "Value": "Sat, 14 Jun 2025 19:28:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4035,7 +4056,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5yx18i7a0w"
+          "Value": "9apz3nd6lf"
         },
         {
           "Name": "label",
@@ -4043,18 +4064,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-x4gdtO1wzfr/kNkKTS9DrLd7cUvENA964PYaeaX7meU="
+          "Value": "sha256-5fMlUvC4LYjlEFOwq8uqu36KP3jAbS3hKvdWLtotPK8="
         }
       ]
     },
     {
       "Route": "css/voidglass.css",
-      "AssetFile": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\obj\\Debug\\net9.0\\compressed\\caidz7uw41-5yx18i7a0w.gz",
+      "AssetFile": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\obj\\Debug\\net9.0\\compressed\\caidz7uw41-9apz3nd6lf.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000324886290"
+          "Quality": "0.000286204923"
         }
       ],
       "ResponseHeaders": [
@@ -4064,15 +4085,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3077"
+          "Value": "3493"
         },
         {
           "Name": "ETag",
-          "Value": "\"x4gdtO1wzfr/kNkKTS9DrLd7cUvENA964PYaeaX7meU=\""
+          "Value": "\"5fMlUvC4LYjlEFOwq8uqu36KP3jAbS3hKvdWLtotPK8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 20:37:08 GMT"
+          "Value": "Sat, 14 Jun 2025 19:28:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4092,13 +4113,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"4x26cqMsSgakPM+KrglF7ZLNLZ8oa4OHOy8XKw/Rd6w=\""
+          "Value": "W/\"P6YaVJABQ6OUS9o8H2FJlIxQ7T3p2CJktofC3tTh3aU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-4x26cqMsSgakPM+KrglF7ZLNLZ8oa4OHOy8XKw/Rd6w="
+          "Value": "sha256-P6YaVJABQ6OUS9o8H2FJlIxQ7T3p2CJktofC3tTh3aU="
         }
       ]
     },
@@ -4113,7 +4134,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13762"
+          "Value": "15858"
         },
         {
           "Name": "Content-Type",
@@ -4121,11 +4142,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4x26cqMsSgakPM+KrglF7ZLNLZ8oa4OHOy8XKw/Rd6w=\""
+          "Value": "\"P6YaVJABQ6OUS9o8H2FJlIxQ7T3p2CJktofC3tTh3aU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 20:37:08 GMT"
+          "Value": "Sat, 14 Jun 2025 19:28:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4135,13 +4156,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-4x26cqMsSgakPM+KrglF7ZLNLZ8oa4OHOy8XKw/Rd6w="
+          "Value": "sha256-P6YaVJABQ6OUS9o8H2FJlIxQ7T3p2CJktofC3tTh3aU="
         }
       ]
     },
     {
       "Route": "css/voidglass.css.gz",
-      "AssetFile": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\obj\\Debug\\net9.0\\compressed\\caidz7uw41-5yx18i7a0w.gz",
+      "AssetFile": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\obj\\Debug\\net9.0\\compressed\\caidz7uw41-9apz3nd6lf.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4150,7 +4171,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3077"
+          "Value": "3493"
         },
         {
           "Name": "Content-Type",
@@ -4158,11 +4179,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"x4gdtO1wzfr/kNkKTS9DrLd7cUvENA964PYaeaX7meU=\""
+          "Value": "\"5fMlUvC4LYjlEFOwq8uqu36KP3jAbS3hKvdWLtotPK8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 20:37:08 GMT"
+          "Value": "Sat, 14 Jun 2025 19:28:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4180,7 +4201,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-x4gdtO1wzfr/kNkKTS9DrLd7cUvENA964PYaeaX7meU="
+          "Value": "sha256-5fMlUvC4LYjlEFOwq8uqu36KP3jAbS3hKvdWLtotPK8="
         }
       ]
     },
@@ -25843,6 +25864,88 @@
       ]
     },
     {
+      "Route": "voidglass/components/_topbar.scss",
+      "AssetFile": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\voidglass\\components\\_topbar.scss",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2386"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WgC7lcc6SpnYgHkkK9lB0kChTTVzaRaF+8rJ8ejTebY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 19:28:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WgC7lcc6SpnYgHkkK9lB0kChTTVzaRaF+8rJ8ejTebY="
+        }
+      ]
+    },
+    {
+      "Route": "voidglass/components/_topbar.uednw70bpg.scss",
+      "AssetFile": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\voidglass\\components\\_topbar.scss",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2386"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WgC7lcc6SpnYgHkkK9lB0kChTTVzaRaF+8rJ8ejTebY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 19:28:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uednw70bpg"
+        },
+        {
+          "Name": "label",
+          "Value": "voidglass/components/_topbar.scss"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WgC7lcc6SpnYgHkkK9lB0kChTTVzaRaF+8rJ8ejTebY="
+        }
+      ]
+    },
+    {
       "Route": "voidglass/components/_vg2x2.04v13rnpg2.scss",
       "AssetFile": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\voidglass\\components\\_vg2x2.scss",
       "Selectors": [],
@@ -26335,51 +26438,6 @@
       ]
     },
     {
-      "Route": "voidglass/layout/_shell.5e0ko5lwrt.scss",
-      "AssetFile": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\voidglass\\layout\\_shell.scss",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1944"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AyUyu3TWj66ei1JpgBvGCbycU0aHDdlsLjk8AP5PT5M=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 13:40:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5e0ko5lwrt"
-        },
-        {
-          "Name": "label",
-          "Value": "voidglass/layout/_shell.scss"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-AyUyu3TWj66ei1JpgBvGCbycU0aHDdlsLjk8AP5PT5M="
-        }
-      ]
-    },
-    {
       "Route": "voidglass/layout/_shell.scss",
       "AssetFile": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\voidglass\\layout\\_shell.scss",
       "Selectors": [],
@@ -26390,7 +26448,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1944"
+          "Value": "2842"
         },
         {
           "Name": "Content-Type",
@@ -26398,11 +26456,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"AyUyu3TWj66ei1JpgBvGCbycU0aHDdlsLjk8AP5PT5M=\""
+          "Value": "\"zcGO4OJ8Zffd0y8LumtAYgYHVLbAQkawcIDCEpTEsDM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 13:40:36 GMT"
+          "Value": "Sat, 14 Jun 2025 18:57:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26412,7 +26470,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-AyUyu3TWj66ei1JpgBvGCbycU0aHDdlsLjk8AP5PT5M="
+          "Value": "sha256-zcGO4OJ8Zffd0y8LumtAYgYHVLbAQkawcIDCEpTEsDM="
+        }
+      ]
+    },
+    {
+      "Route": "voidglass/layout/_shell.vt4v4cyn9t.scss",
+      "AssetFile": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\voidglass\\layout\\_shell.scss",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2842"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zcGO4OJ8Zffd0y8LumtAYgYHVLbAQkawcIDCEpTEsDM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 18:57:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vt4v4cyn9t"
+        },
+        {
+          "Name": "label",
+          "Value": "voidglass/layout/_shell.scss"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zcGO4OJ8Zffd0y8LumtAYgYHVLbAQkawcIDCEpTEsDM="
         }
       ]
     },
@@ -26827,7 +26930,7 @@
       ]
     },
     {
-      "Route": "voidglass/voidglass.277darayyx.scss",
+      "Route": "voidglass/voidglass.p3om4g4j5v.scss",
       "AssetFile": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\voidglass\\voidglass.scss",
       "Selectors": [],
       "ResponseHeaders": [
@@ -26837,7 +26940,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "464"
+          "Value": "496"
         },
         {
           "Name": "Content-Type",
@@ -26845,11 +26948,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rhsKpCYwmu0stc9Bf1XpV40tBT0HQoNvsaCqKlxjJTg=\""
+          "Value": "\"heecYCdz6EhSoCC5ogfKYCrS2M7L4tXz+jrtgPqRZ9Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 12:41:33 GMT"
+          "Value": "Sat, 14 Jun 2025 17:48:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26859,7 +26962,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "277darayyx"
+          "Value": "p3om4g4j5v"
         },
         {
           "Name": "label",
@@ -26867,7 +26970,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-rhsKpCYwmu0stc9Bf1XpV40tBT0HQoNvsaCqKlxjJTg="
+          "Value": "sha256-heecYCdz6EhSoCC5ogfKYCrS2M7L4tXz+jrtgPqRZ9Y="
         }
       ]
     },
@@ -26882,7 +26985,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "464"
+          "Value": "496"
         },
         {
           "Name": "Content-Type",
@@ -26890,11 +26993,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rhsKpCYwmu0stc9Bf1XpV40tBT0HQoNvsaCqKlxjJTg=\""
+          "Value": "\"heecYCdz6EhSoCC5ogfKYCrS2M7L4tXz+jrtgPqRZ9Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 12:41:33 GMT"
+          "Value": "Sat, 14 Jun 2025 17:48:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26904,7 +27007,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-rhsKpCYwmu0stc9Bf1XpV40tBT0HQoNvsaCqKlxjJTg="
+          "Value": "sha256-heecYCdz6EhSoCC5ogfKYCrS2M7L4tXz+jrtgPqRZ9Y="
         }
       ]
     }
