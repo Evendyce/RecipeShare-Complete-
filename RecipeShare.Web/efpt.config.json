@@ -47,7 +47,15 @@
          "ObjectType": 0
       },
       {
+         "Name": "[dbo].[RecipeImages]",
+         "ObjectType": 0
+      },
+      {
          "Name": "[dbo].[Recipes]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[RecipeSteps]",
          "ObjectType": 0
       },
       {

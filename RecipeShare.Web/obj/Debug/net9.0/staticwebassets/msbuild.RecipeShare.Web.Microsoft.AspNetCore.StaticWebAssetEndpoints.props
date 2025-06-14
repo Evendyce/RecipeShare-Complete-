@@ -16,13 +16,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\voidglass.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4zdhpaelhd"},{"Name":"integrity","Value":"sha256-AF616U8HWwXSyWQ2LqpamXnE5lIWq1WN5eQYW15zwv4="},{"Name":"label","Value":"_content/RecipeShare.Web/css/voidglass.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"15902"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022AF616U8HWwXSyWQ2LqpamXnE5lIWq1WN5eQYW15zwv4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Jun 2025 20:37:08 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"15902"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022AF616U8HWwXSyWQ2LqpamXnE5lIWq1WN5eQYW15zwv4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Jun 2025 21:46:40 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/RecipeShare.Web/css/voidglass.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\voidglass.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-AF616U8HWwXSyWQ2LqpamXnE5lIWq1WN5eQYW15zwv4="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"15902"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022AF616U8HWwXSyWQ2LqpamXnE5lIWq1WN5eQYW15zwv4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Jun 2025 20:37:08 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"15902"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022AF616U8HWwXSyWQ2LqpamXnE5lIWq1WN5eQYW15zwv4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Jun 2025 21:46:40 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/RecipeShare.Web/fa/css/all.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fa\css\all.css'))</AssetFile>

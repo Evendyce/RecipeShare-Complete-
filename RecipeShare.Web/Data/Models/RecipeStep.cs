@@ -5,13 +5,15 @@ using System.Collections.Generic;
 
 namespace RecipeShare.Web.Data.Models;
 
-public partial class RecipeFavourite
+public partial class RecipeStep
 {
     public long Id { get; set; }
 
     public long RecipeId { get; set; }
 
-    public string UserId { get; set; }
+    public int StepNumber { get; set; }
+
+    public string Instruction { get; set; }
 
     public virtual Recipe Recipe { get; set; }
 }

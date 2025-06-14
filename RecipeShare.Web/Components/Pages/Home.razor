@@ -1,48 +1,74 @@
-﻿@page "/"
+﻿@inherits HomeBase
+@page "/"
+
 @using RecipeShare.Web.Components.VoidGlass.VG2x2
 @using RecipeShare.Web.Components.VoidGlass.VGCard
 
 <PageTitle>Home</PageTitle>
 
-<VG2x2 CssClass="vg-dashboard"
-       TopLeftHeading="Overview"
-       TopRightHeading="Analytics"
-       BottomLeftHeading="Tasks"
-       BottomRightHeading="Messages">
+@if (IsSeeded)
+{
+    <VG2x2 CssClass="vg-dashboard"
+           TopLeftHeading="Overview"
+           TopRightHeading="Analytics"
+           BottomLeftHeading="Tasks"
+           BottomRightHeading="Messages">
 
-    <TopLeft>
-        <VGCard Header="Welcome" SubHeader="Quick Stats" Icon="fas fa-star">
+        <TopLeft>
+            <VGCard Header="Welcome" SubHeader="Quick Stats" Icon="fas fa-star">
+                <ContentTemplate>
+                    <p>This is a sample card inside the top-left quadrant of the VG2x2 grid.</p>
+                </ContentTemplate>
+            </VGCard>
+        </TopLeft>
+
+        <TopRight>
+            <VGCard Header="Visitors" SubHeader="Today" Icon="fas fa-chart-line">
+                <ContentTemplate>
+                    <p>Number of visitors today: 1,234</p>
+                </ContentTemplate>
+            </VGCard>
+        </TopRight>
+
+        <BottomLeft>
+            <VGCard Header="Pending Tasks" SubHeader="Due Soon" Icon="fas fa-tasks">
+                <ContentTemplate>
+                    <ul>
+                        <li>Review reports</li>
+                        <li>Update website</li>
+                        <li>Team meeting at 3 PM</li>
+                    </ul>
+                </ContentTemplate>
+            </VGCard>
+        </BottomLeft>
+
+        <BottomRight>
+            <VGCard Header="Inbox" SubHeader="New Messages" Icon="fas fa-envelope">
+                <ContentTemplate>
+                    <p>You have 5 new messages.</p>
+                </ContentTemplate>
+            </VGCard>
+        </BottomRight>
+    </VG2x2>
+}
+else
+{
+    <div class="container my-5 text-center">
+        <VGCard Header="Seed Required" SubHeader="Demo Data Missing" Icon="fas fa-database">
             <ContentTemplate>
-                <p>This is a sample card inside the top-left quadrant of the VG2x2 grid.</p>
+                <p>
+                    The application is not seeded yet. Click the button below to generate default data (user, recipes, steps).
+                </p>
+
+                <button class="btn btn-primary mt-3" @onclick="SeedDatabaseAsync">
+                    <i class="fas fa-play-circle me-1"></i> Seed Demo Data
+                </button>
+
+                @if (!string.IsNullOrEmpty(SeedResultMessage))
+                {
+                    <div class="alert alert-info mt-3">@SeedResultMessage</div>
+                }
             </ContentTemplate>
         </VGCard>
-    </TopLeft>
-
-    <TopRight>
-        <VGCard Header="Visitors" SubHeader="Today" Icon="fas fa-chart-line">
-            <ContentTemplate>
-                <p>Number of visitors today: 1,234</p>
-            </ContentTemplate>
-        </VGCard>
-    </TopRight>
-
-    <BottomLeft>
-        <VGCard Header="Pending Tasks" SubHeader="Due Soon" Icon="fas fa-tasks">
-            <ContentTemplate>
-                <ul>
-                    <li>Review reports</li>
-                    <li>Update website</li>
-                    <li>Team meeting at 3 PM</li>
-                </ul>
-            </ContentTemplate>
-        </VGCard>
-    </BottomLeft>
-
-    <BottomRight>
-        <VGCard Header="Inbox" SubHeader="New Messages" Icon="fas fa-envelope">
-            <ContentTemplate>
-                <p>You have 5 new messages.</p>
-            </ContentTemplate>
-        </VGCard>
-    </BottomRight>
-</VG2x2>
+    </div>
+}

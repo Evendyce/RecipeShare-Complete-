@@ -7,7 +7,7 @@ namespace RecipeShare.Web.Data.Models;
 
 public partial class Recipe
 {
-    public Guid Id { get; set; }
+    public long Id { get; set; }
 
     public string Title { get; set; }
 
@@ -26,6 +26,10 @@ public partial class Recipe
     public DateTime? UpdatedAt { get; set; }
 
     public virtual ICollection<RecipeFavourite> RecipeFavourites { get; set; } = new List<RecipeFavourite>();
+
+    public virtual ICollection<RecipeImage> RecipeImages { get; set; } = new List<RecipeImage>();
+
+    public virtual ICollection<RecipeStep> RecipeSteps { get; set; } = new List<RecipeStep>();
 
     public virtual AspNetUser User { get; set; }
 }

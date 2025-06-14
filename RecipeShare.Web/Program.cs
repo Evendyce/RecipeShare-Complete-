@@ -5,6 +5,7 @@ using RecipeShare.Web.Components;
 using RecipeShare.Web.Components.Account;
 using RecipeShare.Web.Components.Layout.Sections.Footer;
 using RecipeShare.Web.Data;
+using RecipeShare.Web.Services;
 
 namespace RecipeShare.Web
 {
@@ -28,19 +29,11 @@ namespace RecipeShare.Web
             builder.Services.AddScoped<IdentityRedirectManager>();
             builder.Services.AddScoped<AuthenticationStateProvider, IdentityRevalidatingAuthenticationStateProvider>();
 
-            builder.Services.AddAuthentication(options =>
-            {
-                options.DefaultScheme = IdentityConstants.ApplicationScheme;
-                options.DefaultSignInScheme = IdentityConstants.ExternalScheme;
-            })
-                .AddIdentityCookies();
-
-            builder.Services.AddIdentityCore<ApplicationUser>(options =>
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
             {
                 options.SignIn.RequireConfirmedAccount = false;
             })
                 .AddEntityFrameworkStores<ApplicationDbContext>()
-                .AddSignInManager()
                 .AddDefaultTokenProviders();
 
             builder.Services.AddSingleton<IEmailSender<ApplicationUser>, IdentityNoOpEmailSender>();
@@ -51,10 +44,11 @@ namespace RecipeShare.Web
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
                 ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 
-            builder.Services.AddDbContext<ApplicationDbContext>(options =>
+            builder.Services.AddDbContextFactory<ApplicationDbContext>(options =>
                 options.UseSqlServer(connectionString));
 
-            builder.Services.AddDbContextFactory<RecipeShareContext>(opt => opt.UseSqlServer(connectionString));
+            builder.Services.AddDbContextFactory<RecipeShareContext>(options =>
+                options.UseSqlServer(connectionString));
 
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
@@ -62,6 +56,9 @@ namespace RecipeShare.Web
             // Custom Services
             // -------------------------------
             builder.Services.AddSingleton<SnapZoneConfig>();
+
+            // Seed logic related services
+            builder.Services.AddScoped<SeedService>();
 
             var app = builder.Build();
 

@@ -7,7 +7,7 @@ namespace RecipeShare.Web.Data.Models;
 
 public partial class UserProfile
 {
-    public Guid Id { get; set; }
+    public long Id { get; set; }
 
     public string UserId { get; set; }
 

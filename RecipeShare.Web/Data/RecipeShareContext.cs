@@ -30,6 +30,10 @@ public partial class RecipeShareContext : DbContext
 
     public virtual DbSet<RecipeFavourite> RecipeFavourites { get; set; }
 
+    public virtual DbSet<RecipeImage> RecipeImages { get; set; }
+
+    public virtual DbSet<RecipeStep> RecipeSteps { get; set; }
+
     public virtual DbSet<UserProfile> UserProfiles { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -108,9 +112,8 @@ public partial class RecipeShareContext : DbContext
 
         modelBuilder.Entity<Recipe>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Recipes__3214EC07E179C680");
+            entity.HasKey(e => e.Id).HasName("PK__Recipes__3214EC073268A64C");
 
-            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
             entity.Property(e => e.CreatedAt).HasDefaultValueSql("(getutcdate())");
             entity.Property(e => e.DietaryTags).HasMaxLength(500);
             entity.Property(e => e.Title)
@@ -127,30 +130,48 @@ public partial class RecipeShareContext : DbContext
 
         modelBuilder.Entity<RecipeFavourite>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__RecipeFa__3214EC07EC6BF095");
+            entity.HasKey(e => e.Id).HasName("PK__RecipeFa__3214EC07065812CB");
 
             entity.HasIndex(e => new { e.UserId, e.RecipeId }, "UQ_RecipeFavourites_User_Recipe").IsUnique();
 
-            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
             entity.Property(e => e.UserId).IsRequired();
 
             entity.HasOne(d => d.Recipe).WithMany(p => p.RecipeFavourites)
                 .HasForeignKey(d => d.RecipeId)
                 .HasConstraintName("FK_RecipeFavourites_Recipes");
+        });
 
-            entity.HasOne(d => d.User).WithMany(p => p.RecipeFavourites)
-                .HasForeignKey(d => d.UserId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_RecipeFavourites_AspNetUsers");
+        modelBuilder.Entity<RecipeImage>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__RecipeIm__3214EC07C4258932");
+
+            entity.Property(e => e.Caption).HasMaxLength(200);
+            entity.Property(e => e.ImageUrl)
+                .IsRequired()
+                .HasMaxLength(500);
+
+            entity.HasOne(d => d.Recipe).WithMany(p => p.RecipeImages)
+                .HasForeignKey(d => d.RecipeId)
+                .HasConstraintName("FK_RecipeImages_Recipes");
+        });
+
+        modelBuilder.Entity<RecipeStep>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__RecipeSt__3214EC075EE60070");
+
+            entity.Property(e => e.Instruction).IsRequired();
+
+            entity.HasOne(d => d.Recipe).WithMany(p => p.RecipeSteps)
+                .HasForeignKey(d => d.RecipeId)
+                .HasConstraintName("FK_RecipeSteps_Recipes");
         });
 
         modelBuilder.Entity<UserProfile>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__UserProf__3214EC0723A45A9A");
+            entity.HasKey(e => e.Id).HasName("PK__UserProf__3214EC070EC1BDF7");
 
-            entity.HasIndex(e => e.UserId, "UQ__UserProf__1788CC4D355B12E5").IsUnique();
+            entity.HasIndex(e => e.UserId, "UQ_UserProfiles_UserId").IsUnique();
 
-            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
             entity.Property(e => e.CreatedAt).HasDefaultValueSql("(getutcdate())");
             entity.Property(e => e.DisplayName)
                 .IsRequired()

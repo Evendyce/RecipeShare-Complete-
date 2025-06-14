@@ -5,13 +5,19 @@ using System.Collections.Generic;
 
 namespace RecipeShare.Web.Data.Models;
 
-public partial class RecipeFavourite
+public partial class RecipeImage
 {
     public long Id { get; set; }
 
     public long RecipeId { get; set; }
 
-    public string UserId { get; set; }
+    public string ImageUrl { get; set; }
+
+    public bool IsCover { get; set; }
+
+    public string Caption { get; set; }
+
+    public int DisplayOrder { get; set; }
 
     public virtual Recipe Recipe { get; set; }
 }

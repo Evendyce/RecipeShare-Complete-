@@ -41,6 +41,7 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 | ❤️ Favourites (per-user toggle)              | ✅ Planned     |
 | 🔍 Dietary Tag Filtering                     | ✅ Planned     |
 | 📄 Export to Markdown + PDF                  | ⏳ Planned     |
+| 📄 Default Data Seeding						| ✅ Complete     |
 | 🧪 Unit Tests (xUnit)                        | ⏳ Planned     |
 | 🥒 500x GET Benchmark Test                   | ⏳ Planned     |
 | 🔧 Dockerfile                                | ✅ Complete    |
@@ -138,6 +139,21 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 Clone the repo, open `RecipeShare.sln`, and build/run from Visual Studio.
 
 Ensure SQL Server Express is available and the connection string is correct inside `appsettings.json`.
+
+---
+
+## 📦 Database Seeding
+
+To seed the database with a demo user and sample recipes, click the **"Seed Demo Data"** button on the homepage after launching the app.
+
+<details>
+<summary>🔐 Demo Login Credentials</summary>
+
+- **Username:** `DemoUser`  
+- **Password:** `Password123!`  
+
+> This seeded user is assigned the `User` role and owns pre-loaded recipes and profile data.
+</details>
 
 ---
 
