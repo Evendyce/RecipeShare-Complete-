@@ -133,7 +133,43 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 
 ---
 
-## 🐫 Docker Support
+## 🚀 Getting Started
+
+Clone the repo, open `RecipeShare.sln`, and build/run from Visual Studio.
+
+Ensure SQL Server Express is available and the connection string is correct inside `appsettings.json`.
+
+---
+
+## 🧶 SCSS Compilation
+
+Custom styles for the **VoidGlass Theme** are authored in SCSS and compiled to CSS for browser use.
+
+### To edit styles:
+Modify any SCSS files under:
+
+```
+RecipeShare.Web/wwwroot/voidglass/
+```
+
+### To regenerate the CSS:
+You’ll need [Dart Sass](https://sass-lang.com/install). Install it via:
+
+```bash
+npm install -g sass
+```
+
+Then run this from the project root:
+
+```bash
+sass wwwroot/voidglass/voidglass.scss wwwroot/css/voidglass.css --no-source-map --style=compressed
+```
+
+> ⚠️ This step is only needed if you change SCSS styles. It's not required to build or run the app.
+
+---
+
+## 🐳 Docker Support
 
 The RecipeShare API is containerized using Docker for demonstration purposes.
 
@@ -154,7 +190,6 @@ http://localhost:5000/swagger
 
 - The container exposes the API on port **8080**, mapped to **localhost:5000** for convenience.
 - Only the **API project** is containerized — the Blazor Server frontend runs outside Docker to simplify the flow and avoid NuGet complications.
-- A `.dockerignore` is used to prevent unneeded files from entering the build context.
 
 ---
 
