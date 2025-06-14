@@ -4,3 +4,5 @@
 
 /RecipeShare.Web/bin/Debug/net9.0
 /RecipeShare.Web/RecipeShare.zip
+/RecipeShare.API/obj
+/RecipeShare.Models/obj

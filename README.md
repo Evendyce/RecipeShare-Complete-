@@ -6,7 +6,8 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 
 ## 🛠️ Tech Stack
 
-- [x] **Blazor Server (.NET 8)**
+- [x] **Blazor Web App (.NET 9)**
+- [x] **ASP.NET Core Web API (.NET 9)**
 - [x] **Entity Framework Core**
 - [x] **SQL Server Express**
 - [x] **ASP.NET Core Identity (Username-based)**
@@ -39,10 +40,10 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 | 🖼️ Multiple Recipe Images                    | ✅ Complete    |
 | ❤️ Favourites (per-user toggle)              | ✅ Planned     |
 | 🔍 Dietary Tag Filtering                     | ✅ Planned     |
-| 📤 Export to Markdown + PDF                  | ⏳ Planned     |
+| 📄 Export to Markdown + PDF                  | ⏳ Planned     |
 | 🧪 Unit Tests (xUnit)                        | ⏳ Planned     |
-| 🕒 500x GET Benchmark Test                   | ⏳ Planned     |
-| 🔧 Dockerfile                                | ⏳ Planned     |
+| 🥒 500x GET Benchmark Test                   | ⏳ Planned     |
+| 🔧 Dockerfile                                | ✅ Complete    |
 | 📄 SOLUTION.md                               | ⏳ Planned     |
 | 📹 Loom Demo Video                           | ⏳ Planned     |
 
@@ -52,7 +53,7 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 
 | Page                         | Status    |
 | ---------------------------- | --------- |
-| 🧭 Top NavBar (Login/Profile) | ✅ Planned |
+| 🛍 Top NavBar (Login/Profile) | ✅ Planned |
 | 🔍 Global Recipes View        | ⏳ Planned |
 | 👤 My Recipes View            | ⏳ Planned |
 | ➕ Add/Edit Recipe            | ⏳ Planned |
@@ -109,7 +110,7 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 
 | Item                      | Status        |
 | ------------------------- | ------------- |
-| Dockerfile                | ⏳ Planned     |
+| Dockerfile                | ✅ Complete    |
 | GitHub Actions (optional) | ❌ Not planned |
 | `README.md` (this!)       | ✅ In Progress |
 | `SOLUTION.md`             | ⏳ Planned     |
@@ -126,5 +127,48 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 | Animated Card/Grid system         | ⏳ Planned  |
 | Attribution license block         | ✅ Added    |
 
-> Attribution required for use.  
+> Attribution required for use.\
 > See `LICENSE.txt` for usage rights.
+
+---
+
+## 🐫 Docker Support
+
+The RecipeShare API is containerized using Docker for demonstration purposes.
+
+### Build & Run:
+
+```bash
+docker build -t recipeshare-api -f ./RecipeShare.API/Dockerfile .
+docker run -p 5000:8080 recipeshare-api
+```
+
+Once running, visit:
+
+```
+http://localhost:5000/swagger
+```
+
+### Notes:
+
+- The container exposes the API on port **8080**, mapped to **localhost:5000** for convenience.
+- Only the **API project** is containerized — the Blazor Server frontend runs outside Docker to simplify the flow and avoid NuGet complications.
+- A `.dockerignore` is used to prevent unneeded files from entering the build context.
+
+---
+
+## 🔍 Swagger in Production
+
+For ease of testing and demonstration, **Swagger UI is enabled in both Development and Production**.
+
+This is handled in `Program.cs` as follows:
+
+```csharp
+// For realworld scenarios, uncomment the below
+// if (app.Environment.IsDevelopment()) { app.MapOpenApi(); }
+
+// Comment this out for realworld
+app.MapOpenApi();
+```
+
+In real-world deployments, Swagger should be disabled or protected in production.

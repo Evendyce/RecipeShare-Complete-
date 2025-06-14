@@ -13,7 +13,7 @@ using System.Reflection;
 
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-RecipeShare.Web-1dcc3d56-c3d3-455f-8939-b9977c96bc04")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("RecipeShare.Web")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab5f25339faea18b25d6ad6bc8d540ddecd34368")]
 [assembly: System.Reflection.AssemblyProductAttribute("RecipeShare.Web")]
