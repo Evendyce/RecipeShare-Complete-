@@ -53,7 +53,7 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 
 | Page                         | Status    |
 | ---------------------------- | --------- |
-| 🛍 Top NavBar (Login/Profile) | ✅ Planned |
+| 🛍 Top NavBar (Login/Profile) | ✅ Complete |
 | 🔍 Global Recipes View        | ⏳ Planned |
 | 👤 My Recipes View            | ⏳ Planned |
 | ➕ Add/Edit Recipe            | ⏳ Planned |
@@ -124,6 +124,7 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 | --------------------------------- | ---------- |
 | SCSS/CSS included                 | ✅ Complete |
 | Footer / Header custom components | ✅ Complete |
+| Theme Switcher Toggle				| ✅ Complete |
 | Animated Card/Grid system         | ⏳ Planned  |
 | Attribution license block         | ✅ Added    |
 
