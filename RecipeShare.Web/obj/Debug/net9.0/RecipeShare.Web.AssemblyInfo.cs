@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RecipeShare.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5aec9bf2a8af658c3dc92229b416e18f6aafebc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18457e54523af8a8ac7022b6346f819e63087913")]
 [assembly: System.Reflection.AssemblyProductAttribute("RecipeShare.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RecipeShare.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

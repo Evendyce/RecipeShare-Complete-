@@ -147,12 +147,13 @@ Ensure SQL Server Express is available and the connection string is correct insi
 To seed the database with a demo user and sample recipes, click the **"Seed Demo Data"** button on the homepage after launching the app.
 
 <details>
-<summary>🔐 Demo Login Credentials</summary>
+<summary>🔐 Demo Login Credentials (Seeded)</summary>
 
 - **Username:** `DemoUser`  
 - **Password:** `Password123!`  
 
-> This seeded user is assigned the `User` role and owns pre-loaded recipes and profile data.
+> This account is seeded automatically and assigned the `User` role.
+> Perfect for testing recipe features and profile display.
 </details>
 
 ---
