@@ -17,7 +17,8 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 
 ---
 
-## 🧱 Architecture
+<details>
+<summary>🧱 Architecture</summary>
 
 | Task                                                   | Status     |
 | ------------------------------------------------------ | ---------- |
@@ -27,30 +28,65 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 | Auto-profile generation on register                    | ✅ Complete |
 | DB split: Recipes, Steps, Images, Favourites, Profiles | ✅ Complete |
 
----
+</details>
 
 ## ✨ Features
 
 | Feature                                     | Status        |
 | ------------------------------------------- | ------------- |
-| 🔐 Username-based Register/Login             | ✅ Complete    |
-| 👤 Auto UserProfile Creation                 | ✅ Complete    |
-| 🍲 Recipes CRUD                              | ✅ In Progress |
-| 🧾 `RecipeSteps` for structured instructions | ✅ Complete    |
-| 🖼️ Multiple Recipe Images                    | ✅ Complete    |
-| ❤️ Favourites (per-user toggle)              | ✅ Planned     |
-| 🔍 Dietary Tag Filtering                     | ✅ Planned     |
-| 📄 Export to Markdown + PDF                  | ⏳ Planned     |
-| 📄 Default Data Seeding						| ✅ Complete     |
-| 🧪 Unit Tests (xUnit)                        | ⏳ Planned     |
-| 🥒 500x GET Benchmark Test                   | ⏳ Planned     |
-| 🔧 Dockerfile                                | ✅ Complete    |
-| 📄 SOLUTION.md                               | ⏳ Planned     |
-| 📹 Loom Demo Video                           | ⏳ Planned     |
+| 🔐 Username-based Register/Login            | ✅ Complete    |
+| 👤 Auto UserProfile Creation                | ✅ Complete    |
+| 🍲 Recipes CRUD                             | ✅ Complete    |
+| 🧾 `RecipeSteps` for structured instructions| ✅ Complete    |
+| 🖼️ Multiple Recipe Images                   | ✅ Complete    |
+| ❤️ Favourites (per-user toggle)             | ✅ Planned     |
+| 📄 Export to Markdown + PDF                 | ⏳ Planned     |
+| 📄 Default Data Seeding                     | ✅ Complete    |
+| 🧪 Unit Tests (xUnit)                       | ⏳ Planned     |
+| 🥒 500x GET Benchmark Test                  | ⏳ Planned     |
+| 🔧 Dockerfile                               | ✅ Complete    |
+| 📄 SOLUTION.md                              | ⏳ Planned     |
+| 📹 Loom Demo Video                          | ⏳ Planned     |
 
 ---
 
-## 🌐 Navigation & Pages
+## 🔧 API Capabilities
+
+<details>
+<summary>Expand to view API capabilities</summary>
+
+| Capability                         | Status     |
+|-----------------------------------|------------|
+| RESTful Recipe Endpoints (CRUD)   | ✅ Complete |
+| Shared DTOs & ViewModel Separation| ✅ Complete |
+| Search + Filter DTOs              | ✅ Complete |
+| Skip-Navigation Tag Mapping       | ✅ Complete |
+| Manual Custom Mapper System       | ✅ Complete |
+
+</details>
+
+---
+
+## 🔍 Filtering & Search
+
+<details>
+<summary>Expand to view supported filters</summary>
+
+| Filter Type             | Status     |
+|-------------------------|------------|
+| By Tag (single/multiple)| ✅ Complete |
+| By Title (partial match)| ✅ Complete |
+| By Ingredient           | ✅ Complete |
+| By Cooking Time Range   | ✅ Complete |
+| Tile vs Full View Toggle| ✅ Complete |
+
+</details>
+
+---
+
+
+<details>
+<summary>🌐 Navigation & Pages</summary>
 
 | Page                         | Status    |
 | ---------------------------- | --------- |
@@ -61,9 +97,12 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 | 📄 Recipe Detail View         | ⏳ Planned |
 | ❤️ My Favourites              | ⏳ Planned |
 
+</details>
+
 ---
 
-## 📂 Database Schema
+<details>
+<summary>📂 Database Schema</summary>
 
 | Table              | Status     |
 | ------------------ | ---------- |
@@ -75,9 +114,12 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 
 > ✅ `Steps` string field remains for spec compliance, synced from structured steps.
 
+</details>
+
 ---
 
-## 📸 Image Handling
+<details>
+<summary>📸 Image Handling</summary>
 
 | Feature                            | Status     |
 | ---------------------------------- | ---------- |
@@ -86,29 +128,27 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 | Cover image support                | ✅ Complete |
 | Display order & captions           | ✅ Complete |
 
+</details>
+
 ---
 
-## 📊 Benchmark
+<details>
+<summary>📊 Benchmark, 🧪 Testing & 📦 Deployment</summary>
 
+#### 📊 Benchmark
 | Metric                        | Status    |
 | ----------------------------- | --------- |
 | 500x GET `/recipes` (Release) | ⏳ Planned |
 | Output to `README.md`         | ⏳ Planned |
 
----
-
-## 🧪 Testing
-
+#### 🧪 Testing
 | Area                   | Status    |
 | ---------------------- | --------- |
 | Recipe CRUD tests      | ⏳ Planned |
 | Favourite toggle tests | ⏳ Planned |
 | Profile creation tests | ⏳ Planned |
 
----
-
-## 📦 Deployment & Docs
-
+#### 📦 Deployment & Docs
 | Item                      | Status        |
 | ------------------------- | ------------- |
 | Dockerfile                | ✅ Complete    |
@@ -116,6 +156,8 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 | `README.md` (this!)       | ✅ In Progress |
 | `SOLUTION.md`             | ⏳ Planned     |
 | Loom Walkthrough Video    | ⏳ Planned     |
+
+</details>
 
 ---
 
