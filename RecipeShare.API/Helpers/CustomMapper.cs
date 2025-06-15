@@ -1,5 +1,6 @@
 ﻿using RecipeShare.API.Data.Models;
 using RecipeShare.Models.Shared;
+using RecipeShare.Utils.Helpers;
 
 namespace RecipeShare.API.Helpers
 {
@@ -203,6 +204,40 @@ namespace RecipeShare.API.Helpers
                 {
                     entity.RecipeImages.Remove(img);
                 }
+            }
+        }
+
+        public static class TagMapper
+        {
+            public static TagDto ToDto(Tag tag)
+            {
+                return new TagDto
+                {
+                    Id = tag.Id,
+                    Name = tag.Name,
+                    Color = string.IsNullOrWhiteSpace(tag.ColorHex)
+                        ? TagColorGenerator.GenerateColor(tag.Name)
+                        : tag.ColorHex,
+                    Description = tag.Description
+                };
+            }
+
+            public static Tag ToEntity(TagDto dto)
+            {
+                return new Tag
+                {
+                    Id = dto.Id,
+                    Name = dto.Name,
+                    ColorHex = dto.Color,
+                    Description = dto.Description
+                };
+            }
+
+            public static void UpdateTagEntity(Tag entity, TagDto dto)
+            {
+                entity.Name = dto.Name;
+                entity.ColorHex = dto.Color;
+                entity.Description = dto.Description;
             }
         }
     }

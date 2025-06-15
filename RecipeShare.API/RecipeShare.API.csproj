@@ -1,26 +1,32 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <DockerfileContext>.</DockerfileContext>
-    <UserSecretsId>db109467-be52-4b18-84e7-708501b6283e</UserSecretsId>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+		<DockerfileContext>.</DockerfileContext>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<DisablePackageFallbackFolders>true</DisablePackageFallbackFolders>
+		<RestoreAdditionalProjectFallbackFolders></RestoreAdditionalProjectFallbackFolders>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(BuildingInsideDocker)' != 'true'">
+		<UserSecretsId>db109467-be52-4b18-84e7-708501b6283e</UserSecretsId>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<None Include="efpt.config.json.user" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <None Include="efpt.config.json.user" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.4" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.11" />
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.4" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.11" />
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\RecipeShare.Models\RecipeShare.Models.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\RecipeShare.Models\RecipeShare.Models.csproj" />
+		<ProjectReference Include="..\RecipeShare.Utils\RecipeShare.Utils.csproj" />
+	</ItemGroup>
 
 </Project>

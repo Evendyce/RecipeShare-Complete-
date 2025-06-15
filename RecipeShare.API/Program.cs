@@ -1,6 +1,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using RecipeShare.API.Data;
+using RecipeShare.API.Services;
 
 namespace RecipeShare.API
 {
@@ -22,6 +23,10 @@ namespace RecipeShare.API
             builder.Services.AddControllers();
 
             builder.Services.AddOpenApi();
+
+            // Custom Services
+            builder.Services.AddScoped<IRecipeService, RecipeService>();
+            builder.Services.AddScoped<ITagService, TagService>();
 
             var app = builder.Build();
 

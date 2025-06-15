@@ -1,30 +1,39 @@
-# See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
-
-# This stage is used when running from VS in fast mode (Default for Debug configuration)
-FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
-# USER $APP_UID
-WORKDIR /app
-EXPOSE 8080
-EXPOSE 8081
-
-
-# This stage is used to build the service project
+# ----------------------------------------
+# Base SDK Image for Build
+# ----------------------------------------
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
-ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["RecipeShare.API.csproj", "."]
-RUN dotnet restore "./RecipeShare.API.csproj"
-COPY . .
-WORKDIR "/src/."
-RUN dotnet build "./RecipeShare.API.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
-# This stage is used to publish the service project to be copied to the final stage
-FROM build AS publish
-ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./RecipeShare.API.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+# Copy project files only for restore first (better layer caching)
+COPY RecipeShare.Models/RecipeShare.Models.csproj ./RecipeShare.Models/
+COPY RecipeShare.Utils/RecipeShare.Utils.csproj ./RecipeShare.Utils/
+COPY RecipeShare.API/RecipeShare.API.csproj ./RecipeShare.API/
 
-# This stage is used in production or when running from VS in regular mode (Default when not using the Debug configuration)
-FROM base AS final
+# Restore dependencies
+RUN dotnet restore ./RecipeShare.API/RecipeShare.API.csproj
+
+# Now copy everything else (source files, assets, etc.)
+COPY RecipeShare.Models/ ./RecipeShare.Models/
+COPY RecipeShare.Utils/ ./RecipeShare.Utils/
+COPY RecipeShare.API/ ./RecipeShare.API/
+
+# Build
+WORKDIR /src/RecipeShare.API
+RUN dotnet build "RecipeShare.API.csproj" -c Release -o /app/build \
+    /p:RestoreFallbackFolders="" \
+    /p:BuildingInsideDocker=true
+
+# ----------------------------------------
+# Final runtime image
+# ----------------------------------------
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS final
 WORKDIR /app
-COPY --from=publish /app/publish .
+
+# Copy the built app
+COPY --from=build /app/build .
+
+# Use port 80 by default (adjust as needed)
+EXPOSE 80
+ENV ASPNETCORE_URLS=http://+:80
+
 ENTRYPOINT ["dotnet", "RecipeShare.API.dll"]
