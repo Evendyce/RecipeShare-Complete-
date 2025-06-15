@@ -24,6 +24,7 @@ C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\wwwroot\fa\cs
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\wwwroot\images\vectors-static.svg
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\wwwroot\css\voidglass.css
+C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\wwwroot\images\No_image_available.svg
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\wwwroot\fa\css\solid.css
@@ -95,6 +96,7 @@ wwwroot\fa\webfonts\fa-solid-900.woff2
 wwwroot\fa\webfonts\fa-v4compatibility.ttf
 wwwroot\fa\webfonts\fa-v4compatibility.woff2
 wwwroot\favicon.png
+wwwroot\images\No_image_available.svg
 wwwroot\images\triangles.svg
 wwwroot\images\vectors.svg
 wwwroot\images\vectors-static.svg

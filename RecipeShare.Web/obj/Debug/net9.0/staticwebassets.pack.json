@@ -121,6 +121,10 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\images\\No_image_available.svg",
+      "PackagePath": "staticwebassets\\images\\No_image_available.svg"
+    },
+    {
       "Id": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\images\\triangles.svg",
       "PackagePath": "staticwebassets\\images\\triangles.svg"
     },

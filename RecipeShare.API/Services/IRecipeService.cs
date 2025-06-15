@@ -3,6 +3,7 @@ using RecipeShare.API.Data;
 using RecipeShare.Models.Shared;
 using System;
 using RecipeShare.API.Helpers;
+using RecipeShare.API.Data.Models;
 
 namespace RecipeShare.API.Services
 {
@@ -14,6 +15,7 @@ namespace RecipeShare.API.Services
         Task<RecipeDto> CreateAsync(RecipeDto dto);
         Task<bool> UpdateAsync(int id, RecipeDto dto);
         Task<bool> DeleteAsync(int id);
+        Task<bool> ToggleFavouriteAsync(FavouriteToggleRequestDto dto);
     }
 
     public class RecipeService : IRecipeService
@@ -29,6 +31,9 @@ namespace RecipeShare.API.Services
         {
             await using var ctx = await _contextFactory.CreateDbContextAsync();
 
+            var user = await ctx.AspNetUsers
+                .FirstOrDefaultAsync(x => x.UserName == filter.Username);
+
             var query = ctx.Recipes
                 .Include(r => r.Tags)
                 .Include(r => r.RecipeSteps)
@@ -59,7 +64,7 @@ namespace RecipeShare.API.Services
 
             var returnData = await query
                 .OrderBy(r => r.Title)
-                .Select(r => CustomMapper.RecipeMapper.ToDto(r))
+                .Select(r => CustomMapper.RecipeMapper.ToDto(r, (user != null ? user.Id : "")))
                 .ToListAsync();
 
             return returnData;
@@ -69,6 +74,9 @@ namespace RecipeShare.API.Services
         {
             await using var ctx = await _contextFactory.CreateDbContextAsync();
 
+            var user = await ctx.AspNetUsers
+                .FirstOrDefaultAsync(x => x.UserName == filter.Username);
+
             var query = ctx.Recipes
                 .Include(r => r.Tags)
                 .Include(r => r.RecipeSteps)
@@ -99,7 +107,7 @@ namespace RecipeShare.API.Services
 
             var returnData = await query
                 .OrderBy(r => r.Title)
-                .Select(r => CustomMapper.RecipeMapper.ToTileDto(r))
+                .Select(r => CustomMapper.RecipeMapper.ToTileDto(r, (user != null ? user.Id : "")))
                 .ToListAsync();
 
             return returnData;
@@ -114,7 +122,7 @@ namespace RecipeShare.API.Services
             .Include(r => r.RecipeImages)
             .Include(r => r.RecipeFavourites)
             .Where(r => r.Id == id)
-            .Select(r => CustomMapper.RecipeMapper.ToDto(r))
+            .Select(r => CustomMapper.RecipeMapper.ToDto(r, ""))
             .FirstOrDefaultAsync();
 
             if (recipeDto == null) return null;
@@ -164,5 +172,46 @@ namespace RecipeShare.API.Services
 
             return true;
         }
+
+        public async Task<bool> ToggleFavouriteAsync(FavouriteToggleRequestDto dto)
+        {
+            await using var context = await _contextFactory.CreateDbContextAsync();
+
+            var user = await context.AspNetUsers
+                .FirstOrDefaultAsync(x => x.UserName == dto.Username);
+
+            if (user == null) return false;
+
+            var recipe = await context.Recipes
+                .Include(x => x.RecipeFavourites)
+                .FirstOrDefaultAsync(x => x.Id == dto.RecipeId);
+
+            if (recipe == null) return false;
+
+            // Check if user already favourited
+            var existing = recipe.RecipeFavourites
+                .FirstOrDefault(f => f.UserId == user.Id);
+
+            if (existing != null)
+            {
+                // Unfavourite
+                context.RecipeFavourites.Remove(existing);
+            }
+            else
+            {
+                // Add favourite
+                var fav = new RecipeFavourite
+                {
+                    RecipeId = recipe.Id,
+                    UserId = user.Id
+                };
+
+                await context.RecipeFavourites.AddAsync(fav);
+            }
+
+            await context.SaveChangesAsync();
+            return true;
+        }
+
     }
 }

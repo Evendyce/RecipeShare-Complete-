@@ -1,42 +1,46 @@
-﻿@inherits RecipeTileBase
+﻿@using RecipeShare.Web.Components.VoidGlass.VGCard
+@inherits RecipeTileBase
 
 <div class="recipe-tile group border rounded-xl p-4 shadow hover:shadow-lg transition-all bg-white dark:bg-zinc-900 relative cursor-pointer"
      @onclick="() => NavigateToRecipe(Recipe.Id)">
+    <VGCard Header="@Recipe.Title" Icon="fas fa-star">
+        <ContentTemplate>
+            @if (!string.IsNullOrWhiteSpace(Recipe.CoverImageUrl))
+            {
+                <img src="@Recipe.CoverImageUrl"
+                     alt="@Recipe.Title"
+                     class="w-full h-40 object-cover rounded-md mb-3 transition-opacity duration-200 group-hover:opacity-90" />
+            }
+            else
+            {
+                <div class="w-full h-40 bg-zinc-200 dark:bg-zinc-800 rounded-md mb-3 flex items-center justify-center text-zinc-500 italic">
+                    No Image
+                </div>
+            }
 
-    @if (!string.IsNullOrWhiteSpace(Recipe.CoverImageUrl))
-    {
-        <img src="@Recipe.CoverImageUrl"
-             alt="@Recipe.Title"
-             class="w-full h-40 object-cover rounded-md mb-3 transition-opacity duration-200 group-hover:opacity-90" />
-    }
-    else
-    {
-        <div class="w-full h-40 bg-zinc-200 dark:bg-zinc-800 rounded-md mb-3 flex items-center justify-center text-zinc-500 italic">
-            No Image
-        </div>
-    }
+            <div class="text-xl font-semibold text-zinc-800 dark:text-zinc-100 mb-1">@Recipe.Title</div>
 
-    <div class="text-xl font-semibold text-zinc-800 dark:text-zinc-100 mb-1">@Recipe.Title</div>
+            <div class="text-sm text-zinc-600 dark:text-zinc-300 mb-2">
+                Cooking Time: @Recipe.CookingTime min
+            </div>
 
-    <div class="text-sm text-zinc-600 dark:text-zinc-300 mb-2">
-        Cooking Time: @Recipe.CookingTime min
-    </div>
+            @if (Recipe.FavouriteCount > 0)
+            {
+                <div class="text-sm text-rose-500 mb-2">
+                    ❤️ @Recipe.FavouriteCount favorites
+                </div>
+            }
 
-    @if (Recipe.FavouriteCount > 0)
-    {
-        <div class="text-sm text-rose-500 mb-2">
-            ❤️ @Recipe.FavouriteCount favorites
-        </div>
-    }
-
-    <div class="flex flex-wrap gap-2 mt-2">
-        @foreach (var tag in Recipe.Tags)
-        {
-            <span class="text-xs px-2 py-1 rounded-full text-white"
-                  style="background-color:@tag.Color"
-                  title="@tag.Description">
-                @tag.Name
-            </span>
-        }
-    </div>
+            <div class="flex flex-wrap gap-2 mt-2">
+                @foreach (var tag in Recipe.Tags)
+                {
+                    <span class="text-xs px-2 py-1 rounded-full text-white"
+                          style="background-color:@tag.Color"
+                          title="@tag.Description">
+                        @tag.Name
+                    </span>
+                }
+            </div>
+        </ContentTemplate>
+    </VGCard>
 </div>

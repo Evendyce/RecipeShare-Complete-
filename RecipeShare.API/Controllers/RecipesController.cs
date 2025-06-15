@@ -32,11 +32,11 @@ namespace RecipeShare.API.Controllers
             return Ok(recipes);
         }
 
-
         [HttpGet("{id}")]
         public async Task<ActionResult<RecipeDto>> GetRecipe(int id)
         {
             var dto = await _service.GetByIdAsync(id);
+
             return dto == null ? NotFound() : Ok(dto);
         }
 
@@ -46,6 +46,7 @@ namespace RecipeShare.API.Controllers
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
             var created = await _service.CreateAsync(dto);
+
             return CreatedAtAction(nameof(GetRecipe), new { id = created.Id }, created);
         }
 
@@ -56,6 +57,7 @@ namespace RecipeShare.API.Controllers
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
             var updated = await _service.UpdateAsync(id, dto);
+
             return updated ? NoContent() : NotFound();
         }
 
@@ -63,7 +65,16 @@ namespace RecipeShare.API.Controllers
         public async Task<IActionResult> DeleteRecipe(int id)
         {
             var deleted = await _service.DeleteAsync(id);
+
             return deleted ? NoContent() : NotFound();
+        }
+
+        [HttpPost("favourite-recipe")]
+        public async Task<IActionResult> ToggleFavourite([FromBody] FavouriteToggleRequestDto request)
+        {
+            var result = await _service.ToggleFavouriteAsync(request);
+
+            return result ? Ok() : BadRequest("Could not toggle favourite.");
         }
     }
 }

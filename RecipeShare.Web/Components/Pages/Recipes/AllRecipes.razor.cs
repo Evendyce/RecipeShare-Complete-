@@ -2,6 +2,7 @@
 using RecipeShare.Models.Shared;
 using RecipeShare.Web.Helpers.System;
 using RecipeShare.Web.Services;
+using System.IO;
 using static System.Net.WebRequestMethods;
 
 namespace RecipeShare.Web.Components.Pages.Recipes
@@ -37,6 +38,7 @@ namespace RecipeShare.Web.Components.Pages.Recipes
 
         protected async Task LoadRecipes()
         {
+            filter.Username = UserName;
             recipes = await _recipeService.GetRecipeTilesAsync(filter);
         }
 
@@ -44,6 +46,22 @@ namespace RecipeShare.Web.Components.Pages.Recipes
         {
             filter = updatedFilter;
             await LoadRecipes();
+        }
+        protected async Task ToggleFavourite(RecipeTileDto recipe)
+        {
+            // Call API to toggle the state
+            recipe.IsFavouritedByUser = !recipe.IsFavouritedByUser;
+
+            // Fake optimistic update (replace with actual result if needed)
+            recipe.FavouriteCount += recipe.IsFavouritedByUser ? 1 : -1;
+
+            var dto = new FavouriteToggleRequestDto
+            {
+                RecipeId = recipe.Id,
+                Username = UserName!
+            };
+
+            await _recipeService.ToggleFavouriteAsync(dto);
         }
     }
 }

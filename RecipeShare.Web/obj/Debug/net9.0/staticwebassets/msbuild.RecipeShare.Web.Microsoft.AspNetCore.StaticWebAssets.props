@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>4zdhpaelhd</Fingerprint>
-      <Integrity>AF616U8HWwXSyWQ2LqpamXnE5lIWq1WN5eQYW15zwv4=</Integrity>
+      <Fingerprint>ygvzey7rkt</Fingerprint>
+      <Integrity>ElAcQ+SYCaFNdQ3GSREmgICQ8X+USg2CX53Mtlv7lDQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\voidglass.css'))</OriginalItemSpec>
@@ -521,6 +521,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\No_image_available.svg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>RecipeShare.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/RecipeShare.Web</BasePath>
+      <RelativePath>images/No_image_available.svg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>uh4hv2jtyu</Fingerprint>
+      <Integrity>/pd+UkRXV8+Rh0CPv8eIdl7KlAUQzoudIVenAb3ejvE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\No_image_available.svg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\triangles.svg'))">
       <SourceType>Package</SourceType>
@@ -1524,8 +1542,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>tm1b2zzqnc</Fingerprint>
-      <Integrity>+8T3Qz9wIlTlLqCGgreu9KdwnsJ/UadLRL83SIyCDck=</Integrity>
+      <Fingerprint>94tud3xopk</Fingerprint>
+      <Integrity>F+isV6qrWQqvQNYsLmZ44v6DuoChVO85pgBBWqao2bA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass\components\_card.scss'))</OriginalItemSpec>

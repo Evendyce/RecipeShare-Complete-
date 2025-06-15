@@ -1,23 +1,63 @@
 ﻿@inherits AllRecipesBase
 @page "/all-recipes"
+@using RecipeShare.Web.Components.VoidGlass.VGCard
 
-<PageTitle>All Recipes</PageTitle>
+<div class="vg-page">
+    <PageTitle>All Recipes</PageTitle>
 
-<h1 class="text-2xl font-bold mb-4">Explore Recipes</h1>
+    <RecipeFilterBar Title="All Recipes" OnSearch="OnFilterChanged" />
 
-<RecipeFilterBar OnSearch="OnFilterChanged" />
+    @if (IsLoading)
+    {
+        <div class="vg-loading shimmer"></div>
+    }
+    else if (recipes is not null && recipes.Any())
+    {
+        <div class="all-recipes-grid">
+            @foreach (var recipe in recipes)
+            {
+                <VGCard Header="@recipe.Title" SubHeader="@($"{recipe.CookingTime} mins")" CssClass="vg-card glow-on-hover">
+                    <ContentTemplate>
+                        <div class="recipe-thumb">
+                            <img src="@(!string.IsNullOrWhiteSpace(recipe.CoverImageUrl) ? recipe.CoverImageUrl : "images/No_image_available.svg")"
+                                 alt="Recipe image"
+                                 loading="lazy" />
+                        </div>
 
-@if (recipes == null)
-{
-    <p>Loading recipes...</p>
-}
-else if (!recipes.Any())
-{
-    <p>No recipes found.</p>
-}
-else
-{
-    <Virtualize Items="@recipes" Context="recipe">
-        <RecipeTile Recipe="recipe" />
-    </Virtualize>
-}
+                        <div class="ingredients-preview">
+                            @recipe.Ingredients
+                        </div>
+
+                        <div class="tag-badge-list">
+                            @foreach (var tag in recipe.Tags)
+                            {
+                                <span class="tag-badge" style="background-color:@tag.Color">@tag.Name</span>
+                            }
+                        </div>
+                    </ContentTemplate>
+
+                    <FooterTemplate>
+                        <div class="card-footer-actions">
+                            <button class="vg-btn vg-btn-glass">View</button>
+
+                            @if (IsLoggedIn)
+                            {
+                                <button class="favourite-pill"
+                                        @onclick="() => ToggleFavourite(recipe)">
+                                    <i class="fa-solid fa-heart"
+                                       style="color:@(recipe.IsFavouritedByUser ? "#ff5c93" : "#666")">
+                                    </i>
+                                    <span class="fav-count">@recipe.FavouriteCount</span>
+                                </button>
+                            }
+                        </div>
+                    </FooterTemplate>
+                </VGCard>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="vg-no-results">No recipes found with selected filters.</div>
+    }
+</div>

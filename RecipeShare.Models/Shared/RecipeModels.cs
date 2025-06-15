@@ -15,7 +15,8 @@ namespace RecipeShare.Models.Shared
         public string Steps { get; set; } = string.Empty; // Flat string for spec compliance
         public int CookingTime { get; set; }
         public string DietaryTags { get; set; } = string.Empty;
-
+        public bool IsFavouritedByUser { get; set; }
+        public List<TagDto> Tags { get; set; } = new();
         public List<RecipeStepDto> StructuredSteps { get; set; } = new();
         public List<RecipeImageDto> Images { get; set; } = new();
 
@@ -45,9 +46,11 @@ namespace RecipeShare.Models.Shared
     {
         public long Id { get; set; }
         public string Title { get; set; } = string.Empty;
+        public string? Ingredients { get; set; } = string.Empty;
         public string CoverImageUrl { get; set; } = string.Empty;
         public List<TagDto> Tags { get; set; } = new();
         public int CookingTime { get; set; }
+        public bool IsFavouritedByUser { get; set; }
         public int FavouriteCount { get; set; }
     }
 
@@ -59,5 +62,12 @@ namespace RecipeShare.Models.Shared
         public int? MinCookingTime { get; set; }
         public int? MaxCookingTime { get; set; }
         public string? Ingredient { get; set; }   // Optional: filter by included ingredient keyword
+        public string Username { get; set; } = string.Empty;
+    }
+
+    public class FavouriteToggleRequestDto
+    {
+        public long RecipeId { get; set; }
+        public string Username { get; set; } = string.Empty;
     }
 }

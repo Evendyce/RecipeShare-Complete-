@@ -20,7 +20,8 @@ namespace RecipeShare.Web.Components.Pages.Recipes
 
         [Parameter]
         public EventCallback<RecipeSearchDto> OnSearch { get; set; }
-
+        [Parameter]
+        public string Title { get; set; }
 
         protected override async Task OnAfterRenderAsync(bool firstRender)
         {

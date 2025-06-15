@@ -8,7 +8,7 @@ namespace RecipeShare.API.Helpers
     {
         public static class RecipeMapper
         {
-            public static RecipeDto ToDto(Recipe recipe)
+            public static RecipeDto ToDto(Recipe recipe, string? userId = null)
             {
                 return new RecipeDto
                 {
@@ -21,6 +21,9 @@ namespace RecipeShare.API.Helpers
                     CookingTime = recipe.CookingTime,
                     DietaryTags = recipe.DietaryTags,
                     FavouriteCount = recipe.RecipeFavourites?.Count ?? 0,
+                    Tags = recipe.Tags.Select(x => TagMapper.ToDto(x)).ToList(),
+                    IsFavouritedByUser = !string.IsNullOrWhiteSpace(userId)
+                        && recipe.RecipeFavourites!.Any(f => f.UserId == userId),
                     StructuredSteps = recipe.RecipeSteps
                         .OrderBy(s => s.StepNumber)
                         .Select(s => new RecipeStepDto
@@ -43,7 +46,7 @@ namespace RecipeShare.API.Helpers
                 };
             }
 
-            public static RecipeTileDto ToTileDto(Recipe recipe)
+            public static RecipeTileDto ToTileDto(Recipe recipe, string? userId = null)
             {
                 return new RecipeTileDto
                 {
@@ -51,6 +54,10 @@ namespace RecipeShare.API.Helpers
                     Title = recipe.Title,
                     CookingTime = recipe.CookingTime,
                     FavouriteCount = recipe.RecipeFavourites?.Count ?? 0,
+                    Ingredients = recipe.Ingredients,
+                    Tags = recipe.Tags.Select(x => TagMapper.ToDto(x)).ToList(),
+                    IsFavouritedByUser = !string.IsNullOrWhiteSpace(userId)
+                        && recipe.RecipeFavourites!.Any(f => f.UserId == userId),
                     CoverImageUrl = recipe.RecipeImages
                         .Where(x => x.IsCover)
                         .OrderBy(i => i.DisplayOrder)

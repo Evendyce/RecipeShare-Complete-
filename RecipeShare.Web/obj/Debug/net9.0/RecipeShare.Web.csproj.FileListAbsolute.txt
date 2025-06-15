@@ -156,7 +156,6 @@ C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\scopedcss\bundle\RecipeShare.Web.styles.css
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\scopedcss\projectbundle\RecipeShare.Web.bundle.scp.css
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\dlyxwdzwwy-khy4lop6wu.gz
-C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\caidz7uw41-4zdhpaelhd.gz
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\9fp3sot4mb-istbqtslxs.gz
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\ib26mr7exu-3uq9x3ktax.gz
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\fawebn1iqj-bf8lz946nb.gz
@@ -241,3 +240,5 @@ C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\RecipeShare.Web.pdb
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\RecipeShare.Web.genruntimeconfig.cache
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\ref\RecipeShare.Web.dll
+C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\csjqh5j4v8-uh4hv2jtyu.gz
+C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\caidz7uw41-ygvzey7rkt.gz

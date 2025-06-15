@@ -7,6 +7,7 @@ namespace RecipeShare.Web.Services
     public interface IRecipeService
     {
         Task<List<RecipeTileDto>> GetRecipeTilesAsync(RecipeSearchDto filter);
+        Task<bool> ToggleFavouriteAsync(FavouriteToggleRequestDto dto);
     }
 
     public class RecipeService : IRecipeService
@@ -37,24 +38,53 @@ namespace RecipeShare.Web.Services
             }
         }
 
+        public async Task<bool> ToggleFavouriteAsync(FavouriteToggleRequestDto dto)
+        {
+            try
+            {
+                var url = $"/api/recipes/favourite-recipe";
+                var content = JsonContent.Create(dto);
+
+                var response = await _http.PostAsync(url, content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return true;
+                }
+
+                _logger.LogWarning("[RecipeService] ToggleFavouriteAsync responded with {StatusCode}", response.StatusCode);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "[RecipeService] Failed to favourite recipe");
+                return false;
+            }
+        }
+
         private static string BuildQueryString(RecipeSearchDto filter)
         {
-            var queryParams = new Dictionary<string, string> { { "useTile", "true" } };
+            var queryParams = new List<string> { "useTile=true" };
 
             if (!string.IsNullOrWhiteSpace(filter.Title))
-                queryParams["Title"] = filter.Title;
+                queryParams.Add($"Title={Uri.EscapeDataString(filter.Title)}");
+
+            if (!string.IsNullOrWhiteSpace(filter.Username))
+                queryParams.Add($"Username={Uri.EscapeDataString(filter.Username)}");
 
             if (filter.Tags?.Any() == true)
+            {
                 foreach (var tag in filter.Tags)
-                    queryParams.Add("Tags", tag);
+                    queryParams.Add($"Tags={Uri.EscapeDataString(tag)}");
+            }
 
             if (filter.MinCookingTime.HasValue)
-                queryParams["MinCookingTime"] = filter.MinCookingTime.Value.ToString();
+                queryParams.Add($"MinCookingTime={filter.MinCookingTime.Value}");
 
             if (filter.MaxCookingTime.HasValue)
-                queryParams["MaxCookingTime"] = filter.MaxCookingTime.Value.ToString();
+                queryParams.Add($"MaxCookingTime={filter.MaxCookingTime.Value}");
 
-            return string.Join("&", queryParams.Select(kv => $"{kv.Key}={Uri.EscapeDataString(kv.Value)}"));
+            return string.Join("&", queryParams);
         }
     }
 }
