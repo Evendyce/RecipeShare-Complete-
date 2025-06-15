@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
+using RecipeShare.Models.Web;
 using RecipeShare.Web.Components;
 using RecipeShare.Web.Components.Account;
 using RecipeShare.Web.Components.Layout.Sections.Footer;
@@ -14,6 +17,19 @@ namespace RecipeShare.Web
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            // -------------------------------
+            // Add CORS Policy for API Domain expansion
+            // -------------------------------
+            builder.Services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(policy =>
+                {
+                    policy.AllowAnyOrigin()
+                          .AllowAnyMethod()
+                          .AllowAnyHeader();
+                });
+            });
 
             // -------------------------------
             // Razor Components
@@ -53,8 +69,32 @@ namespace RecipeShare.Web
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
             // -------------------------------
+            // AppSettings binding and HttpClient setup
+            // -------------------------------
+            // Register full AppSettings binding (if you want access to all sections)
+            //builder.Services.Configure<AppSettingsDto>(builder.Configuration);
+
+            // OR register just the API section if that's all you need
+            builder.Services.Configure<ApiSettingsDto>(builder.Configuration.GetSection("Api"));
+
+            // Configure HttpClient using strongly typed settings
+            builder.Services.AddScoped(sp =>
+            {
+                var apiOptions = sp.GetRequiredService<IOptions<ApiSettingsDto>>();
+                var baseUrl = apiOptions.Value.BaseUrl;
+
+                if (string.IsNullOrWhiteSpace(baseUrl))
+                    throw new InvalidOperationException("API BaseUrl is not configured.");
+
+                return new HttpClient { BaseAddress = new Uri(baseUrl) };
+            });
+
+            // -------------------------------
             // Custom Services
             // -------------------------------
+            builder.Services.AddScoped<IRecipeService, RecipeService>();
+            builder.Services.AddScoped<ITagService, TagService>();
+
             builder.Services.AddSingleton<SnapZoneConfig>();
 
             // Seed logic related services
@@ -68,11 +108,13 @@ namespace RecipeShare.Web
             if (app.Environment.IsDevelopment())
             {
                 app.UseMigrationsEndPoint();
+                app.UseCors();
             }
             else
             {
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
+                app.UseCors();
             }
 
             app.UseHttpsRedirection();

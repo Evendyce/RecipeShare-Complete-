@@ -1,0 +1,23 @@
+﻿@inherits AllRecipesBase
+@page "/all-recipes"
+
+<PageTitle>All Recipes</PageTitle>
+
+<h1 class="text-2xl font-bold mb-4">Explore Recipes</h1>
+
+<RecipeFilterBar OnSearch="OnFilterChanged" />
+
+@if (recipes == null)
+{
+    <p>Loading recipes...</p>
+}
+else if (!recipes.Any())
+{
+    <p>No recipes found.</p>
+}
+else
+{
+    <Virtualize Items="@recipes" Context="recipe">
+        <RecipeTile Recipe="recipe" />
+    </Virtualize>
+}

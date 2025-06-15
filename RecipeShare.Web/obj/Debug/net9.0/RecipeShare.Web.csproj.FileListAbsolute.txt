@@ -1,5 +1,6 @@
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\bin\Debug\net9.0\appsettings.json
+C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\bin\Debug\net9.0\efpt.config.json
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\bin\Debug\net9.0\RecipeShare.Web.staticwebassets.runtime.json
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\bin\Debug\net9.0\RecipeShare.Web.staticwebassets.endpoints.json
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\bin\Debug\net9.0\RecipeShare.Web.exe
@@ -143,10 +144,10 @@ C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\bin\Debug\net
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\bin\Debug\net9.0\RecipeShare.Models.dll
+C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\bin\Debug\net9.0\RecipeShare.Models.pdb
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\RecipeShare.Web.csproj.AssemblyReference.cache
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\RecipeShare.Web.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\RecipeShare.Web.AssemblyInfoInputs.cache
-C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\RecipeShare.Web.AssemblyInfo.cs
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\RecipeShare.Web.csproj.CoreCompileInputs.cache
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\RecipeShare.Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\RecipeShare.Web.sourcelink.json
@@ -155,6 +156,7 @@ C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\scopedcss\bundle\RecipeShare.Web.styles.css
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\scopedcss\projectbundle\RecipeShare.Web.bundle.scp.css
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\dlyxwdzwwy-khy4lop6wu.gz
+C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\caidz7uw41-4zdhpaelhd.gz
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\9fp3sot4mb-istbqtslxs.gz
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\ib26mr7exu-3uq9x3ktax.gz
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\fawebn1iqj-bf8lz946nb.gz
@@ -239,5 +241,3 @@ C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\RecipeShare.Web.pdb
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\RecipeShare.Web.genruntimeconfig.cache
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\ref\RecipeShare.Web.dll
-C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\bin\Debug\net9.0\efpt.config.json
-C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\caidz7uw41-4zdhpaelhd.gz

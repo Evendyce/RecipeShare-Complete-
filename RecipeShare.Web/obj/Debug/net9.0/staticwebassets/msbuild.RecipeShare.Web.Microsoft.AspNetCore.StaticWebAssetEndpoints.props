@@ -928,13 +928,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RecipeShare.Web.p6zu5mn182.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-XwV3XvUiB1rENfVWEcA1r7j0WNw5TOVCr8lOmIx7sLY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"8265"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022XwV3XvUiB1rENfVWEcA1r7j0WNw5TOVCr8lOmIx7sLY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Jun 2025 14:11:26 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"8265"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022XwV3XvUiB1rENfVWEcA1r7j0WNw5TOVCr8lOmIx7sLY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 15 Jun 2025 04:07:06 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/RecipeShare.Web/RecipeShare.Web.p6zu5mn182.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RecipeShare.Web.p6zu5mn182.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"p6zu5mn182"},{"Name":"integrity","Value":"sha256-XwV3XvUiB1rENfVWEcA1r7j0WNw5TOVCr8lOmIx7sLY="},{"Name":"label","Value":"_content/RecipeShare.Web/RecipeShare.Web.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8265"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022XwV3XvUiB1rENfVWEcA1r7j0WNw5TOVCr8lOmIx7sLY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Jun 2025 14:11:26 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8265"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022XwV3XvUiB1rENfVWEcA1r7j0WNw5TOVCr8lOmIx7sLY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 15 Jun 2025 04:07:06 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/RecipeShare.Web/voidglass/components/overrides/SfAccordion/_sf-accordion-override.r9zq4arc9y.scss">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass\components\overrides\SfAccordion\_sf-accordion-override.scss'))</AssetFile>

@@ -1,0 +1,27 @@
+﻿@inherits RecipeFilterBarBase
+
+<div class="mb-4 p-4 rounded bg-gray-100 border">
+    <EditForm Model="filter" OnValidSubmit="SubmitFilter">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <InputText @bind-Value="filter.Title" class="form-input w-full" placeholder="Search title..." />
+
+            <InputNumber @bind-Value="filter.MinCookingTime" class="form-input w-full" placeholder="Min time (min)" />
+            <InputNumber @bind-Value="filter.MaxCookingTime" class="form-input w-full" placeholder="Max time (min)" />
+
+            <button type="submit" class="btn btn-primary w-full">Apply Filters</button>
+        </div>
+
+        @foreach (var tag in tags)
+        {
+            <label class="inline-flex items-center space-x-2 text-sm">
+                <input type="checkbox"
+                       checked="@filter.Tags.Contains(tag.Name)"
+                       @onchange="() => ToggleTag(tag.Name)" />
+                <span class="px-2 py-1 rounded-full"
+                      style="background-color:@tag.Color; color:white">
+                    @tag.Name
+                </span>
+            </label>
+        }
+    </EditForm>
+</div>

@@ -1702,6 +1702,16 @@
             "rid": "win"
           }
         }
+      },
+      "RecipeShare.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/RecipeShare.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RecipeShare.Models.dll": {}
+        }
       }
     }
   },
@@ -4909,6 +4919,11 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "RecipeShare.Models/1.0.0": {
+      "type": "project",
+      "path": "../RecipeShare.Models/RecipeShare.Models.csproj",
+      "msbuildProject": "../RecipeShare.Models/RecipeShare.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4916,7 +4931,8 @@
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 9.0.4",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 9.0.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.4",
-      "Microsoft.EntityFrameworkCore.Tools >= 9.0.4"
+      "Microsoft.EntityFrameworkCore.Tools >= 9.0.4",
+      "RecipeShare.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4955,7 +4971,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Models\\RecipeShare.Models.csproj": {
+              "projectPath": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Models\\RecipeShare.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
