@@ -46,6 +46,7 @@ namespace RecipeShare.Models.Shared
         public long Id { get; set; }
         public string Title { get; set; } = string.Empty;
         public string CoverImageUrl { get; set; } = string.Empty;
+        public List<TagDto> Tags { get; set; } = new();
         public int CookingTime { get; set; }
         public int FavouriteCount { get; set; }
     }
@@ -54,7 +55,7 @@ namespace RecipeShare.Models.Shared
     {
         public string? Title { get; set; }
         public string? Tag { get; set; }          // Single tag for basic use
-        public List<string>? Tags { get; set; }   // Optional multi-tag support
+        public List<string>? Tags { get; set; } = new();   // Optional multi-tag support
         public int? MinCookingTime { get; set; }
         public int? MaxCookingTime { get; set; }
         public string? Ingredient { get; set; }   // Optional: filter by included ingredient keyword
