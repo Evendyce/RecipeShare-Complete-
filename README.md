@@ -95,7 +95,7 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 | 👤 My Recipes View            | ⏳ Planned |
 | ➕ Add/Edit Recipe            | ⏳ Planned |
 | 📄 Recipe Detail View         | ⏳ Planned |
-| ❤️ My Favourites              | ⏳ Planned |
+| ❤️ My Favourites              | ✅ Complete |
 
 </details>
 

@@ -1,0 +1,72 @@
+﻿@inherits MyFavouritesBase
+@page "/favourites"
+@using RecipeShare.Web.Components.VoidGlass.VGCard
+
+<PageTitle>My Favourites</PageTitle>
+
+<h2 class="vg-heading-xl text-center mb-4">❤️ My Favourites</h2>
+
+@if (!IsLoggedIn)
+{
+    <div class="text-center text-muted mt-4">
+        Please log in to view your favourites.
+    </div>
+}
+else if (IsLoading)
+{
+    <div class="vg-loading shimmer mt-4"></div>
+}
+else if (recipes is null || recipes.Count == 0)
+{
+    <div class="text-center text-muted mt-4">
+        You haven’t favourited any recipes yet.
+    </div>
+}
+else
+{
+    <div class="all-recipes-grid">
+        @foreach (var recipe in recipes)
+        {
+            <VGCard Header="@recipe.Title"
+                    SubHeader="@($"{recipe.CookingTime} mins")"
+                    CssClass="vg-card glow-on-hover">
+                <ContentTemplate>
+                    <div class="recipe-thumb">
+                        <img src="@(!string.IsNullOrWhiteSpace(recipe.CoverImageUrl) 
+                            ? recipe.CoverImageUrl 
+                            : "images/No_image_available.svg")"
+                             alt="Cover"
+                             loading="lazy" />
+                    </div>
+
+                    <div class="ingredients-preview">
+                        @recipe.Ingredients
+                    </div>
+
+                    <div class="tag-badge-list">
+                        @foreach (var tag in recipe.Tags)
+                        {
+                            <span class="tag-badge" style="background-color:@tag.Color">
+                                @tag.Name
+                            </span>
+                        }
+                    </div>
+                </ContentTemplate>
+
+                <FooterTemplate>
+                    <div class="card-footer-actions">
+                        <button class="vg-btn vg-btn-glass">View</button>
+
+                        <button class="favourite-pill"
+                                @onclick="() => ToggleFavourite(recipe)">
+                            <i class="fa-solid fa-heart"
+                               style="color:@(recipe.IsFavouritedByUser ? "#ff5c93" : "#666")">
+                            </i>
+                            <span class="fav-count">@recipe.FavouriteCount</span>
+                        </button>
+                    </div>
+                </FooterTemplate>
+            </VGCard>
+        }
+    </div>
+}

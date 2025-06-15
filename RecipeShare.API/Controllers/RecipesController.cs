@@ -32,6 +32,14 @@ namespace RecipeShare.API.Controllers
             return Ok(recipes);
         }
 
+        [HttpGet("recipes-for-user")]
+        public async Task<ActionResult<IEnumerable<object>>> GetRecipesForUser([FromQuery] RecipeSearchDto? filter)
+        {
+            var tiles = await _service.GetAllTilesForUserAsync(filter);
+
+            return Ok(tiles);
+        }
+
         [HttpGet("{id}")]
         public async Task<ActionResult<RecipeDto>> GetRecipe(int id)
         {
