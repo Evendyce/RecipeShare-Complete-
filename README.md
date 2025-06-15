@@ -111,8 +111,11 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 | `RecipeImages`     | ✅ Complete |
 | `RecipeFavourites` | ✅ Complete |
 | `UserProfiles`     | ✅ Complete |
+| `Tags`             | ✅ Complete |
+| `RecipeTags`       | ✅ Complete |
 
-> ✅ `Steps` string field remains for spec compliance, synced from structured steps.
+> ✅ `Steps` string field remains for spec compliance, synced from structured steps.  
+> 🔗 `RecipeTags` is an explicitly defined many-to-many join table between `Recipes` and `Tags`, used for dietary filtering and metrics.
 
 </details>
 
