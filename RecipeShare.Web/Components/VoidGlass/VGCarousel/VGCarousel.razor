@@ -1,0 +1,42 @@
+﻿@inherits VGCarouselBase
+
+@if (Images?.Count > 0)
+{
+    <section class="carousel" aria-label="@AriaLabel">
+        <ol class="carousel__viewport">
+            @for (int i = 0; i < Images.Count; i++)
+            {
+                var img = Images[i];
+                var prevIndex = (i == 0) ? Images.Count - 1 : i - 1;
+                var nextIndex = (i == Images.Count - 1) ? 0 : i + 1;
+
+                <li id="carousel__slide@(i + 1)"
+                    tabindex="0"
+                    class="carousel__slide">
+                    <img src="@img.ImageUrl"
+                         alt="@img.Caption"
+                         class="carousel__image" />
+
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide@(prevIndex + 1)" class="carousel__prev">‹</a>
+                        <a href="#carousel__slide@(nextIndex + 1)" class="carousel__next">›</a>
+                    </div>
+                </li>
+            }
+        </ol>
+
+        <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+                @for (int i = 0; i < Images.Count; i++)
+                {
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide@(i + 1)"
+                           class="carousel__navigation-button">
+                            •
+                        </a>
+                    </li>
+                }
+            </ol>
+        </aside>
+    </section>
+}

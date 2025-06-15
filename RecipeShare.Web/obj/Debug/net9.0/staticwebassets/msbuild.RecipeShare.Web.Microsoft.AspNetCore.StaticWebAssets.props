@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ygvzey7rkt</Fingerprint>
-      <Integrity>ElAcQ+SYCaFNdQ3GSREmgICQ8X+USg2CX53Mtlv7lDQ=</Integrity>
+      <Fingerprint>kozff06zrw</Fingerprint>
+      <Integrity>ZPGj+8CTmvRVKZ4Xwx53RojXFf/mzZdM11Pi0OE04eg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\voidglass.css'))</OriginalItemSpec>
@@ -1542,11 +1542,29 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>94tud3xopk</Fingerprint>
-      <Integrity>F+isV6qrWQqvQNYsLmZ44v6DuoChVO85pgBBWqao2bA=</Integrity>
+      <Fingerprint>er99cvc4dt</Fingerprint>
+      <Integrity>Vj7dF96tonWjQK48VRI7t8Q+LRhxqgt6S2dvG9VOzMo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass\components\_card.scss'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass\components\_carousel.scss'))">
+      <SourceType>Package</SourceType>
+      <SourceId>RecipeShare.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/RecipeShare.Web</BasePath>
+      <RelativePath>voidglass/components/_carousel.scss</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>o4mxn4lw09</Fingerprint>
+      <Integrity>uLpnof21gpW7DuO/WqIYtAguR0ZlY8liojr7XV8is9o=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass\components\_carousel.scss'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass\components\_fab.scss'))">
       <SourceType>Package</SourceType>
@@ -1776,8 +1794,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>p3om4g4j5v</Fingerprint>
-      <Integrity>heecYCdz6EhSoCC5ogfKYCrS2M7L4tXz+jrtgPqRZ9Y=</Integrity>
+      <Fingerprint>jyoez1mpl7</Fingerprint>
+      <Integrity>27z2qSnUmX1hIxeY7iFILVHBoifZu15X2ZJveRLZN90=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass\voidglass.scss'))</OriginalItemSpec>

@@ -1,0 +1,104 @@
+﻿@inherits RecipeBase
+@page "/recipe/{Id:long}"
+@using RecipeShare.Web.Components.VoidGlass.VGCarousel
+
+@if (IsLoading)
+{
+    <div class="vg-loading shimmer mt-4"></div>
+}
+else if (recipe is null)
+{
+    <div class="text-center text-muted mt-4">
+        Recipe not found.
+    </div>
+}
+else
+{
+    <div class="recipe-detail">
+
+        @* --- Gallery --- *@
+        @if (recipe.Images?.Any() == true)
+        {
+            <VGCarousel Images="recipe.Images" />
+        }
+        else
+        {
+            <div class="recipe-detail-cover-fallback">
+                <img src="images/No_image_available.svg" alt="No image" />
+            </div>
+        }
+
+        @* --- Title + Meta --- *@
+        <h2 class="vg-heading-xl text-center mb-2">@recipe.Title</h2>
+
+        <div class="recipe-meta text-center mb-4">
+            🕒 Cooking Time: @recipe.CookingTime min
+        </div>
+
+        @* --- Tags --- *@
+        @if (recipe.Tags?.Any() == true)
+        {
+            <div class="tag-badge-list mb-4 justify-center">
+                @foreach (var tag in recipe.Tags)
+                {
+                    <span class="tag-badge" style="background-color:@tag.Color">@tag.Name</span>
+                }
+            </div>
+        }
+
+        @* --- Ingredients --- *@
+        <div class="mb-4">
+            <h3 class="vg-subheading">🧾 Ingredients</h3>
+            <p class="vg-paragraph">@recipe.Ingredients</p>
+        </div>
+
+        @* --- Steps --- *@
+        <div>
+            <h3 class="vg-subheading">👨‍🍳 Steps</h3>
+            @if (recipe.StructuredSteps?.Any() == true)
+            {
+                <ol class="vg-step-list">
+                    @foreach (var step in recipe.StructuredSteps.OrderBy(s => s.Order))
+                    {
+                        <li>
+                            <label class="vg-step-check">
+                                <input type="checkbox" @bind="step.IsChecked" />
+                                <span class="step-text @( step.IsChecked ? "checked" : "" )">
+                                    @step.Instruction
+                                </span>
+                            </label>
+                        </li>
+                    }
+                </ol>
+            }
+            else
+            {
+                <p class="vg-paragraph">@recipe.Steps</p>
+            }
+        </div>
+
+        @* --- Actions --- *@
+        <div class="recipe-action-bar">
+            <button class="vg-btn-glass" @onclick="ResetAllSteps">
+                🔁 Reset Steps
+            </button>
+
+            @if (IsLoggedIn)
+            {
+                <div class="action-center">
+                    <button class="favourite-pill"
+                            @onclick="ToggleFavourite">
+                        <i class="fa-solid fa-heart"
+                           style="color:@(recipe.IsFavouritedByUser ? "#ff5c93" : "#666")">
+                        </i>
+                        <span class="fav-count">@recipe.FavouriteCount</span>
+                    </button>
+                </div>
+            }
+
+            <button class="vg-btn-glass" @onclick="ExportRecipe">
+                📄 Export
+            </button>
+        </div>
+    </div>
+}

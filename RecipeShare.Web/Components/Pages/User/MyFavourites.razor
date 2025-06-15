@@ -55,7 +55,9 @@ else
 
                 <FooterTemplate>
                     <div class="card-footer-actions">
-                        <button class="vg-btn vg-btn-glass">View</button>
+                        <button class="vg-btn vg-btn-glass" title="View recipe" @onclick='() => Nav.NavigateTo($"/recipe/{recipe.Id}")'>
+                            View
+                        </button>
 
                         <button class="favourite-pill"
                                 @onclick="() => ToggleFavourite(recipe)">

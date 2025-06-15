@@ -15,14 +15,14 @@
     <StaticWebAssetEndpoint Include="_content/RecipeShare.Web/css/voidglass.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\voidglass.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ElAcQ\u002BSYCaFNdQ3GSREmgICQ8X\u002BUSg2CX53Mtlv7lDQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"18962"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ElAcQ\u002BSYCaFNdQ3GSREmgICQ8X\u002BUSg2CX53Mtlv7lDQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 15 Jun 2025 11:33:54 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ZPGj\u002B8CTmvRVKZ4Xwx53RojXFf/mzZdM11Pi0OE04eg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"23356"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ZPGj\u002B8CTmvRVKZ4Xwx53RojXFf/mzZdM11Pi0OE04eg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 15 Jun 2025 13:46:10 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/RecipeShare.Web/css/voidglass.ygvzey7rkt.css">
+    <StaticWebAssetEndpoint Include="_content/RecipeShare.Web/css/voidglass.kozff06zrw.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\voidglass.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ygvzey7rkt"},{"Name":"integrity","Value":"sha256-ElAcQ\u002BSYCaFNdQ3GSREmgICQ8X\u002BUSg2CX53Mtlv7lDQ="},{"Name":"label","Value":"_content/RecipeShare.Web/css/voidglass.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"18962"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ElAcQ\u002BSYCaFNdQ3GSREmgICQ8X\u002BUSg2CX53Mtlv7lDQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 15 Jun 2025 11:33:54 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kozff06zrw"},{"Name":"integrity","Value":"sha256-ZPGj\u002B8CTmvRVKZ4Xwx53RojXFf/mzZdM11Pi0OE04eg="},{"Name":"label","Value":"_content/RecipeShare.Web/css/voidglass.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"23356"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ZPGj\u002B8CTmvRVKZ4Xwx53RojXFf/mzZdM11Pi0OE04eg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 15 Jun 2025 13:46:10 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/RecipeShare.Web/fa/css/all.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fa\css\all.css'))</AssetFile>
@@ -1020,17 +1020,29 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-EkObPj2\u002BtSiHcqPHuFmOFHA//sKw4\u002BjvNSGErCNrsYU="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1559"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022EkObPj2\u002BtSiHcqPHuFmOFHA//sKw4\u002BjvNSGErCNrsYU=\u0022"},{"Name":"Last-Modified","Value":"Tue, 20 May 2025 18:07:38 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/RecipeShare.Web/voidglass/components/_card.94tud3xopk.scss">
+    <StaticWebAssetEndpoint Include="_content/RecipeShare.Web/voidglass/components/_card.er99cvc4dt.scss">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass\components\_card.scss'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"94tud3xopk"},{"Name":"integrity","Value":"sha256-F\u002BisV6qrWQqvQNYsLmZ44v6DuoChVO85pgBBWqao2bA="},{"Name":"label","Value":"_content/RecipeShare.Web/voidglass/components/_card.scss"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5631"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022F\u002BisV6qrWQqvQNYsLmZ44v6DuoChVO85pgBBWqao2bA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 15 Jun 2025 11:33:21 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"er99cvc4dt"},{"Name":"integrity","Value":"sha256-Vj7dF96tonWjQK48VRI7t8Q\u002BLRhxqgt6S2dvG9VOzMo="},{"Name":"label","Value":"_content/RecipeShare.Web/voidglass/components/_card.scss"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9485"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022Vj7dF96tonWjQK48VRI7t8Q\u002BLRhxqgt6S2dvG9VOzMo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 15 Jun 2025 13:28:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/RecipeShare.Web/voidglass/components/_card.scss">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass\components\_card.scss'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-F\u002BisV6qrWQqvQNYsLmZ44v6DuoChVO85pgBBWqao2bA="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5631"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022F\u002BisV6qrWQqvQNYsLmZ44v6DuoChVO85pgBBWqao2bA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 15 Jun 2025 11:33:21 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Vj7dF96tonWjQK48VRI7t8Q\u002BLRhxqgt6S2dvG9VOzMo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"9485"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022Vj7dF96tonWjQK48VRI7t8Q\u002BLRhxqgt6S2dvG9VOzMo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 15 Jun 2025 13:28:51 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/RecipeShare.Web/voidglass/components/_carousel.o4mxn4lw09.scss">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass\components\_carousel.scss'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"o4mxn4lw09"},{"Name":"integrity","Value":"sha256-uLpnof21gpW7DuO/WqIYtAguR0ZlY8liojr7XV8is9o="},{"Name":"label","Value":"_content/RecipeShare.Web/voidglass/components/_carousel.scss"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2352"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022uLpnof21gpW7DuO/WqIYtAguR0ZlY8liojr7XV8is9o=\u0022"},{"Name":"Last-Modified","Value":"Sun, 15 Jun 2025 12:26:37 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/RecipeShare.Web/voidglass/components/_carousel.scss">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass\components\_carousel.scss'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-uLpnof21gpW7DuO/WqIYtAguR0ZlY8liojr7XV8is9o="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2352"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022uLpnof21gpW7DuO/WqIYtAguR0ZlY8liojr7XV8is9o=\u0022"},{"Name":"Last-Modified","Value":"Sun, 15 Jun 2025 12:26:37 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/RecipeShare.Web/voidglass/components/_fab.3325amqxcc.scss">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass\components\_fab.scss'))</AssetFile>
@@ -1176,17 +1188,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-RY1m5ZgpZFzviFTgzaUraVHnu8rE3uUD4RtPaLKZ1jQ="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"265"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022RY1m5ZgpZFzviFTgzaUraVHnu8rE3uUD4RtPaLKZ1jQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 18 May 2025 10:40:01 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/RecipeShare.Web/voidglass/voidglass.p3om4g4j5v.scss">
+    <StaticWebAssetEndpoint Include="_content/RecipeShare.Web/voidglass/voidglass.jyoez1mpl7.scss">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass\voidglass.scss'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"p3om4g4j5v"},{"Name":"integrity","Value":"sha256-heecYCdz6EhSoCC5ogfKYCrS2M7L4tXz\u002BjrtgPqRZ9Y="},{"Name":"label","Value":"_content/RecipeShare.Web/voidglass/voidglass.scss"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"496"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022heecYCdz6EhSoCC5ogfKYCrS2M7L4tXz\u002BjrtgPqRZ9Y=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Jun 2025 17:48:52 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"jyoez1mpl7"},{"Name":"integrity","Value":"sha256-27z2qSnUmX1hIxeY7iFILVHBoifZu15X2ZJveRLZN90="},{"Name":"label","Value":"_content/RecipeShare.Web/voidglass/voidglass.scss"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"530"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u002227z2qSnUmX1hIxeY7iFILVHBoifZu15X2ZJveRLZN90=\u0022"},{"Name":"Last-Modified","Value":"Sun, 15 Jun 2025 12:26:56 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/RecipeShare.Web/voidglass/voidglass.scss">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass\voidglass.scss'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-heecYCdz6EhSoCC5ogfKYCrS2M7L4tXz\u002BjrtgPqRZ9Y="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"496"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022heecYCdz6EhSoCC5ogfKYCrS2M7L4tXz\u002BjrtgPqRZ9Y=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Jun 2025 17:48:52 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-27z2qSnUmX1hIxeY7iFILVHBoifZu15X2ZJveRLZN90="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"530"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u002227z2qSnUmX1hIxeY7iFILVHBoifZu15X2ZJveRLZN90=\u0022"},{"Name":"Last-Modified","Value":"Sun, 15 Jun 2025 12:26:56 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/RecipeShare.Web/voidglass/_animations.i0iw6es6a3.scss">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass\_animations.scss'))</AssetFile>

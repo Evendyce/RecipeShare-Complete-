@@ -41,9 +41,9 @@ namespace RecipeShare.API.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<RecipeDto>> GetRecipe(int id)
+        public async Task<ActionResult<RecipeDto>> GetRecipe(int id, [FromQuery] string? username)
         {
-            var dto = await _service.GetByIdAsync(id);
+            var dto = await _service.GetByIdAsync(id, username);
 
             return dto == null ? NotFound() : Ok(dto);
         }

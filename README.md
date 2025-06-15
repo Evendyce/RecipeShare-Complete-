@@ -40,7 +40,8 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 | 🧾 `RecipeSteps` for structured instructions| ✅ Complete    |
 | 🖼️ Multiple Recipe Images                   | ✅ Complete    |
 | ❤️ Favourites (per-user toggle)             | ✅ Complete     |
-| 📄 Export to Markdown + PDF                 | ⏳ Planned     |
+| 📄 Export to Markdown + PDF                 | ✅ Complete    |
+| ✅ Interactive Step Checklist					| ✅ Complete |
 | 📄 Default Data Seeding                     | ✅ Complete    |
 | 🧪 Unit Tests (xUnit)                       | ⏳ Planned     |
 | 🥒 500x GET Benchmark Test                  | ⏳ Planned     |
@@ -94,7 +95,7 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 | 🔍 Global Recipes View        | ✅ Complete |
 | 👤 My Recipes View            | ⏳ Planned |
 | ➕ Add/Edit Recipe            | ⏳ Planned |
-| 📄 Recipe Detail View         | ⏳ Planned |
+| 📄 Recipe Detail View         | ✅ Complete |
 | ❤️ My Favourites              | ✅ Complete |
 
 </details>

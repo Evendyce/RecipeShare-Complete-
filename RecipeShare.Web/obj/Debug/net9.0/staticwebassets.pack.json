@@ -337,6 +337,10 @@
       "PackagePath": "staticwebassets\\voidglass\\components\\_card.scss"
     },
     {
+      "Id": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\voidglass\\components\\_carousel.scss",
+      "PackagePath": "staticwebassets\\voidglass\\components\\_carousel.scss"
+    },
+    {
       "Id": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\voidglass\\components\\_fab.scss",
       "PackagePath": "staticwebassets\\voidglass\\components\\_fab.scss"
     },

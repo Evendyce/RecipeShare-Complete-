@@ -15,6 +15,8 @@ namespace RecipeShare.Web.Components.Pages.Recipes
         //I N J E C T I O N S
         [Inject]
         protected IRecipeService _recipeService { get; set; }
+        [Inject]
+        protected NavigationManager Nav {  get; set; }
 
         protected List<RecipeTileDto>? recipes;
         protected RecipeSearchDto filter = new();

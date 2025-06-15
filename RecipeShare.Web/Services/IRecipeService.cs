@@ -8,7 +8,8 @@ namespace RecipeShare.Web.Services
     {
         Task<List<RecipeTileDto>> GetRecipeTilesAsync(RecipeSearchDto filter);
         Task<List<RecipeTileDto>> GetRecipeTilesForUserAsync(RecipeSearchDto filter);
-        
+        Task<RecipeDto?> GetRecipeByIdAsync(long id, string? username);
+
         Task<bool> ToggleFavouriteAsync(FavouriteToggleRequestDto dto);
     }
 
@@ -54,6 +55,29 @@ namespace RecipeShare.Web.Services
             {
                 _logger.LogError(ex, "[RecipeService] Failed to load recipe tiles");
                 return new List<RecipeTileDto>();
+            }
+        }
+
+        public async Task<RecipeDto?> GetRecipeByIdAsync(long id, string? username)
+        {
+            try
+            {
+                var url = $"/api/recipes/{id}";
+
+                // Append username if available
+                if (!string.IsNullOrWhiteSpace(username))
+                {
+                    url += $"?Username={Uri.EscapeDataString(username)}";
+                }
+
+                var response = await _http.GetFromJsonAsync<RecipeDto>(url);
+
+                return response;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "[RecipeService] Failed to fetch recipe with ID {RecipeId}", id);
+                return null;
             }
         }
 

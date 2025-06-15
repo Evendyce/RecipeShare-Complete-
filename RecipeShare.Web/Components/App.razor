@@ -29,6 +29,7 @@
 <body>
     <Routes @rendermode="PageRenderMode" />
     <script src="js/themeToggle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script src="_framework/blazor.web.js"></script>
 
     <script>
@@ -38,6 +39,98 @@
             window.voidGlassTheme.init();
           };
         });
+
+        window.downloadFile = function (filename, content) {
+          const blob = new Blob([content], { type: 'text/markdown' });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = filename;
+          a.click();
+          URL.revokeObjectURL(url);
+        }
+
+        window.exportMarkdownAsPdf = (markdownText, title) => {
+          const container = document.createElement('div');
+          container.style.padding = '2rem';
+          container.style.maxWidth = '800px';
+          container.style.fontFamily = 'Lato, sans-serif';
+
+          // Basic Markdown → HTML (you can use marked.js later for full parsing)
+          const html = markdownText
+          .replace(/^# (.*$)/gim, '<h1>$1</h1>')
+          .replace(/^## (.*$)/gim, '<h2>$1</h2>')
+          .replace(/^\*\*(.*?)\*\*/gim, '<strong>$1</strong>')
+          .replace(/- \[ \] (.*)/gim, '<div class="pdf-step"><input type="checkbox" disabled> <span>$1</span></div>')
+          .replace(/^\*\s(.*)/gim, '<li>$1</li>')
+          .replace(/\n{2,}/g, '</p><p>') // new paragraphs
+          .replace(/\n/g, '<br>');
+
+          container.innerHTML = `
+              <div class="pdf-root">${html}</div>
+              <div class="pdf-footer"><p>Generated via RecipeShare</p></div>
+            `;
+
+          document.body.appendChild(container);
+
+          const style = document.createElement("style");
+            style.innerHTML = `
+              .pdf-root {
+                font-family: 'Lato', sans-serif;
+                color: #333;
+                max-width: 700px;
+                margin: 0 auto;
+                font-size: 0.95rem;
+                line-height: 1.6;
+              }
+
+              h1, h2 {
+                color: #111;
+                margin-bottom: 0.5rem;
+              }
+
+              h1 {
+                font-size: 1.75rem;
+                border-bottom: 1px solid #eee;
+                padding-bottom: 0.25rem;
+                margin-bottom: 1rem;
+              }
+
+              h2 {
+                font-size: 1.25rem;
+                margin-top: 1.5rem;
+              }
+
+              .pdf-step {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                margin: 0.4rem 0;
+              }
+
+              .pdf-step input[type="checkbox"] {
+                accent-color: #00ffe0;
+                transform: scale(1.2);
+              }
+
+              p {
+                margin: 0.5rem 0;
+              }
+            `;
+
+            document.head.appendChild(style);
+
+          html2pdf()
+            .from(container)
+            .set({
+              filename: `${title}.pdf`,
+              margin: 0.5,
+              html2canvas: { scale: 2 },
+              jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            })
+            .save()
+            .then(() => document.body.removeChild(container));
+        };
     </script>
 </body>
 

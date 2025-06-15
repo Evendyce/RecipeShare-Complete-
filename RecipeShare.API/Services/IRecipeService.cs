@@ -12,7 +12,7 @@ namespace RecipeShare.API.Services
         Task<List<RecipeDto>> GetAllRecipesAsync(RecipeSearchDto? filter);
         Task<List<RecipeTileDto>> GetAllTilesAsync(RecipeSearchDto? filter);
         Task<List<RecipeTileDto>> GetAllTilesForUserAsync(RecipeSearchDto? filter);
-        Task<RecipeDto?> GetByIdAsync(int id);
+        Task<RecipeDto?> GetByIdAsync(int id, string? username);
         Task<RecipeDto> CreateAsync(RecipeDto dto);
         Task<bool> UpdateAsync(int id, RecipeDto dto);
         Task<bool> DeleteAsync(int id);
@@ -142,21 +142,24 @@ namespace RecipeShare.API.Services
             return new List<RecipeTileDto>();
         }
 
-        public async Task<RecipeDto?> GetByIdAsync(int id)
+        public async Task<RecipeDto?> GetByIdAsync(int id, string? username)
         {
-            await using var context = await _contextFactory.CreateDbContextAsync();
+            await using var ctx = await _contextFactory.CreateDbContextAsync();
 
-            var recipeDto = await context.Recipes
-            .Include(r => r.RecipeSteps)
-            .Include(r => r.RecipeImages)
-            .Include(r => r.RecipeFavourites)
-            .Where(r => r.Id == id)
-            .Select(r => CustomMapper.RecipeMapper.ToDto(r, ""))
-            .FirstOrDefaultAsync();
+            var user = await ctx.AspNetUsers
+                .FirstOrDefaultAsync(x => x.UserName == username);
 
-            if (recipeDto == null) return null;
+            var recipe = await ctx.Recipes
+                .Include(r => r.Tags)
+                .Include(r => r.RecipeSteps)
+                .Include(r => r.RecipeImages)
+                .Include(r => r.RecipeFavourites)
+                .FirstOrDefaultAsync(r => r.Id == id);
 
-            return recipeDto;
+            if (recipe == null)
+                return null;
+
+            return CustomMapper.RecipeMapper.ToDto(recipe, (user != null ? user.Id : ""));
         }
 
         public async Task<RecipeDto> CreateAsync(RecipeDto dto)

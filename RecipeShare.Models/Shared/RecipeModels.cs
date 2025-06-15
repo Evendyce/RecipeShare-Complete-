@@ -30,6 +30,9 @@ namespace RecipeShare.Models.Shared
 
         public int Order { get; set; }
         public string Instruction { get; set; } = string.Empty;
+
+        // New client-side-only property
+        public bool IsChecked { get; set; } = false;
     }
 
     public class RecipeImageDto

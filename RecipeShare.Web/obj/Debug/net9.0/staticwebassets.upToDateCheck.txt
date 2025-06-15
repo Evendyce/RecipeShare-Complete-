@@ -150,6 +150,7 @@ wwwroot\voidglass\_base.scss
 wwwroot\voidglass\components\_backgrounds.scss
 wwwroot\voidglass\components\_button.scss
 wwwroot\voidglass\components\_card.scss
+wwwroot\voidglass\components\_carousel.scss
 wwwroot\voidglass\components\_fab.scss
 wwwroot\voidglass\components\_glass.scss
 wwwroot\voidglass\components\_sidebar.scss
