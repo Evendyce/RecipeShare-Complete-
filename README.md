@@ -39,7 +39,7 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 | 🍲 Recipes CRUD                             | ✅ Complete    |
 | 🧾 `RecipeSteps` for structured instructions| ✅ Complete    |
 | 🖼️ Multiple Recipe Images                   | ✅ Complete    |
-| ❤️ Favourites (per-user toggle)             | ✅ Planned     |
+| ❤️ Favourites (per-user toggle)             | ✅ Complete     |
 | 📄 Export to Markdown + PDF                 | ⏳ Planned     |
 | 📄 Default Data Seeding                     | ✅ Complete    |
 | 🧪 Unit Tests (xUnit)                       | ⏳ Planned     |
@@ -91,7 +91,7 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 | Page                         | Status    |
 | ---------------------------- | --------- |
 | 🛍 Top NavBar (Login/Profile) | ✅ Complete |
-| 🔍 Global Recipes View        | ⏳ Planned |
+| 🔍 Global Recipes View        | ✅ Complete |
 | 👤 My Recipes View            | ⏳ Planned |
 | ➕ Add/Edit Recipe            | ⏳ Planned |
 | 📄 Recipe Detail View         | ⏳ Planned |
@@ -171,7 +171,9 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 | SCSS/CSS included                 | ✅ Complete |
 | Footer / Header custom components | ✅ Complete |
 | Theme Switcher Toggle				| ✅ Complete |
-| Animated Card/Grid system         | ⏳ Planned  |
+| Animated Card/Grid system         | ✅ Complete  |
+| FilterBar Styling & Sticky Logic | ✅ Complete  |
+| Favourite Toggle with Icons      | ✅ Complete  |
 | Attribution license block         | ✅ Added    |
 
 > Attribution required for use.\
