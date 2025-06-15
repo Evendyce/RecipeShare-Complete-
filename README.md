@@ -233,27 +233,33 @@ sass wwwroot/voidglass/voidglass.scss wwwroot/css/voidglass.css --no-source-map 
 
 ## 🐳 Docker Support
 
-The RecipeShare API is containerized using Docker for demonstration purposes.
+The **RecipeShare API** is containerized using Docker for demonstration purposes.
 
-### Build & Run:
+### 🛠️ Build & Run:
 
 ```bash
 docker build -t recipeshare-api -f ./RecipeShare.API/Dockerfile .
-docker run -p 5000:8080 recipeshare-api
+docker run -p 5000:80 recipeshare-api
 ```
 
-Once running, visit:
+Once running, access the Swagger UI at:
 
 ```
 http://localhost:5000/swagger
 ```
 
-### Notes:
+### 📌 Notes:
 
-- The container exposes the API on port **8080**, mapped to **localhost:5000** for convenience.
-- Only the **API project** is containerized — the Blazor Server frontend runs outside Docker to simplify the flow and avoid NuGet complications.
+* The container exposes the API on internal port **80**, mapped to **localhost:5000**.
+* Only the **API project** is containerized.
+* The **Blazor Server frontend** runs outside Docker to avoid complications with:
+
+  * Local database access (`host.docker.internal` issues, `sa` config, trust certs, etc.)
+  * NuGet fallback path bugs inside SDK containers.
+* For a smoother experience, run the API using **Visual Studio** or `dotnet run` during development.
 
 ---
+
 
 ## 🔍 Swagger in Production
 
