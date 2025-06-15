@@ -59,6 +59,14 @@
          "ObjectType": 0
       },
       {
+         "Name": "[dbo].[RecipeTags]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Tags]",
+         "ObjectType": 0
+      },
+      {
          "Name": "[dbo].[UserProfiles]",
          "ObjectType": 0
       }

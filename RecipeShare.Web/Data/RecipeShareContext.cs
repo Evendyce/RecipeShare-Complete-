@@ -34,6 +34,8 @@ public partial class RecipeShareContext : DbContext
 
     public virtual DbSet<RecipeStep> RecipeSteps { get; set; }
 
+    public virtual DbSet<Tag> Tags { get; set; }
+
     public virtual DbSet<UserProfile> UserProfiles { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -126,6 +128,21 @@ public partial class RecipeShareContext : DbContext
             entity.HasOne(d => d.User).WithMany(p => p.Recipes)
                 .HasForeignKey(d => d.UserId)
                 .HasConstraintName("FK_Recipes_AspNetUsers");
+
+            entity.HasMany(d => d.Tags).WithMany(p => p.Recipes)
+                .UsingEntity<Dictionary<string, object>>(
+                    "RecipeTag",
+                    r => r.HasOne<Tag>().WithMany()
+                        .HasForeignKey("TagId")
+                        .HasConstraintName("FK__RecipeTag__TagId__681373AD"),
+                    l => l.HasOne<Recipe>().WithMany()
+                        .HasForeignKey("RecipeId")
+                        .HasConstraintName("FK__RecipeTag__Recip__671F4F74"),
+                    j =>
+                    {
+                        j.HasKey("RecipeId", "TagId").HasName("PK__RecipeTa__2B8E472A5701F2FF");
+                        j.ToTable("RecipeTags");
+                    });
         });
 
         modelBuilder.Entity<RecipeFavourite>(entity =>
@@ -164,6 +181,17 @@ public partial class RecipeShareContext : DbContext
             entity.HasOne(d => d.Recipe).WithMany(p => p.RecipeSteps)
                 .HasForeignKey(d => d.RecipeId)
                 .HasConstraintName("FK_RecipeSteps_Recipes");
+        });
+
+        modelBuilder.Entity<Tag>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__Tags__3214EC078AE35C02");
+
+            entity.HasIndex(e => e.Name, "UQ__Tags__737584F6BB3A93EF").IsUnique();
+
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(100);
         });
 
         modelBuilder.Entity<UserProfile>(entity =>

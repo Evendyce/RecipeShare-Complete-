@@ -32,4 +32,6 @@ public partial class Recipe
     public virtual ICollection<RecipeStep> RecipeSteps { get; set; } = new List<RecipeStep>();
 
     public virtual AspNetUser User { get; set; }
+
+    public virtual ICollection<Tag> Tags { get; set; } = new List<Tag>();
 }

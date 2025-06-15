@@ -2,6 +2,7 @@
 using RecipeShare.Web.Data.Models;
 using RecipeShare.Web.Data;
 using Microsoft.EntityFrameworkCore;
+using Azure;
 
 namespace RecipeShare.Web.Services
 {
@@ -51,13 +52,11 @@ namespace RecipeShare.Web.Services
             {
                 _logger.LogInformation("Seeding user: {userName}", userName);
 
-                // Create Role
+                // Role
                 if (!await _roleManager.RoleExistsAsync(roleName))
-                {
                     await _roleManager.CreateAsync(new IdentityRole(roleName));
-                }
 
-                // Create User
+                // User
                 var user = new ApplicationUser
                 {
                     UserName = userName,
@@ -66,36 +65,35 @@ namespace RecipeShare.Web.Services
                 };
 
                 var result = await _userManager.CreateAsync(user, password);
+                if (!result.Succeeded)
+                    return $"Failed to create user: {string.Join(", ", result.Errors.Select(e => e.Description))}";
 
-                if (result.Succeeded)
+                await _userManager.AddToRoleAsync(user, roleName);
+
+                var userProfile = new UserProfile
                 {
-                    var roleResult = await _userManager.AddToRoleAsync(user, roleName);
-                    if (!roleResult.Succeeded)
-                    {
-                        var errors = string.Join(", ", roleResult.Errors.Select(e => e.Description));
-                        return $"User created but role assignment failed: {errors}";
-                    }
+                    UserId = user.Id,
+                    DisplayName = "Demo User",
+                    Bio = "Just a demo foodie sharing love and carbs.",
+                    CreatedAt = DateTime.UtcNow
+                };
 
-                    var userProfile = new UserProfile
-                    {
-                        UserId = user.Id,
-                        DisplayName = "Demo User",
-                        Bio = "Just a demo foodie sharing love and carbs.",
-                        ProfileImageUrl = null, // or some placeholder image URL
-                        CreatedAt = DateTime.UtcNow,
-                        UpdatedAt = null
-                    };
+                await ctx.UserProfiles.AddAsync(userProfile);
 
-                    await ctx.UserProfiles.AddAsync(userProfile);
-                    await ctx.SaveChangesAsync();
-                }
-                else
-                {
-                    var errors = string.Join(", ", result.Errors.Select(e => e.Description));
-                    return $"Failed to create user: {errors}";
-                }
+                // Step 1: Seed Tags
+                var tagNames = new[] { "Pasta", "Meat", "Vegetarian", "Gluten-Free", "Spicy" };
 
-                // Create Recipes
+                var tagEntities = tagNames
+                    .Select(name => new Tag { Name = name })
+                    .ToList();
+
+                await ctx.Tags.AddRangeAsync(tagEntities);
+                await ctx.SaveChangesAsync();
+
+                // Map for reuse
+                var tagMap = tagEntities.ToDictionary(t => t.Name, t => t);
+
+                // Step 2: Create Recipes with RecipeTags
                 var recipes = new List<Recipe>
                 {
                     new Recipe
@@ -103,43 +101,56 @@ namespace RecipeShare.Web.Services
                         Title = "Spaghetti Carbonara",
                         Ingredients = "Spaghetti, Eggs, Parmesan, Bacon, Pepper",
                         CookingTime = 25,
-                        DietaryTags = "Pasta,Meat",
-                        UserId = user.Id
+                        UserId = user.Id,
+                        Tags = new List<Tag>
+                        {
+                            tagMap["Pasta"],
+                            tagMap["Meat"]
+                        }
                     },
                     new Recipe
                     {
                         Title = "Veggie Stir-Fry",
                         Ingredients = "Broccoli, Bell Pepper, Carrots, Soy Sauce, Garlic",
                         CookingTime = 15,
-                        DietaryTags = "Vegetarian,Gluten-Free",
-                        UserId = user.Id
+                        UserId = user.Id,
+                        Tags = new List<Tag>
+                        {
+                            tagMap["Vegetarian"],
+                            tagMap["Gluten-Free"]
+                        }
                     },
                     new Recipe
                     {
                         Title = "Chicken Curry",
                         Ingredients = "Chicken, Curry Powder, Onion, Tomato, Coconut Milk",
                         CookingTime = 40,
-                        DietaryTags = "Meat,Spicy",
-                        UserId = user.Id
+                        UserId = user.Id,
+                        Tags = new List<Tag>
+                        {
+                            tagMap["Meat"],
+                            tagMap["Spicy"]
+                        }
                     }
                 };
 
                 await ctx.Recipes.AddRangeAsync(recipes);
                 await ctx.SaveChangesAsync();
 
+                // Step 3: Add steps
                 var steps = new List<RecipeStep>
                 {
-                    new RecipeStep { Recipe = recipes[0], StepNumber = 1, Instruction = "Boil the spaghetti." },
-                    new RecipeStep { Recipe = recipes[0], StepNumber = 2, Instruction = "Fry the bacon." },
-                    new RecipeStep { Recipe = recipes[0], StepNumber = 3, Instruction = "Mix eggs and cheese, then combine all." },
+                    new() { Recipe = recipes[0], StepNumber = 1, Instruction = "Boil the spaghetti." },
+                    new() { Recipe = recipes[0], StepNumber = 2, Instruction = "Fry the bacon." },
+                    new() { Recipe = recipes[0], StepNumber = 3, Instruction = "Mix eggs and cheese, then combine all." },
 
-                    new RecipeStep { Recipe = recipes[1], StepNumber = 1, Instruction = "Chop vegetables." },
-                    new RecipeStep { Recipe = recipes[1], StepNumber = 2, Instruction = "Stir-fry in pan." },
-                    new RecipeStep { Recipe = recipes[1], StepNumber = 3, Instruction = "Add soy sauce and serve." },
+                    new() { Recipe = recipes[1], StepNumber = 1, Instruction = "Chop vegetables." },
+                    new() { Recipe = recipes[1], StepNumber = 2, Instruction = "Stir-fry in pan." },
+                    new() { Recipe = recipes[1], StepNumber = 3, Instruction = "Add soy sauce and serve." },
 
-                    new RecipeStep { Recipe = recipes[2], StepNumber = 1, Instruction = "Cook onions and tomatoes." },
-                    new RecipeStep { Recipe = recipes[2], StepNumber = 2, Instruction = "Add chicken and spices." },
-                    new RecipeStep { Recipe = recipes[2], StepNumber = 3, Instruction = "Pour coconut milk and simmer." }
+                    new() { Recipe = recipes[2], StepNumber = 1, Instruction = "Cook onions and tomatoes." },
+                    new() { Recipe = recipes[2], StepNumber = 2, Instruction = "Add chicken and spices." },
+                    new() { Recipe = recipes[2], StepNumber = 3, Instruction = "Pour coconut milk and simmer." }
                 };
 
                 await ctx.RecipeSteps.AddRangeAsync(steps);
