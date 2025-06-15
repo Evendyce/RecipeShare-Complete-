@@ -1,4 +1,7 @@
 
+using Microsoft.EntityFrameworkCore;
+using RecipeShare.API.Data;
+
 namespace RecipeShare.API
 {
     public class Program
@@ -7,10 +10,17 @@ namespace RecipeShare.API
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            // -------------------------------
+            // Database Context
+            // -------------------------------
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
+                ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+
+            builder.Services.AddDbContextFactory<RecipeShareContext>(options =>
+                options.UseSqlServer(connectionString));
 
             builder.Services.AddControllers();
-            // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+
             builder.Services.AddOpenApi();
 
             var app = builder.Build();
@@ -25,7 +35,6 @@ namespace RecipeShare.API
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 
