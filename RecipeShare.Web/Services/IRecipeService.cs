@@ -8,6 +8,7 @@ namespace RecipeShare.Web.Services
     {
         Task<List<RecipeTileDto>> GetRecipeTilesAsync(RecipeSearchDto filter);
         Task<List<RecipeTileDto>> GetRecipeTilesForUserAsync(RecipeSearchDto filter);
+        Task<List<RecipeTileDto>> GetMyRecipeTilesAsync(RecipeSearchDto filter);
         Task<RecipeDto?> GetRecipeByIdAsync(long id, string? username);
 
         Task<bool> ToggleFavouriteAsync(FavouriteToggleRequestDto dto);
@@ -46,6 +47,23 @@ namespace RecipeShare.Web.Services
             try
             {
                 var url = $"/api/recipes/recipes-for-user?{BuildQueryString(filter)}";
+
+                var response = await _http.GetFromJsonAsync<List<RecipeTileDto>>(url);
+
+                return response ?? new List<RecipeTileDto>();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "[RecipeService] Failed to load recipe tiles");
+                return new List<RecipeTileDto>();
+            }
+        }
+
+        public async Task<List<RecipeTileDto>> GetMyRecipeTilesAsync(RecipeSearchDto filter)
+        {
+            try
+            {
+                var url = $"/api/recipes/my-recipes?{BuildQueryString(filter)}";
 
                 var response = await _http.GetFromJsonAsync<List<RecipeTileDto>>(url);
 

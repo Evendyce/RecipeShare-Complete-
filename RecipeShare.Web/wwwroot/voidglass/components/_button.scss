@@ -65,3 +65,14 @@
         justify-content: center;
     }
 }
+
+.vg-button--danger {
+    background-color: #ff4d4f;
+    color: white;
+    border-color: #ff4d4f;
+
+    &:hover {
+        background-color: #ff7875;
+        box-shadow: 0 0 10px #ff4d4f;
+    }
+}

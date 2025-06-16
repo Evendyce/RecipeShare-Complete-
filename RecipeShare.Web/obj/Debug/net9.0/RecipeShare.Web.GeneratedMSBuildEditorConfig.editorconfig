@@ -220,6 +220,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVc2VyXE15RmF2b3VyaXRlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Donovan/source/repos/Evendyce/RecipeShare/RecipeShare.Web/Components/Pages/User/MyRecipes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVc2VyXE15UmVjaXBlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Donovan/source/repos/Evendyce/RecipeShare/RecipeShare.Web/Components/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

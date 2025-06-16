@@ -93,7 +93,7 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 | ---------------------------- | --------- |
 | 🛍 Top NavBar (Login/Profile) | ✅ Complete |
 | 🔍 Global Recipes View        | ✅ Complete |
-| 👤 My Recipes View            | ⏳ Planned |
+| 👤 My Recipes View            | ✅ Complete |
 | ➕ Add/Edit Recipe            | ⏳ Planned |
 | 📄 Recipe Detail View         | ✅ Complete |
 | ❤️ My Favourites              | ✅ Complete |

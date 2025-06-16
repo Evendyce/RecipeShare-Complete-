@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>kozff06zrw</Fingerprint>
-      <Integrity>ZPGj+8CTmvRVKZ4Xwx53RojXFf/mzZdM11Pi0OE04eg=</Integrity>
+      <Fingerprint>yaym5g7u8m</Fingerprint>
+      <Integrity>KqwP/9HBTtgJQInRt5HI1vFGUkU5F3L3qLzzLhu0hLY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\voidglass.css'))</OriginalItemSpec>
@@ -1422,6 +1422,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RecipeShare.Web.p6zu5mn182.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass.zip'))">
+      <SourceType>Package</SourceType>
+      <SourceId>RecipeShare.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/RecipeShare.Web</BasePath>
+      <RelativePath>voidglass.zip</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>80qduv2asj</Fingerprint>
+      <Integrity>6B55Pc999sE47QnDQz3sTYTgmo7ylqoT71VqxuBG2/Y=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass.zip'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass\components\overrides\SfAccordion\_sf-accordion-override.scss'))">
       <SourceType>Package</SourceType>
       <SourceId>RecipeShare.Web</SourceId>
@@ -1524,8 +1542,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>a9a01ebtft</Fingerprint>
-      <Integrity>EkObPj2+tSiHcqPHuFmOFHA//sKw4+jvNSGErCNrsYU=</Integrity>
+      <Fingerprint>rwli4f76i7</Fingerprint>
+      <Integrity>lbC/htw7Rcjee+1K9fFMfcxuW3HaUjOu7OpXc+GfqGs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass\components\_button.scss'))</OriginalItemSpec>
@@ -1776,8 +1794,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>fv5cmd6l5q</Fingerprint>
-      <Integrity>RY1m5ZgpZFzviFTgzaUraVHnu8rE3uUD4RtPaLKZ1jQ=</Integrity>
+      <Fingerprint>clzsy9dbmn</Fingerprint>
+      <Integrity>MFmeaGB8gTFkwEQcScls26NWkjaUjnMZLrtB9iq1Gz0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass\utilities\_utilities.scss'))</OriginalItemSpec>

@@ -1,15 +1,15 @@
-﻿@inherits MyFavouritesBase
-@page "/favourites"
+﻿@inherits MyRecipesBase
+@page "/my-recipes"
 @using RecipeShare.Web.Components.VoidGlass.VGCard
 
-<PageTitle>My Favourites</PageTitle>
+<PageTitle>My Recipes</PageTitle>
 
-<h2 class="vg-heading-xl text-center mb-4">❤️ My Favourites</h2>
+<h2 class="vg-heading-xl text-center mb-4">My Recipes</h2>
 
 @if (!IsLoggedIn)
 {
     <div class="text-center text-muted mt-4">
-        Please log in to view your favourites.
+        Please log in to view your recipes.
     </div>
 }
 else if (IsLoading)
@@ -19,11 +19,16 @@ else if (IsLoading)
 else if (recipes is null || recipes.Count == 0)
 {
     <div class="text-center text-muted mt-4">
-        You haven’t favourited any recipes yet.
+        You haven’t created any recipes yet.
     </div>
 }
 else
 {
+    <div class="vg-toolbar">
+        <button class="vg-button vg-button--solid" @onclick='() => Nav.NavigateTo("/add")'>
+            <i class="fa-solid fa-plus me-1"></i> Add New Recipe
+        </button>
+    </div>
     <div class="all-recipes-grid">
         @foreach (var recipe in recipes)
         {
@@ -32,8 +37,8 @@ else
                     CssClass="vg-card glow-on-hover">
                 <ContentTemplate>
                     <div class="recipe-thumb">
-                        <img src="@(!string.IsNullOrWhiteSpace(recipe.CoverImageUrl) 
-                            ? recipe.CoverImageUrl 
+                        <img src="@(!string.IsNullOrWhiteSpace(recipe.CoverImageUrl)
+                            ? recipe.CoverImageUrl
                             : "images/No_image_available.svg")"
                              alt="Cover"
                              loading="lazy" />
@@ -60,12 +65,14 @@ else
                             <i class="fa-solid fa-eye me-1"></i> View
                         </button>
 
-                        <button class="favourite-pill"
-                                @onclick="() => ToggleFavourite(recipe)">
-                            <i class="fa-solid fa-heart"
-                               style="color:@(recipe.IsFavouritedByUser ? "#ff5c93" : "#666")">
-                            </i>
-                            <span class="fav-count">@recipe.FavouriteCount</span>
+                        <button class="vg-button vg-button--outline" title="Edit recipe"
+                                @onclick='() => Nav.NavigateTo($"/edit/{recipe.Id}")'>
+                            <i class="fa-solid fa-pen me-1"></i> Edit
+                        </button>
+
+                        <button class="vg-button vg-button--danger" title="Delete recipe"
+                                @onclick='() => ConfirmDelete(recipe.Id)'>
+                            <i class="fa-solid fa-trash"></i> Delete
                         </button>
                     </div>
                 </FooterTemplate>

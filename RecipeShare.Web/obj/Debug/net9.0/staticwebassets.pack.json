@@ -317,6 +317,10 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
+      "Id": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\voidglass.zip",
+      "PackagePath": "staticwebassets\\voidglass.zip"
+    },
+    {
       "Id": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\voidglass\\_animations.scss",
       "PackagePath": "staticwebassets\\voidglass\\_animations.scss"
     },

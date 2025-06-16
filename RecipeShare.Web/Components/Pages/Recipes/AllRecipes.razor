@@ -38,8 +38,9 @@
 
                     <FooterTemplate>
                         <div class="card-footer-actions">
-                            <button class="vg-btn vg-btn-glass" title="View recipe" @onclick='() => Nav.NavigateTo($"/recipe/{recipe.Id}")'>
-                                View
+                            <button class="vg-button vg-button--outline" title="View recipe"
+                                    @onclick='() => Nav.NavigateTo($"/recipe/{recipe.Id}")'>
+                                <i class="fa-solid fa-eye me-1"></i> View
                             </button>
 
                             @if (IsLoggedIn)

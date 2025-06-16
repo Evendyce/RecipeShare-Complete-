@@ -12,6 +12,7 @@ namespace RecipeShare.API.Services
         Task<List<RecipeDto>> GetAllRecipesAsync(RecipeSearchDto? filter);
         Task<List<RecipeTileDto>> GetAllTilesAsync(RecipeSearchDto? filter);
         Task<List<RecipeTileDto>> GetAllTilesForUserAsync(RecipeSearchDto? filter);
+        Task<List<RecipeTileDto>> GetMyRecipesTilesAsync(RecipeSearchDto? filter);
         Task<RecipeDto?> GetByIdAsync(int id, string? username);
         Task<RecipeDto> CreateAsync(RecipeDto dto);
         Task<bool> UpdateAsync(int id, RecipeDto dto);
@@ -129,6 +130,34 @@ namespace RecipeShare.API.Services
                     .Include(r => r.RecipeImages)
                     .Include(r => r.RecipeFavourites)
                     .Where(x => x.RecipeFavourites!.Any(f => f.UserId == user.Id))
+                    .AsQueryable();
+
+                var returnData = await query
+                    .OrderBy(r => r.Title)
+                    .Select(r => CustomMapper.RecipeMapper.ToTileDto(r, (user != null ? user.Id : "")))
+                    .ToListAsync();
+
+                return returnData;
+            }
+
+            return new List<RecipeTileDto>();
+        }
+
+        public async Task<List<RecipeTileDto>> GetMyRecipesTilesAsync(RecipeSearchDto? filter)
+        {
+            await using var ctx = await _contextFactory.CreateDbContextAsync();
+
+            var user = await ctx.AspNetUsers
+                .FirstOrDefaultAsync(x => x.UserName == filter.Username);
+
+            if (user != null)
+            {
+                var query = ctx.Recipes
+                    .Include(r => r.Tags)
+                    .Include(r => r.RecipeSteps)
+                    .Include(r => r.RecipeImages)
+                    .Include(r => r.RecipeFavourites)
+                    .Where(x => x.UserId == user.Id)
                     .AsQueryable();
 
                 var returnData = await query
