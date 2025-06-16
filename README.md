@@ -207,6 +207,28 @@ Ensure SQL Server Express is available and the connection string is correct insi
 
 ---
 
+## 🧹 Database Schema & SQL Setup
+
+The full database schema is included as a SQL script for convenience.
+This can be found in the Root of the project:
+
+```
+/RecipeShare.sql
+```
+
+To create the database manually:
+
+1. Open SQL Server Management Studio (or your preferred tool).
+2. Create a new database (e.g., `RecipeShareDb`).
+3. Run the contents of `RecipeShare.sql` against the new database.
+4. Ensure the connection string in `appsettings.Development.json` (or your environment) points to the correct DB.
+
+> **Note:**
+> The script includes all tables, constraints, indexes, and cascade delete logic required for the app to function.
+
+
+---
+
 ## 🧵 Test Execution Notes
 
 To ensure integration tests pass, the database **must be seeded** before running tests.
