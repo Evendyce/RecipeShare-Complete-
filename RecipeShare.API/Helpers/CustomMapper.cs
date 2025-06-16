@@ -146,6 +146,26 @@ namespace RecipeShare.API.Helpers
                 entity.CookingTime = dto.CookingTime;
                 entity.DietaryTags = dto.DietaryTags;
 
+                // --- Tags ---
+                var incomingTagIds = dto.Tags.Select(t => t.Id).ToHashSet();
+                var existingTags = entity.Tags.ToList();
+
+                // Remove tags not in incoming list
+                foreach (var tag in existingTags)
+                {
+                    if (!incomingTagIds.Contains(tag.Id))
+                        entity.Tags.Remove(tag);
+                }
+
+                // Add tags not yet attached
+                foreach (var incoming in incomingTagIds)
+                {
+                    if (!entity.Tags.Any(t => t.Id == incoming))
+                    {
+                        entity.Tags.Add(TagMapper.ToEntity(dto.Tags.First(x => x.Id == incoming)));
+                    }
+                }
+
                 // --- Steps ---
                 var incomingSteps = dto.StructuredSteps.OrderBy(s => s.Order).ToList();
                 var existingSteps = entity.RecipeSteps.ToList();
@@ -205,6 +225,28 @@ namespace RecipeShare.API.Helpers
                 }
 
                 var incomingImageIds = incomingImages.Select(i => i.Id).ToHashSet();
+
+                // ✅ Ensure only ONE image is marked as cover
+                var coverSet = entity.RecipeImages.Count(i => i.IsCover);
+
+                // 1. If multiple are marked as cover, keep the first one only
+                if (coverSet > 1)
+                {
+                    var first = entity.RecipeImages.FirstOrDefault(i => i.IsCover);
+                    foreach (var img in entity.RecipeImages)
+                    {
+                        img.IsCover = (img == first);
+                    }
+                }
+
+                // 2. If NONE marked as cover, fallback to first Additional image
+                if (coverSet == 0 && entity.RecipeImages.Count > 0)
+                {
+                    var first = entity.RecipeImages.OrderBy(i => i.DisplayOrder).FirstOrDefault();
+                    if (first != null)
+                        first.IsCover = true;
+                }
+
                 var imagesToRemove = existingImages.Where(i => i.Id != 0 && !incomingImageIds.Contains(i.Id)).ToList();
 
                 foreach (var img in imagesToRemove)

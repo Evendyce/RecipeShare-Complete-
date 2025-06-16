@@ -6,14 +6,14 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 
 ## 🛠️ Tech Stack
 
-- [x] **Blazor Web App (.NET 9)**
-- [x] **ASP.NET Core Web API (.NET 9)**
-- [x] **Entity Framework Core**
-- [x] **SQL Server Express**
-- [x] **ASP.NET Core Identity (Username-based)**
-- [x] **EF Core Power Tools** (Reverse-Engineered Models)
-- [x] **VoidGlass Theme** (Custom neon-glass UI)
-- [x] **Font Awesome (local)**
+* [x] **Blazor Web App (.NET 9)**
+* [x] **ASP.NET Core Web API (.NET 9)**
+* [x] **Entity Framework Core**
+* [x] **SQL Server Express**
+* [x] **ASP.NET Core Identity (Username-based)**
+* [x] **EF Core Power Tools** (Reverse-Engineered Models)
+* [x] **VoidGlass Theme** (Custom neon-glass UI)
+* [x] **Font Awesome (local)**
 
 ---
 
@@ -32,22 +32,23 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 
 ## ✨ Features
 
-| Feature                                     | Status        |
-| ------------------------------------------- | ------------- |
-| 🔐 Username-based Register/Login            | ✅ Complete    |
-| 👤 Auto UserProfile Creation                | ✅ Complete    |
-| 🍲 Recipes CRUD                             | ✅ Complete    |
-| 🧾 `RecipeSteps` for structured instructions| ✅ Complete    |
-| 🖼️ Multiple Recipe Images                   | ✅ Complete    |
-| ❤️ Favourites (per-user toggle)             | ✅ Complete     |
-| 📄 Export to Markdown + PDF                 | ✅ Complete    |
-| ✅ Interactive Step Checklist					| ✅ Complete |
-| 📄 Default Data Seeding                     | ✅ Complete    |
-| 🧪 Unit Tests (xUnit)                       | ⏳ Planned     |
-| 🥒 500x GET Benchmark Test                  | ⏳ Planned     |
-| 🔧 Dockerfile                               | ✅ Complete    |
-| 📄 SOLUTION.md                              | ⏳ Planned     |
-| 📹 Loom Demo Video                          | ⏳ Planned     |
+| Feature                                      | Status     |
+| -------------------------------------------- | ---------- |
+| 🔐 Username-based Register/Login             | ✅ Complete |
+| 👤 Auto UserProfile Creation                 | ✅ Complete |
+| 🍲 Recipes CRUD                              | ✅ Complete |
+| 🣟 `RecipeSteps` for structured instructions | ✅ Complete |
+| 🖼️ Multiple Recipe Images                   | ✅ Complete |
+| ❤️ Favourites (per-user toggle)              | ✅ Complete |
+| 📄 Export to Markdown + PDF                  | ✅ Complete |
+| ✅ Interactive Step Checklist                 | ✅ Complete |
+| 📄 Default Data Seeding                      | ✅ Complete |
+| 🖋️ Smart Tag + Step + Image Syncing         | ✅ Complete |
+| 𞢪 Unit Tests (xUnit)                        | ⏳ Planned  |
+| 🥒 500x GET Benchmark Test                   | ⏳ Planned  |
+| 🔧 Dockerfile                                | ✅ Complete |
+| 📄 SOLUTION.md                               | ⏳ Planned  |
+| 📹 Loom Demo Video                           | ⏳ Planned  |
 
 ---
 
@@ -57,12 +58,12 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 <summary>Expand to view API capabilities</summary>
 
 | Capability                         | Status     |
-|-----------------------------------|------------|
-| RESTful Recipe Endpoints (CRUD)   | ✅ Complete |
-| Shared DTOs & ViewModel Separation| ✅ Complete |
-| Search + Filter DTOs              | ✅ Complete |
-| Skip-Navigation Tag Mapping       | ✅ Complete |
-| Manual Custom Mapper System       | ✅ Complete |
+| ---------------------------------- | ---------- |
+| RESTful Recipe Endpoints (CRUD)    | ✅ Complete |
+| Shared DTOs & ViewModel Separation | ✅ Complete |
+| Search + Filter DTOs               | ✅ Complete |
+| Skip-Navigation Tag Mapping        | ✅ Complete |
+| Manual Custom Mapper System        | ✅ Complete |
 
 </details>
 
@@ -73,28 +74,27 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 <details>
 <summary>Expand to view supported filters</summary>
 
-| Filter Type             | Status     |
-|-------------------------|------------|
-| By Tag (single/multiple)| ✅ Complete |
-| By Title (partial match)| ✅ Complete |
-| By Ingredient           | ✅ Complete |
-| By Cooking Time Range   | ✅ Complete |
-| Tile vs Full View Toggle| ✅ Complete |
+| Filter Type              | Status     |
+| ------------------------ | ---------- |
+| By Tag (single/multiple) | ✅ Complete |
+| By Title (partial match) | ✅ Complete |
+| By Ingredient            | ✅ Complete |
+| By Cooking Time Range    | ✅ Complete |
+| Tile vs Full View Toggle | ✅ Complete |
 
 </details>
 
 ---
 
-
 <details>
 <summary>🌐 Navigation & Pages</summary>
 
-| Page                         | Status    |
-| ---------------------------- | --------- |
-| 🛍 Top NavBar (Login/Profile) | ✅ Complete |
+| Page                          | Status     |
+| ----------------------------- | ---------- |
+| 🏍 Top NavBar (Login/Profile) | ✅ Complete |
 | 🔍 Global Recipes View        | ✅ Complete |
 | 👤 My Recipes View            | ✅ Complete |
-| ➕ Add/Edit Recipe            | ⏳ Planned |
+| ➕ Add/Edit Recipe             | ✅ Complete |
 | 📄 Recipe Detail View         | ✅ Complete |
 | ❤️ My Favourites              | ✅ Complete |
 
@@ -115,7 +115,7 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 | `Tags`             | ✅ Complete |
 | `RecipeTags`       | ✅ Complete |
 
-> ✅ `Steps` string field remains for spec compliance, synced from structured steps.  
+> ✅ `Steps` string field remains for spec compliance, synced from structured steps.
 > 🔗 `RecipeTags` is an explicitly defined many-to-many join table between `Recipes` and `Tags`, used for dietary filtering and metrics.
 
 </details>
@@ -127,7 +127,9 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 
 | Feature                            | Status     |
 | ---------------------------------- | ---------- |
-| File uploads to `/wwwroot/uploads` | ✅ Planned  |
+| File uploads to `/wwwroot/uploads` | ✅ Complete |
+| Temp upload staging (GUID folder)  | ✅ Complete |
+| Server-side move + path rewrite    | ✅ Complete |
 | DB path storage in `RecipeImages`  | ✅ Complete |
 | Cover image support                | ✅ Complete |
 | Display order & captions           | ✅ Complete |
@@ -137,15 +139,17 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 ---
 
 <details>
-<summary>📊 Benchmark, 🧪 Testing & 📦 Deployment</summary>
+<summary>📊 Benchmark, 🦢 Testing & 📦 Deployment</summary>
 
 #### 📊 Benchmark
+
 | Metric                        | Status    |
 | ----------------------------- | --------- |
 | 500x GET `/recipes` (Release) | ⏳ Planned |
 | Output to `README.md`         | ⏳ Planned |
 
-#### 🧪 Testing
+#### 🦢 Testing
+
 | Area                   | Status    |
 | ---------------------- | --------- |
 | Recipe CRUD tests      | ⏳ Planned |
@@ -153,6 +157,7 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 | Profile creation tests | ⏳ Planned |
 
 #### 📦 Deployment & Docs
+
 | Item                      | Status        |
 | ------------------------- | ------------- |
 | Dockerfile                | ✅ Complete    |
@@ -171,13 +176,13 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 | --------------------------------- | ---------- |
 | SCSS/CSS included                 | ✅ Complete |
 | Footer / Header custom components | ✅ Complete |
-| Theme Switcher Toggle				| ✅ Complete |
-| Animated Card/Grid system         | ✅ Complete  |
-| FilterBar Styling & Sticky Logic | ✅ Complete  |
-| Favourite Toggle with Icons      | ✅ Complete  |
+| Theme Switcher Toggle             | ✅ Complete |
+| Animated Card/Grid system         | ✅ Complete |
+| FilterBar Styling & Sticky Logic  | ✅ Complete |
+| Favourite Toggle with Icons       | ✅ Complete |
 | Attribution license block         | ✅ Added    |
 
-> Attribution required for use.\
+> Attribution required for use.
 > See `LICENSE.txt` for usage rights.
 
 ---
@@ -197,11 +202,12 @@ To seed the database with a demo user and sample recipes, click the **"Seed Demo
 <details>
 <summary>🔐 Demo Login Credentials (Seeded)</summary>
 
-- **Username:** `DemoUser`  
-- **Password:** `Password123!`  
+* **Username:** `DemoUser`
+* **Password:** `Password123!`
 
 > This account is seeded automatically and assigned the `User` role.
 > Perfect for testing recipe features and profile display.
+
 </details>
 
 ---
@@ -211,6 +217,7 @@ To seed the database with a demo user and sample recipes, click the **"Seed Demo
 Custom styles for the **VoidGlass Theme** are authored in SCSS and compiled to CSS for browser use.
 
 ### To edit styles:
+
 Modify any SCSS files under:
 
 ```
@@ -218,6 +225,7 @@ RecipeShare.Web/wwwroot/voidglass/
 ```
 
 ### To regenerate the CSS:
+
 You’ll need [Dart Sass](https://sass-lang.com/install). Install it via:
 
 ```bash
@@ -263,7 +271,6 @@ http://localhost:5000/swagger
 
 ---
 
-
 ## 🔍 Swagger in Production
 
 For ease of testing and demonstration, **Swagger UI is enabled in both Development and Production**.
@@ -279,3 +286,26 @@ app.MapOpenApi();
 ```
 
 In real-world deployments, Swagger should be disabled or protected in production.
+
+---
+
+## 🛋️ Runtime Notes
+
+* Static image uploads are served via `/uploads` mapped in `Program.cs`:
+
+  ```csharp
+  app.UseStaticFiles(new StaticFileOptions
+  {
+      FileProvider = new PhysicalFileProvider(
+          Path.Combine(env.WebRootPath, "uploads")),
+      RequestPath = "/uploads"
+  });
+  ```
+* Images are uploaded to:
+  `/wwwroot/uploads/RecipeImages/{recipeId}/[CoverImage|Additional]/`
+* New recipes use a temporary staging folder:
+  `/wwwroot/uploads/TempRecipeImages/{guid}/...`, which is finalized post-creation.
+
+---
+
+> Tip: Use the new `.vg-panel` class to wrap entire form/card sections with VoidGlass style.

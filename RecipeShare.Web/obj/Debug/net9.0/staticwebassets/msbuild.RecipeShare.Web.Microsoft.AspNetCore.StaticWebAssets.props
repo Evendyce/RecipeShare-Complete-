@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>yaym5g7u8m</Fingerprint>
-      <Integrity>KqwP/9HBTtgJQInRt5HI1vFGUkU5F3L3qLzzLhu0hLY=</Integrity>
+      <Fingerprint>cwo6lvk7nw</Fingerprint>
+      <Integrity>dCsfuyzJMR/QJzh9ImKvvg0A7leCSCyP8XYsqq4oLHU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\voidglass.css'))</OriginalItemSpec>
@@ -1422,23 +1422,95 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RecipeShare.Web.p6zu5mn182.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass.zip'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\RecipeImages\12\Additional\19a8a94c-f1c7-4505-8d51-dd5cc52537a5.png'))">
       <SourceType>Package</SourceType>
       <SourceId>RecipeShare.Web</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/RecipeShare.Web</BasePath>
-      <RelativePath>voidglass.zip</RelativePath>
+      <RelativePath>uploads/RecipeImages/12/Additional/19a8a94c-f1c7-4505-8d51-dd5cc52537a5.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>80qduv2asj</Fingerprint>
-      <Integrity>6B55Pc999sE47QnDQz3sTYTgmo7ylqoT71VqxuBG2/Y=</Integrity>
+      <Fingerprint>6069d51wsy</Fingerprint>
+      <Integrity>pvcDHLqZzMVeGcDYv2KE/QXICEDS1V1bH8doip93VGI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass.zip'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\RecipeImages\12\Additional\19a8a94c-f1c7-4505-8d51-dd5cc52537a5.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\RecipeImages\12\CoverImage\0d53c833-e15f-49cf-868b-d565c61eeb43.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>RecipeShare.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/RecipeShare.Web</BasePath>
+      <RelativePath>uploads/RecipeImages/12/CoverImage/0d53c833-e15f-49cf-868b-d565c61eeb43.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>rnjm668nbg</Fingerprint>
+      <Integrity>B+vkc693VntwEvN0m3t8EQ2dTYqkYOzx4Xdc+df7yPc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\RecipeImages\12\CoverImage\0d53c833-e15f-49cf-868b-d565c61eeb43.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\RecipeImages\12\CoverImage\2b848831-d0db-4564-8f83-989ad12418a4.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>RecipeShare.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/RecipeShare.Web</BasePath>
+      <RelativePath>uploads/RecipeImages/12/CoverImage/2b848831-d0db-4564-8f83-989ad12418a4.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>rnjm668nbg</Fingerprint>
+      <Integrity>B+vkc693VntwEvN0m3t8EQ2dTYqkYOzx4Xdc+df7yPc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\RecipeImages\12\CoverImage\2b848831-d0db-4564-8f83-989ad12418a4.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\RecipeImages\12\CoverImage\c95c2589-60c4-4ac5-bd92-bf84c0f29de2.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>RecipeShare.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/RecipeShare.Web</BasePath>
+      <RelativePath>uploads/RecipeImages/12/CoverImage/c95c2589-60c4-4ac5-bd92-bf84c0f29de2.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>rnjm668nbg</Fingerprint>
+      <Integrity>B+vkc693VntwEvN0m3t8EQ2dTYqkYOzx4Xdc+df7yPc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\RecipeImages\12\CoverImage\c95c2589-60c4-4ac5-bd92-bf84c0f29de2.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\RecipeImages\12\CoverImage\e214a63a-aa4c-4f6b-844a-f2fbcb61529b.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>RecipeShare.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/RecipeShare.Web</BasePath>
+      <RelativePath>uploads/RecipeImages/12/CoverImage/e214a63a-aa4c-4f6b-844a-f2fbcb61529b.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>rnjm668nbg</Fingerprint>
+      <Integrity>B+vkc693VntwEvN0m3t8EQ2dTYqkYOzx4Xdc+df7yPc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\RecipeImages\12\CoverImage\e214a63a-aa4c-4f6b-844a-f2fbcb61529b.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass\components\overrides\SfAccordion\_sf-accordion-override.scss'))">
       <SourceType>Package</SourceType>
@@ -1542,8 +1614,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>rwli4f76i7</Fingerprint>
-      <Integrity>lbC/htw7Rcjee+1K9fFMfcxuW3HaUjOu7OpXc+GfqGs=</Integrity>
+      <Fingerprint>u8sg0gjlpz</Fingerprint>
+      <Integrity>Al1bIxmr3WnymXV7bCTkXolR7NumyOg62A/ZaspWO6s=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass\components\_button.scss'))</OriginalItemSpec>
@@ -1560,8 +1632,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>er99cvc4dt</Fingerprint>
-      <Integrity>Vj7dF96tonWjQK48VRI7t8Q+LRhxqgt6S2dvG9VOzMo=</Integrity>
+      <Fingerprint>0rxao0wz38</Fingerprint>
+      <Integrity>XKG2SLYdJOxLZ5j3v1hB/Eo7f2bSyyxk9CKbpV8cO+E=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass\components\_card.scss'))</OriginalItemSpec>
@@ -1794,8 +1866,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>clzsy9dbmn</Fingerprint>
-      <Integrity>MFmeaGB8gTFkwEQcScls26NWkjaUjnMZLrtB9iq1Gz0=</Integrity>
+      <Fingerprint>ipogwes1og</Fingerprint>
+      <Integrity>6gZ/z8g032PsQDZX+w2FT2rDNURhy+lk8gLAjM9wHDA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass\utilities\_utilities.scss'))</OriginalItemSpec>

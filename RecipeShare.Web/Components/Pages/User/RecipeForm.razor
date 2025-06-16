@@ -1,0 +1,119 @@
+﻿@inherits RecipeFormBase
+
+<EditForm Model="@Recipe" OnValidSubmit="@(() => OnSubmit.InvokeAsync(Recipe))">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <!-- Title -->
+    <div class="vg-form-group">
+        <label class="vg-label">Title</label>
+        <InputText class="vg-input" @bind-Value="Recipe.Title" />
+    </div>
+
+    <!-- Ingredients -->
+    <div class="vg-form-group">
+        <label class="vg-label">Ingredients</label>
+        <InputTextArea class="vg-input" rows="3" @bind-Value="Recipe.Ingredients" />
+    </div>
+
+    <!-- Cooking Time -->
+    <div class="vg-form-group">
+        <label>Cooking Time (minutes)</label>
+        <InputNumber class="vg-input" @bind-Value="Recipe.CookingTime" />
+    </div>
+
+    <!-- Dietary Tags -->
+    <div class="vg-form-group">
+        <label class="vg-label">Dietary Tags</label>
+        <div class="tag-selector">
+            @foreach (var tag in AllTags)
+            {
+                var isSelected = Recipe.Tags.Any(t => t.Id == tag.Id);
+                var selectedClass = isSelected ? "selected" : "";
+
+                <label class="tag-badge clickable @selectedClass" style="background:@tag.Color">
+                    <input type="checkbox"
+                           checked="@isSelected"
+                           @onchange="(e => ToggleTag(tag))"
+                           hidden />
+                    @tag.Name
+                </label>
+            }
+        </div>
+    </div>
+
+    <!-- Structured Steps -->
+    <div class="vg-form-group mb-4">
+        <label class="vg-label">Steps</label>
+        @foreach (var step in Recipe.StructuredSteps.OrderBy(s => s.Order).ToList())
+        {
+            <div class="step-editor">
+                <span class="step-number">@step.Order.</span>
+                <InputText class="vg-input flex-grow-1" @bind-Value="step.Instruction" />
+                <button type="button"
+                        class="vg-button vg-button--danger ms-2"
+                        @onclick="@(() => RemoveStep(step))">
+                    ✕
+                </button>
+            </div>
+        }
+        <button type="button" class="vg-button vg-button--solid mt-2 mb-4" @onclick="AddStep">
+            <i class="fa-solid fa-plus me-1"></i> Add Step
+        </button>
+    </div>
+
+    <!-- Images -->
+    <div class="vg-form-group">
+        <label class="vg-label">Recipe Images</label>
+        @foreach (var img in Recipe.Images.OrderBy(i => i.DisplayOrder))
+        {
+            <div class="image-editor d-flex align-items-center mb-2">
+                <img src="@img.ImageUrl" width="64" height="64" class="me-2" />
+                <InputText class="vg-input flex-grow-1" @bind-Value="img.Caption" placeholder="Caption..." />
+                <InputNumber class="vg-input position-input ms-2" @bind-Value="img.DisplayOrder" />
+
+                @if (img.IsCover)
+                {
+                    <span class="badge bg-success ms-2">Cover</span>
+                }
+                else
+                {
+                    <button type="button"
+                            class="vg-button vg-button--outline vg-button--small ms-2"
+                            @onclick="@(() => SetAsCover(img))">
+                        Make Cover
+                    </button>
+                }
+
+                <button type="button"
+                        class="vg-button vg-button--danger ms-2"
+                        @onclick="@(() => RemoveImageAsync(img))">
+                    ✕
+                </button>
+            </div>
+        }
+        <div class="form-group mb-2">
+            <div class="vg-upload-block">
+                <label class="vg-label">Upload Cover Image</label>
+                <InputFile class="vg-input-file" OnChange="e => HandleImageUpload(e, true)" />
+            </div>
+        </div>
+
+        <div class="form-group mb-4">
+            <div class="vg-upload-block">
+                <label class="vg-label">Upload Additional Images</label>
+                <InputFile class="vg-input-file" OnChange="e => HandleImageUpload(e, false)" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Submit / Cancel -->
+    <div class="d-flex justify-content-end gap-3">
+        <button type="submit" class="vg-button vg-button--solid">
+            @(IsEditMode ? "Update Recipe" : "Create Recipe")
+        </button>
+        <button type="button" class="vg-button vg-button--outline" @onclick="Cancel">
+            Cancel
+        </button>
+    </div>
+</EditForm>

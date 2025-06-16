@@ -1,0 +1,21 @@
+﻿@inherits AddEditRecipeBase
+@page "/add"
+@page "/edit/{RecipeId:long}"
+
+<PageTitle>@(IsEditMode ? "Edit Recipe" : "Add Recipe")</PageTitle>
+
+<h2 class="vg-heading-xl text-center mb-4">@(IsEditMode ? "Edit Recipe" : "Add Recipe")</h2>
+
+@if (IsLoading)
+{
+    <div class="vg-loading shimmer mt-4"></div>
+}
+else
+{
+    <div class="vg-panel vg-panel--form">
+        <RecipeForm @ref="RecipeFormRef"
+                    Recipe="CurrentRecipe"
+                    OnSubmit="HandleSubmit"
+                    IsEditMode="IsEditMode" />
+    </div>
+}

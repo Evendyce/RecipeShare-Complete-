@@ -317,8 +317,24 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\voidglass.zip",
-      "PackagePath": "staticwebassets\\voidglass.zip"
+      "Id": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\uploads\\RecipeImages\\12\\Additional\\19a8a94c-f1c7-4505-8d51-dd5cc52537a5.png",
+      "PackagePath": "staticwebassets\\uploads\\RecipeImages\\12\\Additional\\19a8a94c-f1c7-4505-8d51-dd5cc52537a5.png"
+    },
+    {
+      "Id": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\uploads\\RecipeImages\\12\\CoverImage\\0d53c833-e15f-49cf-868b-d565c61eeb43.png",
+      "PackagePath": "staticwebassets\\uploads\\RecipeImages\\12\\CoverImage\\0d53c833-e15f-49cf-868b-d565c61eeb43.png"
+    },
+    {
+      "Id": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\uploads\\RecipeImages\\12\\CoverImage\\2b848831-d0db-4564-8f83-989ad12418a4.png",
+      "PackagePath": "staticwebassets\\uploads\\RecipeImages\\12\\CoverImage\\2b848831-d0db-4564-8f83-989ad12418a4.png"
+    },
+    {
+      "Id": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\uploads\\RecipeImages\\12\\CoverImage\\c95c2589-60c4-4ac5-bd92-bf84c0f29de2.png",
+      "PackagePath": "staticwebassets\\uploads\\RecipeImages\\12\\CoverImage\\c95c2589-60c4-4ac5-bd92-bf84c0f29de2.png"
+    },
+    {
+      "Id": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\uploads\\RecipeImages\\12\\CoverImage\\e214a63a-aa4c-4f6b-844a-f2fbcb61529b.png",
+      "PackagePath": "staticwebassets\\uploads\\RecipeImages\\12\\CoverImage\\e214a63a-aa4c-4f6b-844a-f2fbcb61529b.png"
     },
     {
       "Id": "C:\\Users\\Donovan\\source\\repos\\Evendyce\\RecipeShare\\RecipeShare.Web\\wwwroot\\voidglass\\_animations.scss",

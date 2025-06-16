@@ -49,7 +49,7 @@ namespace RecipeShare.API.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<RecipeDto>> GetRecipe(int id, [FromQuery] string? username)
+        public async Task<ActionResult<RecipeDto>> GetRecipe(long id, [FromQuery] string? username)
         {
             var dto = await _service.GetByIdAsync(id, username);
 
@@ -63,11 +63,11 @@ namespace RecipeShare.API.Controllers
 
             var created = await _service.CreateAsync(dto);
 
-            return CreatedAtAction(nameof(GetRecipe), new { id = created.Id }, created);
+            return Ok(created.Id);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateRecipe(int id, [FromBody] RecipeDto dto)
+        public async Task<IActionResult> UpdateRecipe(long id, [FromBody] RecipeDto dto)
         {
             if (id != dto.Id) return BadRequest("ID mismatch");
             if (!ModelState.IsValid) return BadRequest(ModelState);
@@ -78,12 +78,12 @@ namespace RecipeShare.API.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteRecipe(int id)
+        public async Task<IActionResult> DeleteRecipe(long id)
         {
-            var deleted = await _service.DeleteAsync(id);
-
-            return deleted ? NoContent() : NotFound();
+            var success = await _service.DeleteAsync(id);
+            return success ? NoContent() : NotFound();
         }
+
 
         [HttpPost("favourite-recipe")]
         public async Task<IActionResult> ToggleFavourite([FromBody] FavouriteToggleRequestDto request)

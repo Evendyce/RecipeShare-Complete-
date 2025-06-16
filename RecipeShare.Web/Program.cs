@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Options;
 using RecipeShare.Models.Web;
 using RecipeShare.Web.Components;
@@ -17,6 +18,8 @@ namespace RecipeShare.Web
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            var env = builder.Environment;
 
             // -------------------------------
             // Add CORS Policy for API Domain expansion
@@ -94,6 +97,7 @@ namespace RecipeShare.Web
             // -------------------------------
             builder.Services.AddScoped<IRecipeService, RecipeService>();
             builder.Services.AddScoped<ITagService, TagService>();
+            builder.Services.AddScoped<IImageUploadService, ImageUploadService>();
 
             builder.Services.AddSingleton<SnapZoneConfig>();
 
@@ -101,6 +105,16 @@ namespace RecipeShare.Web
             builder.Services.AddScoped<SeedService>();
 
             var app = builder.Build();
+
+            app.UseStaticFiles(); // for wwwroot
+
+            // 👇 serves /uploads mapped to wwwroot/uploads
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(env.WebRootPath, "uploads")),
+                RequestPath = "/uploads"
+            });
 
             // -------------------------------
             // Middleware & Pipeline

@@ -437,3 +437,38 @@
     color: var(--vg-accent);
     box-shadow: 0 0 6px var(--vg-accent, #00ffe0);
 }
+
+.vg-panel {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    background: var(--vg-glass, rgba(255, 255, 255, 0.04));
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.vg-panel::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.04);
+}
+
+
+.vg-panel--tight {
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+}
+
+.vg-panel--form {
+    background: var(--vg-glass-light, rgba(255, 255, 255, 0.06));
+    border: 1px solid var(--vg-border);
+}

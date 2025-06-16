@@ -10,7 +10,9 @@ namespace RecipeShare.Web.Services
         Task<List<RecipeTileDto>> GetRecipeTilesForUserAsync(RecipeSearchDto filter);
         Task<List<RecipeTileDto>> GetMyRecipeTilesAsync(RecipeSearchDto filter);
         Task<RecipeDto?> GetRecipeByIdAsync(long id, string? username);
-
+        Task<long> CreateRecipeAsync(RecipeDto model);
+        Task<bool> UpdateRecipeAsync(RecipeDto model);
+        Task<bool> DeleteRecipeAsync(long recipeId);
         Task<bool> ToggleFavouriteAsync(FavouriteToggleRequestDto dto);
     }
 
@@ -96,6 +98,70 @@ namespace RecipeShare.Web.Services
             {
                 _logger.LogError(ex, "[RecipeService] Failed to fetch recipe with ID {RecipeId}", id);
                 return null;
+            }
+        }
+
+        public async Task<long> CreateRecipeAsync(RecipeDto model)
+        {
+            try
+            {
+                var response = await _http.PostAsJsonAsync("/api/recipes", model);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var id = await response.Content.ReadFromJsonAsync<long>();
+                    return id;
+                }
+
+                _logger.LogWarning("[RecipeService] CreateRecipeAsync responded with {StatusCode}", response.StatusCode);
+                return 0;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "[RecipeService] Failed to create recipe");
+                return 0;
+            }
+        }
+
+        public async Task<bool> UpdateRecipeAsync(RecipeDto model)
+        {
+            try
+            {
+                var response = await _http.PutAsJsonAsync($"/api/recipes/{model.Id}", model);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return true;
+                }
+
+                _logger.LogWarning("[RecipeService] UpdateRecipeAsync responded with {StatusCode}", response.StatusCode);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "[RecipeService] Failed to update recipe {RecipeId}", model.Id);
+                return false;
+            }
+        }
+
+        public async Task<bool> DeleteRecipeAsync(long recipeId)
+        {
+            try
+            {
+                var response = await _http.DeleteAsync($"/api/recipes/{recipeId}");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return true;
+                }
+
+                _logger.LogWarning("[RecipeService] DeleteRecipeAsync responded with {StatusCode}", response.StatusCode);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "[RecipeService] Failed to delete recipe with ID {RecipeId}", recipeId);
+                return false;
             }
         }
 

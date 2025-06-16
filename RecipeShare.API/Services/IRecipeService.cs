@@ -13,10 +13,10 @@ namespace RecipeShare.API.Services
         Task<List<RecipeTileDto>> GetAllTilesAsync(RecipeSearchDto? filter);
         Task<List<RecipeTileDto>> GetAllTilesForUserAsync(RecipeSearchDto? filter);
         Task<List<RecipeTileDto>> GetMyRecipesTilesAsync(RecipeSearchDto? filter);
-        Task<RecipeDto?> GetByIdAsync(int id, string? username);
+        Task<RecipeDto?> GetByIdAsync(long id, string? username);
         Task<RecipeDto> CreateAsync(RecipeDto dto);
-        Task<bool> UpdateAsync(int id, RecipeDto dto);
-        Task<bool> DeleteAsync(int id);
+        Task<bool> UpdateAsync(long id, RecipeDto dto);
+        Task<bool> DeleteAsync(long id);
         Task<bool> ToggleFavouriteAsync(FavouriteToggleRequestDto dto);
     }
 
@@ -171,7 +171,7 @@ namespace RecipeShare.API.Services
             return new List<RecipeTileDto>();
         }
 
-        public async Task<RecipeDto?> GetByIdAsync(int id, string? username)
+        public async Task<RecipeDto?> GetByIdAsync(long id, string? username)
         {
             await using var ctx = await _contextFactory.CreateDbContextAsync();
 
@@ -205,13 +205,17 @@ namespace RecipeShare.API.Services
             return dto;
         }
 
-        public async Task<bool> UpdateAsync(int id, RecipeDto dto)
+        public async Task<bool> UpdateAsync(long id, RecipeDto dto)
         {
             await using var context = await _contextFactory.CreateDbContextAsync();
 
-            var r = await context.Recipes.FindAsync(id);
+            var r = await context.Recipes
+                .Include(x => x.RecipeSteps)
+                .Include(x => x.RecipeImages)
+                .Include(x => x.Tags)
+                .FirstOrDefaultAsync(x => x.Id == id);
 
-            if(r == null)
+            if (r == null)
                 return false;
 
             CustomMapper.RecipeMapper.UpdateRecipeEntitySmart(r, dto);
@@ -221,7 +225,7 @@ namespace RecipeShare.API.Services
             return true;
         }
 
-        public async Task<bool> DeleteAsync(int id)
+        public async Task<bool> DeleteAsync(long id)
         {
             await using var context = await _contextFactory.CreateDbContextAsync();
 
