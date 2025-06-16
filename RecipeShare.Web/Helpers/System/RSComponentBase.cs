@@ -46,6 +46,7 @@ namespace RecipeShare.Web.Helpers.System
 
             // Optional: display result (console or toast)
             Console.WriteLine($"Seed result: {SeedResultMessage}");
+            NavigationManager.NavigateTo("", forceLoad: true);
         }
 
         protected void LogoutAndRedirect()

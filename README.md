@@ -48,7 +48,7 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 | 🥒 500x GET Benchmark Test                   | ✅ Complete |
 | 🔧 Dockerfile                                | ✅ Complete |
 | 📄 SOLUTION.md                               | ✅ Complete |
-| 📹 Loom Demo Video                           | ⏳ Planned  |
+| 📹 Loom Demo Video                           | ✅ Complete |
 
 ---
 
@@ -160,9 +160,9 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 | ------------------------- | ------------- |
 | Dockerfile                | ✅ Complete    |
 | GitHub Actions (optional) | ❌ Not planned |
-| `README.md` (this!)       | ✅ In Progress |
+| `README.md` (this!)       | ✅ Complete |
 | `SOLUTION.md`             | ✅ Complete    |
-| Loom Walkthrough Video    | ⏳ Planned     |
+| Loom Walkthrough Video    | ✅ Complete |
 
 </details>
 
