@@ -6,122 +6,119 @@ This document outlines the architectural decisions, implementation rationale, tr
 
 ## 🌍 Project Goals
 
-* Build a **recipe-sharing platform** with CRUD support.
-* Enable user interaction through favourites, filtering, and step tracking.
-* Apply clean design and **custom UI theme** (VoidGlass).
+- Build a **recipe-sharing platform** with full CRUD capabilities.
+- Enable user interaction through favourites, filtering, and step tracking.
+- Apply clean, maintainable design with a **custom VoidGlass UI theme**.
 
 ---
 
-## ✅ Requirements from Spec (Implemented)
+## ✅ Spec Requirements — Implemented
 
-* [x] Register/Login with user system
-* [x] Create, Read, Update, Delete Recipes
-* [x] Support multiple images per recipe
-* [x] Mark one image as a cover
-* [x] Filter recipes by tags
-* [x] Export to PDF or Markdown
-* [x] Use .NET, Entity Framework, and a frontend framework (Blazor)
-* [x] Include default seed data
+| Spec Task                                                          | Status     |
+| ------------------------------------------------------------------ | ---------- |
+| Create ASP.NET Core 6+ project                                     | ✅ Complete |
+| Define Recipe model (ID, title, ingredients, steps, cooking time, tags) | ✅ Complete |
+| Implement full RESTful CRUD endpoints                              | ✅ Complete |
+| Use EF Core + SQL Server                                           | ✅ Complete |
+| Seed database with ≥ 3 example recipes                             | ✅ Complete |
+| LINQ-based filtering (e.g. dietary tags)                           | ✅ Complete |
+| Add validation (e.g. required title, cooking time > 0)             | ✅ Complete |
+| Include unit tests (xUnit)                                         | ⏳ Planned  |
+| Benchmark 500x GET /api/recipes                                    | ⏳ Planned  |
+| Build front end (list, detail, add/edit/delete, validation)        | ✅ Complete |
 
 ---
 
 ## ✨ Additional Features (Beyond Spec)
 
-* [x] Structured step editing (with automatic sync to flat `Steps` string)
-* [x] Per-user Favourite toggles with counters
-* [x] Interactive checklist view for recipe steps
-* [x] Responsive tile grid with filters and tag badges
-* [x] Full UI/UX built with custom **VoidGlass** theme (SCSS-based)
-* [x] Toggle cover image from UI
-* [x] Image staging/finalization logic with temporary folders
-* [x] Dietary Tags as a many-to-many normalized entity (`RecipeTags`)
-* [x] Smart tag persistence on update (non-destructive sync)
+| Feature                                                           | Description |
+| ----------------------------------------------------------------- | ----------- |
+| Structured step editing                                           | Synced to flat `Steps` string for spec compatibility |
+| Per-user Favourites                                               | Toggle and counter system |
+| Markdown checklist                                                | Interactive `[ ]` rendering |
+| 📄 Export to PDF or Markdown                                      | Both formats supported — Markdown client-side, PDF via `html2pdf.js` |
+| 🖼️ Recipe Images with Carousel                                    | Cover image + additional images with order & captions |
+| 🧱 Steps and Tags in separate tables                              | Normalized design for better filtering, metrics, and editing UX |
+| Tile/grid responsive layout                                       | With tag badges and filters |
+| Image upload staging/finalization                                 | With temporary GUID folders |
+| Dietary Tags (many-to-many)                                       | Via normalized `RecipeTags` join |
+| Manual mapping system                                             | For total control and clarity |
+| Full SCSS-based UI with theme switcher                            | **VoidGlass** custom components |
+
 
 ---
 
-## 🚀 Technology Stack & Rationale
+## 🚀 Tech Stack & Rationale
 
-| Technology           | Reasoning                                                                 |
-| -------------------- | ------------------------------------------------------------------------- |
-| **Blazor Server**    | Clean full-stack .NET with real-time interaction, no JS bundling needed   |
-| **ASP.NET Core API** | Clean API separation, Docker-ready, testable                              |
-| **Entity Framework** | Rapid development, clean migrations, flexible mapping control             |
-| **Manual Mapping**   | Chosen over AutoMapper for clarity and full control during DTO transforms |
-| **VoidGlass Theme**  | Custom SCSS-based aesthetic to showcase design capability                 |
+| Technology            | Reasoning                                                                 |
+| ---------------------| -------------------------------------------------------------------------- |
+| **Blazor Server**     | Seamless .NET full stack with real-time UI                                |
+| **ASP.NET Core API**  | Clear separation, RESTful, Docker-ready                                   |
+| **Entity Framework**  | Rapid dev with strong model-to-db mapping                                 |
+| **Manual Mapping**    | Chosen over AutoMapper for transparency and intent                        |
+| **VoidGlass Theme**   | Custom SCSS aesthetic to showcase visual polish                           |
 
 ---
 
 ## 🔍 Architecture Decisions
 
-### 📑 Folder Structure
+### 📁 Folder Structure
 
-* Clear separation of concerns:
+- `RecipeShare.Web`: Blazor frontend
+- `RecipeShare.API`: ASP.NET Core API backend
+- `RecipeShare.Models`: Shared DTOs and ViewModels
 
-  * `RecipeShare.Web`: Blazor frontend
-  * `RecipeShare.API`: Web API backend
-  * `RecipeShare.Models`: Shared DTOs
+### 🔐 Identity Handling
 
-### 🔗 Identity Handling
+- ASP.NET Core Identity with username-based login
+- Demo user (`DemoUser` / `Password123!`) seeded on init
 
-* Used `Username`-based login for simplicity
-* ASP.NET Core Identity with seeded `DemoUser`
+### 🧩 Data Modeling
 
-### 📊 Data Modeling
-
-* `Recipes`, `RecipeSteps`, `RecipeImages`, `RecipeFavourites`, `Tags`
-* Dietary tags use a **normalized many-to-many** relationship (`RecipeTags`)
-* Steps and Images support **ordered sequences**
-* Steps are dual-stored: both `StructuredSteps` and joined `string Steps` field for spec compliance
+- Tables: `Recipes`, `RecipeSteps`, `RecipeImages`, `RecipeFavourites`, `Tags`, `RecipeTags`
+- Steps stored in both `StructuredSteps` and `Steps` string
+- Images have captions, order, and cover flag
+- Tags are normalized via join table for flexibility and metrics
 
 ---
 
 ## 📂 File Upload Strategy
 
-### 🔍 Challenge:
+### Problem:
+Recipe ID is unknown at initial upload time.
 
-Recipe IDs aren’t available until DB creation.
-
-### ✅ Solution:
-
-* Uploads use **temp folder** `/uploads/TempRecipeImages/{guid}` before creation
-* After `POST`, image paths are finalized and moved to:
+### Solution:
+- Uploads are staged in `/uploads/TempRecipeImages/{guid}/`
+- On recipe creation, images are moved to:
   `/uploads/RecipeImages/{recipeId}/...`
-* Ensures paths are correct and avoids orphaned files
 
-### 🔄 API vs Web Upload:
-
-* Image uploads are handled by the Web frontend project, not via API
-* Rationale: avoids CORS complexity, simplifies relative URL references, and aligns with hosting expectations
+### Notes:
+- Uploads handled **in Blazor Web** (not API) to avoid CORS and simplify relative paths
+- Paths stored in DB via `RecipeImages`
 
 ---
 
-## ✨ UI & UX Design
+## 🎨 UI & UX Design
 
-### 🚀 VoidGlass Theme
+### ✨ VoidGlass Theme
+- SCSS-based glass/neon UI
+- Custom components: `vg-panel`, `vg-card`, `vg-input`, etc.
+- Responsive layouts with tile/grid switching
+- Dark/light toggle
 
-* Fully custom SCSS layout
-* Blur + neon accent design
-* Includes:
+### ❤️ Favourites
+- Stored per user in `RecipeFavourites`
+- Heart toggle + count updated live
 
-  * `vg-button`, `vg-card`, `vg-panel`, `vg-input`, `vg-heading`, etc.
-  * Responsive layout grid for Recipe Tiles
+### 📋 Markdown & PDF Export
+- Markdown supports `[ ]` checklist rendering
+- PDF generated via `html2pdf.js` from rendered recipe
 
-### 💍 Favourite Toggle
-
-* Per-user tracking using `RecipeFavourites`
-* Heart toggle icon updates count + style
-
-### ✏️ Markdown + PDF Export
-
-* Client-side Markdown export with `[ ]` checkbox support
-* PDF export via `html2pdf.js` from rendered content
-
-### 🛠️ Recipe Editor
-
-* Structured Step builder
-* Cover + optional image uploader
-* Dynamic Tag selector
-* Validation integrated with EditForm
+### 🧱 Recipe Editor
+- Dynamic form for steps, tags, and images
+- Image preview + cover toggle
+- Tag persistence on update
+- Realtime validation via `EditForm` binding
 
 ---
 
@@ -131,43 +128,43 @@ Recipe IDs aren’t available until DB creation.
 
 | Area                      | Notes                                                                |
 | ------------------------- | -------------------------------------------------------------------- |
-| AutoMapper                | Avoided in favor of `CustomMapper` for transparency                  |
-| Full Repository Layer     | Skipped, used `Service > DbContext` directly per personal preference |
-| EF Lazy Loading           | Avoided for clarity, used explicit `Include()`s                      |
-| API Swagger in Production | Enabled for demo purposes (comment for prod)                         |
-| Full Test Suite           | Not implemented, focus was core features                             |
+| AutoMapper                | Skipped in favor of `CustomMapper` for full control                  |
+| Repository Layer          | Skipped — used `Service > DbContext` directly                        |
+| EF Lazy Loading           | Disabled — explicit `Include()` usage for clarity                    |
+| Swagger in Production     | Left enabled intentionally for demo convenience                      |
+| Unit Testing              | Deferred — prioritized feature parity and UX                         |
 
 ### Challenges
 
-* Managing file uploads without a pre-existing Recipe ID
-* Ensuring image paths persist cleanly through create/update flows
-* Avoiding duplication during update of steps/images/tags
+- Uploads before ID: handled via temp folder & GUID
+- Syncing Steps string from `StructuredSteps`
+- Non-destructive tag/image updates
+- Ensuring safe rollback paths if submission canceled mid-flow
 
 ---
 
-## 📈 Possible Enhancements (Post-Submission)
+## 📈 Potential Enhancements (Post-Submission)
 
-* [ ] Add `Unit Tests` for API and Services
-* [ ] Add `Bulk Insert` logic during seeding
-* [ ] Expand filtering (e.g., ingredients contains ALL vs ANY)
-* [ ] Support drag & drop image reordering
-* [ ] Add paging to recipe tiles
+- [ ] Unit & integration tests
+- [ ] Bulk insert on seed
+- [ ] Ingredient-level filtering improvements (ALL vs ANY match)
+- [ ] Image reordering via drag & drop
+- [ ] Pagination & lazy loading
 
 ---
 
 ## 😎 Summary
 
-RecipeShare demonstrates:
+**RecipeShare** is a fully-featured, visually polished recipe-sharing app demonstrating:
 
-* Clean architectural foundations
-* End-to-end feature implementation
-* Custom styling and UX polish
-* Practical problem solving under realistic constraints
+- Clean architecture and separation of concerns
+- Fully implemented REST API with seed data and filtering
+- Custom-designed Blazor UI with rich UX elements
+- Manual mapping and data sync logic for clarity and control
+- Real-world constraints tackled pragmatically (e.g., image handling, spec compliance)
 
-> The app was built with performance, usability, and maintainability in mind.
-
-Thank you for reviewing this project! 🌟
+> Built with performance, maintainability, and user experience at the forefront.
 
 ---
 
-*Developed by Donovan Minnie*
+*Developed with ♥ by Donovan Minnie*
