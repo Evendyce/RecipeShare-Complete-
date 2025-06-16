@@ -23,6 +23,12 @@
     gap: 1rem;
     padding: 1rem;
     border-radius: 1rem;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+
+    &::-webkit-scrollbar {
+        display: none; /* Chrome, Safari */
+    }
 }
 
 .carousel__slide {
@@ -65,6 +71,7 @@
 }
 
 .carousel__navigation-button {
+    display: inline-block; // <-- This is the key fix
     width: 1rem;
     height: 1rem;
     background-color: var(--vg-border-light, rgba(255,255,255,0.2));
@@ -109,4 +116,22 @@
 
 .carousel__next {
     right: 0.5rem;
+}
+
+.carousel__navigation-button--active {
+    background-color: var(--vg-accent, #00ffe0);
+    transform: scale(1.2);
+}
+.carousel__navigation-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel__navigation-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -18,8 +18,8 @@
                          class="carousel__image" />
 
                     <div class="carousel__snapper">
-                        <a href="#carousel__slide@(prevIndex + 1)" class="carousel__prev">‹</a>
-                        <a href="#carousel__slide@(nextIndex + 1)" class="carousel__next">›</a>
+                        <a class="carousel__prev" @onclick="@(() => ScrollToSlide(prevIndex + 1))">‹</a>
+                        <a class="carousel__next" @onclick="@(() => ScrollToSlide(nextIndex + 1))">›</a>
                     </div>
                 </li>
             }
@@ -30,10 +30,7 @@
                 @for (int i = 0; i < Images.Count; i++)
                 {
                     <li class="carousel__navigation-item">
-                        <a href="#carousel__slide@(i + 1)"
-                           class="carousel__navigation-button">
-                            •
-                        </a>
+                        <a class="carousel__navigation-button" @onclick="@(() => ScrollToSlide(i + 1))"></a>
                     </li>
                 }
             </ol>

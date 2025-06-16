@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Components;
+using Microsoft.JSInterop;
 using RecipeShare.Models.Shared;
 using RecipeShare.Web.Helpers.System;
 
@@ -27,6 +28,11 @@ namespace RecipeShare.Web.Components.VoidGlass.VGCarousel
                 IsLoading = false;
                 await InvokeAsync(StateHasChanged);
             }
+        }
+
+        protected async Task ScrollToSlide(int slideNumber)
+        {
+            await JS.InvokeVoidAsync("scrollToCarouselSlide", slideNumber);
         }
     }
 }

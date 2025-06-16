@@ -33,6 +33,11 @@
     <script src="_framework/blazor.web.js"></script>
 
     <script>
+        window.scrollToCarouselSlide = function(slideNumber) {
+            const el = document.getElementById("carousel__slide" + slideNumber);
+            if (el) el.scrollIntoView({ behavior: "smooth", inline: "center" });
+        };
+
         window.addEventListener("DOMContentLoaded", () => {
           window.voidGlassTheme.init();
           window.__applyThemeAfterBlazorNav = () => {

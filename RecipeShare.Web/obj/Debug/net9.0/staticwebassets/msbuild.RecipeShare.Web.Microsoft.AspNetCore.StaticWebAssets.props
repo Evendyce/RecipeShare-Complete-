@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>cwo6lvk7nw</Fingerprint>
-      <Integrity>dCsfuyzJMR/QJzh9ImKvvg0A7leCSCyP8XYsqq4oLHU=</Integrity>
+      <Fingerprint>h2cyr0j839</Fingerprint>
+      <Integrity>mZwTGwaewSoo5rJgm6rgTdXNccRUOEnJxkXhtbdo/MU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\voidglass.css'))</OriginalItemSpec>
@@ -1668,8 +1668,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>o4mxn4lw09</Fingerprint>
-      <Integrity>uLpnof21gpW7DuO/WqIYtAguR0ZlY8liojr7XV8is9o=</Integrity>
+      <Fingerprint>dplivf31cq</Fingerprint>
+      <Integrity>nzYp8ScnmMrqBF+8x1ojQ6y3hflhTO+CbJCTlutwxX8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voidglass\components\_carousel.scss'))</OriginalItemSpec>
