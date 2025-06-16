@@ -24,7 +24,7 @@ This document outlines the architectural decisions, implementation rationale, tr
 | LINQ-based filtering (e.g. dietary tags)                           | ✅ Complete |
 | Add validation (e.g. required title, cooking time > 0)             | ✅ Complete |
 | Include unit tests (xUnit)                                         | ✅ Complete |
-| Benchmark 500x GET /api/recipes                                    | ⏳ Planned  |
+| Benchmark 500x GET /api/recipes                                    | ✅ Complete |
 | Build front end (list, detail, add/edit/delete, validation)        | ✅ Complete |
 
 ---
