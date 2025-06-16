@@ -1,66 +1,90 @@
 ﻿@inherits AllRecipesBase
-@page "/all-recipes"
+@page "/"
 @using RecipeShare.Web.Components.VoidGlass.VGCard
 
 <div class="vg-page">
     <PageTitle>All Recipes</PageTitle>
 
-    <RecipeFilterBar Title="All Recipes" OnSearch="OnFilterChanged" />
-
-    @if (IsLoading)
+    @if (IsSeeded)
     {
-        <div class="vg-loading shimmer"></div>
-    }
-    else if (recipes is not null && recipes.Any())
-    {
-        <div class="all-recipes-grid">
-            @foreach (var recipe in recipes)
-            {
-                <VGCard Header="@recipe.Title" SubHeader="@($"{recipe.CookingTime} mins")" CssClass="vg-card glow-on-hover">
-                    <ContentTemplate>
-                        <div class="recipe-thumb">
-                            <img src="@(!string.IsNullOrWhiteSpace(recipe.CoverImageUrl) ? recipe.CoverImageUrl : "images/No_image_available.svg")"
-                                 alt="Recipe image"
-                                 loading="lazy" />
-                        </div>
+        <RecipeFilterBar Title="All Recipes" OnSearch="OnFilterChanged" />
 
-                        <div class="ingredients-preview">
-                            @recipe.Ingredients
-                        </div>
+        @if (IsLoading)
+        {
+            <div class="vg-loading shimmer"></div>
+        }
+        else if (recipes is not null && recipes.Any())
+        {
+            <div class="all-recipes-grid">
+                @foreach (var recipe in recipes)
+                {
+                    <VGCard Header="@recipe.Title" SubHeader="@($"{recipe.CookingTime} mins")" CssClass="vg-card glow-on-hover">
+                        <ContentTemplate>
+                            <div class="recipe-thumb">
+                                <img src="@(!string.IsNullOrWhiteSpace(recipe.CoverImageUrl) ? recipe.CoverImageUrl : "images/No_image_available.svg")"
+                                     alt="Recipe image"
+                                     loading="lazy" />
+                            </div>
 
-                        <div class="tag-badge-list">
-                            @foreach (var tag in recipe.Tags)
-                            {
-                                <span class="tag-badge" style="background-color:@tag.Color">@tag.Name</span>
-                            }
-                        </div>
-                    </ContentTemplate>
+                            <div class="ingredients-preview">
+                                @recipe.Ingredients
+                            </div>
 
-                    <FooterTemplate>
-                        <div class="card-footer-actions">
-                            <button class="vg-button vg-button--outline" title="View recipe"
-                                    @onclick='() => Nav.NavigateTo($"/recipe/{recipe.Id}")'>
-                                <i class="fa-solid fa-eye me-1"></i> View
-                            </button>
+                            <div class="tag-badge-list">
+                                @foreach (var tag in recipe.Tags)
+                                {
+                                    <span class="tag-badge" style="background-color:@tag.Color">@tag.Name</span>
+                                }
+                            </div>
+                        </ContentTemplate>
 
-                            @if (IsLoggedIn)
-                            {
-                                <button class="favourite-pill"
-                                        @onclick="() => ToggleFavourite(recipe)">
-                                    <i class="fa-solid fa-heart"
-                                       style="color:@(recipe.IsFavouritedByUser ? "#ff5c93" : "#666")">
-                                    </i>
-                                    <span class="fav-count">@recipe.FavouriteCount</span>
+                        <FooterTemplate>
+                            <div class="card-footer-actions">
+                                <button class="vg-button vg-button--outline" title="View recipe"
+                                        @onclick='() => Nav.NavigateTo($"/recipe/{recipe.Id}")'>
+                                    <i class="fa-solid fa-eye me-1"></i> View
                                 </button>
-                            }
-                        </div>
-                    </FooterTemplate>
-                </VGCard>
-            }
-        </div>
+
+                                @if (IsLoggedIn)
+                                {
+                                    <button class="favourite-pill"
+                                            @onclick="() => ToggleFavourite(recipe)">
+                                        <i class="fa-solid fa-heart"
+                                           style="color:@(recipe.IsFavouritedByUser ? "#ff5c93" : "#666")">
+                                        </i>
+                                        <span class="fav-count">@recipe.FavouriteCount</span>
+                                    </button>
+                                }
+                            </div>
+                        </FooterTemplate>
+                    </VGCard>
+                }
+            </div>
+        }
+        else
+        {
+            <div class="vg-no-results">No recipes found with selected filters.</div>
+        }
     }
     else
     {
-        <div class="vg-no-results">No recipes found with selected filters.</div>
+        <div class="container my-5 text-center">
+            <VGCard Header="Seed Required" SubHeader="Demo Data Missing" Icon="fas fa-database">
+                <ContentTemplate>
+                    <p>
+                        The application is not seeded yet. Click the button below to generate default data (user, recipes, steps).
+                    </p>
+
+                    <button class="btn btn-primary mt-3" @onclick="SeedDatabaseAsync">
+                        <i class="fas fa-play-circle me-1"></i> Seed Demo Data
+                    </button>
+
+                    @if (!string.IsNullOrEmpty(SeedResultMessage))
+                    {
+                        <div class="alert alert-info mt-3">@SeedResultMessage</div>
+                    }
+                </ContentTemplate>
+            </VGCard>
+        </div>
     }
 </div>
