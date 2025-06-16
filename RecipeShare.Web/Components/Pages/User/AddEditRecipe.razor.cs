@@ -51,9 +51,11 @@ namespace RecipeShare.Web.Components.Pages.User
         protected async Task HandleSubmit(RecipeDto model)
         {
             model.DietaryTags = String.Join(", ", model.Tags.Select(x => x.Name));
+            model.Steps = String.Join(", ", model.StructuredSteps.Select(x => x.Instruction));
 
             if (IsEditMode)
             {
+                model.UserName = UserName;
                 await _recipeService.UpdateRecipeAsync(model);
             }
             else

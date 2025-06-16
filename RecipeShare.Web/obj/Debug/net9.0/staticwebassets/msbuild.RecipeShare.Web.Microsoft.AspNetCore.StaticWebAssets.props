@@ -1422,60 +1422,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RecipeShare.Web.p6zu5mn182.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\RecipeImages\12\Additional\19a8a94c-f1c7-4505-8d51-dd5cc52537a5.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>RecipeShare.Web</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/RecipeShare.Web</BasePath>
-      <RelativePath>uploads/RecipeImages/12/Additional/19a8a94c-f1c7-4505-8d51-dd5cc52537a5.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>6069d51wsy</Fingerprint>
-      <Integrity>pvcDHLqZzMVeGcDYv2KE/QXICEDS1V1bH8doip93VGI=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\RecipeImages\12\Additional\19a8a94c-f1c7-4505-8d51-dd5cc52537a5.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\RecipeImages\12\Additional\faa51409-8c21-4012-a4eb-7cf02b964c19.gif'))">
-      <SourceType>Package</SourceType>
-      <SourceId>RecipeShare.Web</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/RecipeShare.Web</BasePath>
-      <RelativePath>uploads/RecipeImages/12/Additional/faa51409-8c21-4012-a4eb-7cf02b964c19.gif</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>pzo1wbee9t</Fingerprint>
-      <Integrity>Oz9O0yQG82jHuA+QqyLKtQ64qx91KrfNP5x1IedkIYE=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\RecipeImages\12\Additional\faa51409-8c21-4012-a4eb-7cf02b964c19.gif'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\RecipeImages\12\CoverImage\0d53c833-e15f-49cf-868b-d565c61eeb43.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>RecipeShare.Web</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/RecipeShare.Web</BasePath>
-      <RelativePath>uploads/RecipeImages/12/CoverImage/0d53c833-e15f-49cf-868b-d565c61eeb43.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>rnjm668nbg</Fingerprint>
-      <Integrity>B+vkc693VntwEvN0m3t8EQ2dTYqkYOzx4Xdc+df7yPc=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\RecipeImages\12\CoverImage\0d53c833-e15f-49cf-868b-d565c61eeb43.png'))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\RecipeImages\12\CoverImage\2b848831-d0db-4564-8f83-989ad12418a4.png'))">
       <SourceType>Package</SourceType>
       <SourceId>RecipeShare.Web</SourceId>

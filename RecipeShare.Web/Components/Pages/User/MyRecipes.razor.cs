@@ -56,7 +56,7 @@ namespace RecipeShare.Web.Components.Pages.User
 
             try
             {
-                //await _recipeService.DeleteRecipeAsync(recipeId);
+                await _recipeService.DeleteRecipeAsync(recipeId);
                 var recipeToDelete = recipes.FirstOrDefault(x => x.Id == recipeId);
                 if (recipeToDelete != null)
                 {

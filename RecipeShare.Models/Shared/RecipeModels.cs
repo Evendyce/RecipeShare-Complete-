@@ -17,7 +17,6 @@ namespace RecipeShare.Models.Shared
         [Required]
         public string Ingredients { get; set; } = string.Empty;
 
-        [Required]
         public string Steps { get; set; } = string.Empty;
 
         [Range(1, int.MaxValue, ErrorMessage = "Cooking time must be greater than 0.")]

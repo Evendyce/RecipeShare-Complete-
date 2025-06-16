@@ -214,7 +214,7 @@ namespace RecipeShare.API.Services
 
             var r = await context.Recipes
                 .Include(x => x.RecipeSteps)
-                .Include(x => x.RecipeImages)
+                .Include(x => x.RecipeImages) 
                 .Include(x => x.Tags)
                 .FirstOrDefaultAsync(x => x.Id == id);
 
