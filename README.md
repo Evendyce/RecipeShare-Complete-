@@ -44,7 +44,7 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 | ✅ Interactive Step Checklist                 | ✅ Complete |
 | 📄 Default Data Seeding                      | ✅ Complete |
 | 🖋️ Smart Tag + Step + Image Syncing         | ✅ Complete |
-| 𞢪 Unit Tests (xUnit)                        | ⏳ Planned  |
+| 𞢪 Unit Tests (xUnit)                        | ✅ Complete |
 | 🥒 500x GET Benchmark Test                   | ⏳ Planned  |
 | 🔧 Dockerfile                                | ✅ Complete |
 | 📄 SOLUTION.md                               | ✅ Complete |
@@ -192,6 +192,35 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 Clone the repo, open `RecipeShare.sln`, and build/run from Visual Studio.
 
 Ensure SQL Server Express is available and the connection string is correct inside `appsettings.json`.
+
+---
+
+## 🧵 Test Execution Notes
+
+To ensure integration tests pass, the database **must be seeded** before running tests.
+
+### ✅ Seed Before Running Tests
+
+Before executing:
+
+```bash
+dotnet test
+```
+
+Make sure you:
+
+1. Launch the app at least once and click the **"Seed Demo Data"** button on the homepage
+   **OR**
+2. Manually trigger the seeding endpoint (if exposed)
+3. Ensure the `DemoUser` and required lookup data exist in the database
+
+Tests rely on:
+
+* `DemoUser` being present
+* Recipe creation logic having a valid `UserId` to assign
+* Tag and image-related joins being prepped
+
+> ⚠️ Tests will **fail or behave unexpectedly** if the seeded data is missing.
 
 ---
 

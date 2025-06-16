@@ -23,7 +23,7 @@ This document outlines the architectural decisions, implementation rationale, tr
 | Seed database with ≥ 3 example recipes                             | ✅ Complete |
 | LINQ-based filtering (e.g. dietary tags)                           | ✅ Complete |
 | Add validation (e.g. required title, cooking time > 0)             | ✅ Complete |
-| Include unit tests (xUnit)                                         | ⏳ Planned  |
+| Include unit tests (xUnit)                                         | ✅ Complete |
 | Benchmark 500x GET /api/recipes                                    | ⏳ Planned  |
 | Build front end (list, detail, add/edit/delete, validation)        | ✅ Complete |
 
@@ -126,13 +126,14 @@ Recipe ID is unknown at initial upload time.
 
 ### Trade-offs & Constraints
 
-| Area                      | Notes                                                                |
-| ------------------------- | -------------------------------------------------------------------- |
-| AutoMapper                | Skipped in favor of `CustomMapper` for full control                  |
-| Repository Layer          | Skipped — used `Service > DbContext` directly                        |
-| EF Lazy Loading           | Disabled — explicit `Include()` usage for clarity                    |
-| Swagger in Production     | Left enabled intentionally for demo convenience                      |
-| Unit Testing              | Deferred — prioritized feature parity and UX                         |
+| Area                    | Notes                                                                           |
+| ----------------------- | ------------------------------------------------------------------------------- |
+| AutoMapper              | Skipped in favor of `CustomMapper` for full control                             |
+| Repository Layer        | Skipped — used `Service > DbContext` directly                                   |
+| EF Lazy Loading         | Disabled — explicit `Include()` usage for clarity                               |
+| Swagger in Production   | Left enabled intentionally for demo convenience                                 |
+| Unit Testing            | Implemented basic xUnit test coverage for GET, POST, and validation flows       |
+| Seed Dependency (Tests) | Tests rely on `DemoUser` and require seed data to be present prior to execution |
 
 ### Challenges
 

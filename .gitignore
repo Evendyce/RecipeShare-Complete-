@@ -11,3 +11,6 @@
 /RecipeShare.Utils/bin/Debug/net9.0
 /RecipeShare.Utils/obj
 /RecipeShare.Web/wwwroot/uploads/RecipeImages/12
+/RecipeShare.Tests/bin/Debug/net9.0
+/RecipeShare.Tests/obj
+/RecipeShare.Tests/obj/Debug/net9.0/ref/RecipeShare.Tests.dll

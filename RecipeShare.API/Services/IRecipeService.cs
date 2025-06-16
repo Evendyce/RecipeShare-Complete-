@@ -195,7 +195,10 @@ namespace RecipeShare.API.Services
         {
             await using var context = await _contextFactory.CreateDbContextAsync();
 
-            var entity = CustomMapper.RecipeMapper.ToEntity(dto);
+            var user = await context.AspNetUsers
+                .FirstOrDefaultAsync(x => x.UserName == dto.UserName);
+
+            var entity = CustomMapper.RecipeMapper.ToEntity(dto, (user != null ? user.Id : ""));
 
             context.Recipes.Add(entity);
             await context.SaveChangesAsync();

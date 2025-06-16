@@ -57,14 +57,15 @@ namespace RecipeShare.API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<RecipeDto>> CreateRecipe([FromBody] RecipeDto dto)
+        public async Task<IActionResult> CreateRecipe([FromBody] RecipeDto dto)
         {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState); // Optional: redundant if [ApiController] is used
 
             var created = await _service.CreateAsync(dto);
-
-            return Ok(created.Id);
+            return CreatedAtAction(nameof(GetRecipe), new { id = created.Id }, created); // <-- returns 201 Created
         }
+
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateRecipe(long id, [FromBody] RecipeDto dto)

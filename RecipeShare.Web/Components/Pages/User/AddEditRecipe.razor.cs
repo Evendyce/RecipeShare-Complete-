@@ -58,6 +58,7 @@ namespace RecipeShare.Web.Components.Pages.User
             }
             else
             {
+                model.UserName = UserName;
                 var newRecipeId = await _recipeService.CreateRecipeAsync(model);
 
                 // Finalize image uploads

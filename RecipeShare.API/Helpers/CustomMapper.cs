@@ -65,11 +65,12 @@ namespace RecipeShare.API.Helpers
                 };
             }
 
-            public static Recipe ToEntity(RecipeDto dto)
+            public static Recipe ToEntity(RecipeDto dto, string? UserId)
             {
                 return new Recipe
                 {
                     Id = dto.Id,
+                    UserId = UserId,
                     Title = dto.Title,
                     Ingredients = dto.Ingredients,
                     Steps = dto.Steps,

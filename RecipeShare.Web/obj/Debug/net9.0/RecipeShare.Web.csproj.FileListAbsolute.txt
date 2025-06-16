@@ -156,6 +156,7 @@ C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\scopedcss\bundle\RecipeShare.Web.styles.css
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\scopedcss\projectbundle\RecipeShare.Web.bundle.scp.css
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\dlyxwdzwwy-khy4lop6wu.gz
+C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\caidz7uw41-cwo6lvk7nw.gz
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\9fp3sot4mb-istbqtslxs.gz
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\ib26mr7exu-3uq9x3ktax.gz
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\fawebn1iqj-bf8lz946nb.gz
@@ -174,6 +175,7 @@ C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\5tlyw6dbkc-jwj9jx3e8l.gz
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\0edm0uzuxj-iepe0ndeer.gz
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\1rvzljoey4-al8uc4fpfy.gz
+C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\csjqh5j4v8-uh4hv2jtyu.gz
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\d9e24eu4p2-zgw66hweqi.gz
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\bwpw3fehzd-vodysogv7g.gz
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\epdp3o5cxa-j7u2s0k0eg.gz
@@ -233,12 +235,9 @@ C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.RecipeShare.Web.props
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.RecipeShare.Web.props
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\RecipeSh.D80D30BF.Up2Date
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\RecipeShare.Web.dll
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\refint\RecipeShare.Web.dll
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\RecipeShare.Web.pdb
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\RecipeShare.Web.genruntimeconfig.cache
 C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\ref\RecipeShare.Web.dll
-C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\csjqh5j4v8-uh4hv2jtyu.gz
-C:\Users\Donovan\source\repos\Evendyce\RecipeShare\RecipeShare.Web\obj\Debug\net9.0\compressed\caidz7uw41-cwo6lvk7nw.gz
