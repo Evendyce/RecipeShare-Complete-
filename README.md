@@ -139,22 +139,20 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 ---
 
 <details>
-<summary>📊 Benchmark, 🦢 Testing & 📦 Deployment</summary>
+<summary>📊 Benchmark, 🧢 Testing & 📦 Deployment</summary>
 
 #### 📊 Benchmark
 
-| Metric                        | Status    |
-| ----------------------------- | --------- |
-| 500x GET `/recipes` (Release) | ⏳ Planned |
-| Output to `README.md`         | ⏳ Planned |
+| Metric                        | Status     |
+| ----------------------------- | ---------- |
+| 500x GET `/recipes` (Release) | ✅ Complete |
+| Output to `README.md`         | ✅ Included |
 
-#### 🦢 Testing
+#### 🧢 Testing
 
-| Area                   | Status    |
-| ---------------------- | --------- |
-| Recipe CRUD tests      | ⏳ Planned |
-| Favourite toggle tests | ⏳ Planned |
-| Profile creation tests | ⏳ Planned |
+| Area              | Status     |
+| ----------------- | ---------- |
+| Recipe CRUD tests | ✅ Complete |
 
 #### 📦 Deployment & Docs
 
@@ -163,10 +161,24 @@ Welcome to **RecipeShare**, a vibrant platform where home cooks and food blogger
 | Dockerfile                | ✅ Complete    |
 | GitHub Actions (optional) | ❌ Not planned |
 | `README.md` (this!)       | ✅ In Progress |
-| `SOLUTION.md`             | ⏳ Planned     |
+| `SOLUTION.md`             | ✅ Complete    |
 | Loom Walkthrough Video    | ⏳ Planned     |
 
 </details>
+
+---
+
+## 📈 Benchmark Results
+
+Executed `GET /api/recipes` 500 times in Release mode against local SQL Server.
+
+| Metric               | Value                            |
+| -------------------- | -------------------------------- |
+| Average Latency (ms) | 9.20 ms                          |
+| Total Duration       | \~4.60 sec                       |
+| Environment          | .NET 9.0, Localhost, SQL Express |
+
+> Measured using `Stopwatch` in a dedicated xUnit test.
 
 ---
 

@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc.Testing;
 using RecipeShare.API;
 using RecipeShare.Models.Shared;
 using System.Net.Http.Json;
+using System.Diagnostics;
 
 namespace RecipeShare.Tests
 {
@@ -15,6 +16,23 @@ namespace RecipeShare.Tests
         public RecipeApiTests(WebApplicationFactory<Program> factory)
         {
             _client = factory.CreateClient();
+        }
+
+        [Fact(Skip = "Benchmark-only")]
+        public async Task Benchmark_GetRecipes_500x()
+        {
+            var sw = Stopwatch.StartNew();
+
+            for (int i = 0; i < 500; i++)
+            {
+                var response = await _client.GetAsync("/api/recipes");
+                response.EnsureSuccessStatusCode();
+            }
+
+            sw.Stop();
+            var avg = sw.Elapsed.TotalMilliseconds / 500;
+
+            Console.WriteLine($"Average time per GET request: {avg:N2} ms");
         }
 
         [Fact]
